@@ -32,6 +32,7 @@ class ViewController: NSViewController {
     var canvasController: CanvasController?
     var help: Help?
     let saver = Saver()
+    var popUpMenu: PopUpMenuView?
     
     @IBOutlet var canvas: NSView!
     @IBOutlet var menuView: NSView!
@@ -54,8 +55,13 @@ class ViewController: NSViewController {
         canvasController = CanvasController(canvas: canvas)
         Timer.scheduledTimer(timeInterval: 0.005, target: self, selector: #selector(detectMouseDrag), userInfo: nil, repeats: true)
         help = Help(superView: self.canvas)
+        popUpMenu = PopUpMenuView(canvasController: canvasController!)
         
         self.view.window?.isRestorable = false
+        
+        for key in Array(UserDefaults.standard.dictionaryRepresentation().keys) {
+            UserDefaults.standard.removeObject(forKey: key)
+        }
     }
     
     override func mouseDown(with event: NSEvent) {
@@ -63,6 +69,9 @@ class ViewController: NSViewController {
             actionStarted = false
             count = 0;
         }
+        
+        popUpMenu?.removeFromSuperview()
+        popUpMenu?.isActive = false
         help?.hide()
         
         // if user changes frame color
@@ -78,22 +87,21 @@ class ViewController: NSViewController {
             let color = NSColor.init(hue: h, saturation: curRadius / center.y, brightness: 1, alpha: 1)
             self.canvas.layer?.backgroundColor = color.cgColor
         }
-        
-        if self.canvas.frame.contains(mouseLocation) {
-            canvasController?.click(mouseLocation, byLeftMouse: true)
-            updateConstrains()
-        }
     }
  
     override func rightMouseDown(with event: NSEvent) {
-        self.becomeFirstResponder()
+        if self.canvas.frame.contains(mouseLocation) == false {
+            return
+        }
         
-        Swift.print(self.acceptsFirstResponder)
-        //self.perform(#selector(NSResponder.becomeFirstResponder), with: self, afterDelay: 0)
-        
-        if self.canvas.frame.contains(mouseLocation) {
-            updateConstrains()
-            canvasController?.click(mouseLocation, byLeftMouse: false)
+        if popUpMenu!.isActive {
+            popUpMenu?.removeFromSuperview()
+            popUpMenu?.isActive = false
+        } else {
+            canvasController?.savedMouseLocation = event.locationInWindow
+            popUpMenu?.locateView(at: CGPoint(x: canvas.frame.width / 2, y: canvas.frame.height / 2))
+            self.view.addSubview(popUpMenu!)
+            popUpMenu?.isActive = true
             help?.hide()
         }
     }
@@ -204,9 +212,6 @@ class ViewController: NSViewController {
     override func viewDidLayout() {
         super.viewDidLayout()
         
-        canvasController?.closeMenu()
-        help?.hide()
-        
         // resize canvas and its subviews
         self.canvas.frame = NSRect(x: 0, y: 0, width: self.view.frame.width - self.menuSize, height: self.view.frame.height)
         self.view.setFrameOrigin(NSPoint(x: 0, y: 0))
@@ -225,8 +230,6 @@ class ViewController: NSViewController {
     }
     
     @IBAction func saveButtonPressed(_ sender: AnyObject) {
-        canvasController?.closeMenu()
-        help?.hide()
         saver.save(view: self.canvas)
     }
     
@@ -237,7 +240,6 @@ class ViewController: NSViewController {
     
     @IBAction func shareOnSocialNetwork(_ sender: NSButton) {
         help?.hide()
-        canvasController?.closeMenu()
         let text = "I made a beautiful picture using this Collage app!"
         let content: [Any] = [text, saver.getSnapshot(view: self.canvas)]
         switch sender.tag {
@@ -251,7 +253,8 @@ class ViewController: NSViewController {
     }
     
     @IBAction func helpButtonPressed(_ sender: NSButton) {
-        canvasController?.closeMenu()
+        popUpMenu?.removeFromSuperview()
+        popUpMenu?.isActive = false
         help?.changeState()
     }
 }

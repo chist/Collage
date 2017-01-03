@@ -9,12 +9,10 @@
 import Foundation
 import Cocoa
 
-class CanvasController {
+class CanvasController: MenuDelegate {
     let canvas: NSView
     let container: Container
-    var popup: NSView
     var lock = false
-    let menu = PopupMenu()
     var savedMouseLocation = NSPoint()
     var largestContainerWithPointInFrame: Container?
     var initPoint: NSPoint?
@@ -23,30 +21,10 @@ class CanvasController {
     init(canvas: NSView) {
         self.canvas = canvas
         self.container = Container(border: Rectangle(fromNSRect: canvas.frame).framed(), outerView: canvas)
-        let center = CGPoint(x: canvas.frame.midX, y: canvas.frame.midY)
-        popup = menu.getView(at: center)
     }
     
-    func click(_ location: NSPoint, byLeftMouse: Bool) {
-        let center = CGPoint(x: canvas.frame.midX, y: canvas.frame.midY)
-        popup = menu.getView(at: center)
-        if lock == false && byLeftMouse == true {
-            // do nothing
-            return
-        } else if lock == true && menu.getRectangle().checkIfContains(location) == true {
-            let mode = menu.selectOption(location)
-            container.click(savedMouseLocation, mode: mode)
-            lock = false;
-            popup.removeFromSuperview()
-        } else if lock == true {
-            // close menu
-            popup.removeFromSuperview()
-            lock = false
-        } else if lock == false {
-            canvas.addSubview(popup)
-            lock = true
-            savedMouseLocation = location
-        }
+    func menuItemIsChosen(mode: Int) {
+        container.click(savedMouseLocation, mode: mode)
     }
     
     // check if given point is located between main container and the canvas frames
@@ -175,11 +153,5 @@ class CanvasController {
         let x = self.container.findMinWindowXSize()
         let y = self.container.findMinWindowYSize()
         return CGPoint(x: x, y: y)
-    }
-    
-    func closeMenu() {
-        if self.lock == true {
-            self.click(NSPoint(), byLeftMouse: true)
-        }
     }
 }

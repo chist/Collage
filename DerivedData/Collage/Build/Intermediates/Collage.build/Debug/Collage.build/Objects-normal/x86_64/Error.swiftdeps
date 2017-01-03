@@ -11,19 +11,19 @@ provides-member:
 - ["C7Collage5Error", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "=="
+- "AssignmentPrecedence"
 - "NSTextField"
 - !private "NSFont"
-- "AssignmentPrecedence"
-- "=="
+- "Error"
 - "NSRect"
 - "String"
 - !private "NSColor"
 - !private "BooleanLiteralType"
-- "Error"
 - "NSView"
 - !private "print"
-- !private "StringLiteralType"
 - "Swift"
+- !private "StringLiteralType"
 - "ErrorType"
 depends-member:
 - !private ["Ps9AnyObject", "NSColor"]

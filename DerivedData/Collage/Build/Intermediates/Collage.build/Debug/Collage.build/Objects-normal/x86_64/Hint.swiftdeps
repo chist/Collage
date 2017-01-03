@@ -7,21 +7,21 @@ provides-member:
 - ["C7Collage4Hint", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Hint"
-- !private "-"
-- !private "BooleanLiteralType"
-- "String"
-- !private "NSRect"
-- !private "NSColor"
-- "NSSize"
-- "NSTextView"
-- "NSView"
-- "AssignmentPrecedence"
 - !private "NSPoint"
-- !private "*"
 - !private "NSFont"
 - "CGFloat"
+- "NSTextView"
+- "AssignmentPrecedence"
+- "NSView"
+- !private "NSRect"
+- !private "NSColor"
+- "String"
 - !private "NSTextAlignment"
+- "Hint"
+- "NSSize"
+- !private "-"
+- !private "BooleanLiteralType"
+- !private "*"
 depends-member:
 - !private ["Ps9AnyObject", "NSColor"]
 - !private ["Ps9AnyObject", "NSFont"]

@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F0A2E9A1DD0E5200023D6A2 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0A2E991DD0E5200023D6A2 /* Window.swift */; };
 		4F2C828D1D7E01E500D9D852 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2C828C1D7E01E500D9D852 /* ScrollView.swift */; };
 		4F31BF7B1D9FF01B005D0B8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F31BF791D9FF01B005D0B8D /* Main.storyboard */; };
+		4F6893DC1E1BDBDE00D387B2 /* MenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6893DB1E1BDBDE00D387B2 /* MenuDelegate.swift */; };
+		4F6893E01E1BFCD200D387B2 /* ScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6893DF1E1BFCD200D387B2 /* ScrollViewDelegate.swift */; };
 		4F857B5F1D7041390072762D /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F857B5E1D7041390072762D /* Quartz.framework */; };
 		4F857B631D7070030072762D /* CanvasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F857B621D7070030072762D /* CanvasController.swift */; };
 		4F9B4A4E1D9AFDCD00ADD3E9 /* Saver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B4A4D1D9AFDCD00ADD3E9 /* Saver.swift */; };
@@ -46,9 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4F0A2E991DD0E5200023D6A2 /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
 		4F2C828C1D7E01E500D9D852 /* ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		4F31BF7E1D9FF1FA005D0B8D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Collage/en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4F6893DB1E1BDBDE00D387B2 /* MenuDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuDelegate.swift; sourceTree = "<group>"; };
+		4F6893DF1E1BFCD200D387B2 /* ScrollViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewDelegate.swift; sourceTree = "<group>"; };
 		4F857B5E1D7041390072762D /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		4F857B621D7070030072762D /* CanvasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CanvasController.swift; path = ../CanvasController.swift; sourceTree = "<group>"; };
 		4F9B4A4D1D9AFDCD00ADD3E9 /* Saver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Saver.swift; sourceTree = "<group>"; };
@@ -99,6 +101,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F6893E11E1C03B000D387B2 /* Container Contents */ = {
+			isa = PBXGroup;
+			children = (
+				4F2C828C1D7E01E500D9D852 /* ScrollView.swift */,
+				4F6893DF1E1BFCD200D387B2 /* ScrollViewDelegate.swift */,
+				4FCA9CBC1E167B190022ED87 /* DragAndDropImageView.swift */,
+			);
+			name = "Container Contents";
+			sourceTree = "<group>";
+		};
+		4F6893E21E1C188200D387B2 /* PopUp menu */ = {
+			isa = PBXGroup;
+			children = (
+				4FBD52EE1D7DC9860056E15F /* PopupMenu.swift */,
+				4F6893DB1E1BDBDE00D387B2 /* MenuDelegate.swift */,
+			);
+			name = "PopUp menu";
+			sourceTree = "<group>";
+		};
 		4F857B5D1D7041390072762D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,21 +153,19 @@
 			isa = PBXGroup;
 			children = (
 				4FB62C331D6F5B3E00FE2BD3 /* AppDelegate.swift */,
-				4F857B621D7070030072762D /* CanvasController.swift */,
-				4FBD52EE1D7DC9860056E15F /* PopupMenu.swift */,
 				4FB62C351D6F5B3E00FE2BD3 /* ViewController.swift */,
-				4F0A2E991DD0E5200023D6A2 /* Window.swift */,
+				4F857B621D7070030072762D /* CanvasController.swift */,
+				4FF3684C1D6F639A0049E699 /* Container.swift */,
+				4F6893E11E1C03B000D387B2 /* Container Contents */,
+				4F6893E21E1C188200D387B2 /* PopUp menu */,
 				4FB8A3261DCC01CC00317161 /* Help */,
 				4F9B4A4F1D9B09FD00ADD3E9 /* PreferencesViewController.swift */,
+				4F9B4A4D1D9AFDCD00ADD3E9 /* Saver.swift */,
+				4FF368501D6F66650049E699 /* Rectangle.swift */,
 				4FB62C371D6F5B3E00FE2BD3 /* Assets.xcassets */,
 				4F31BF791D9FF01B005D0B8D /* Main.storyboard */,
 				4FB62C3C1D6F5B3E00FE2BD3 /* Info.plist */,
-				4FF3684C1D6F639A0049E699 /* Container.swift */,
 				4F9E1CF61D8004D9000D6C69 /* Error.swift */,
-				4F2C828C1D7E01E500D9D852 /* ScrollView.swift */,
-				4FCA9CBC1E167B190022ED87 /* DragAndDropImageView.swift */,
-				4FF368501D6F66650049E699 /* Rectangle.swift */,
-				4F9B4A4D1D9AFDCD00ADD3E9 /* Saver.swift */,
 			);
 			path = Collage;
 			sourceTree = "<group>";
@@ -320,19 +339,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F9E1CF71D8004D9000D6C69 /* Error.swift in Sources */,
-				4F0A2E9A1DD0E5200023D6A2 /* Window.swift in Sources */,
 				4FBD52EF1D7DC9860056E15F /* PopupMenu.swift in Sources */,
 				4FB8A3281DCC2A9B00317161 /* Hint.swift in Sources */,
 				4F2C828D1D7E01E500D9D852 /* ScrollView.swift in Sources */,
 				4FF368511D6F66650049E699 /* Rectangle.swift in Sources */,
 				4F857B631D7070030072762D /* CanvasController.swift in Sources */,
 				4F9B4A501D9B09FD00ADD3E9 /* PreferencesViewController.swift in Sources */,
+				4F6893E01E1BFCD200D387B2 /* ScrollViewDelegate.swift in Sources */,
 				4FB62C361D6F5B3E00FE2BD3 /* ViewController.swift in Sources */,
 				4FCA9CBD1E167B190022ED87 /* DragAndDropImageView.swift in Sources */,
 				4FB8A32A1DCC2AB800317161 /* Help.swift in Sources */,
 				4FF3684D1D6F639A0049E699 /* Container.swift in Sources */,
 				4FB62C341D6F5B3E00FE2BD3 /* AppDelegate.swift in Sources */,
 				4F9B4A4E1D9AFDCD00ADD3E9 /* Saver.swift in Sources */,
+				4F6893DC1E1BDBDE00D387B2 /* MenuDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

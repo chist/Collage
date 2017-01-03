@@ -6,29 +6,29 @@ provides-nominal:
 provides-member:
 - ["C7Collage25PreferencesViewController", ""]
 provides-dynamic-lookup:
-- "chooseDirectoryButton"
 - "viewDidLoad"
 - "cutPathName"
 - "chooseDirectoryButtonPressed"
+- "chooseDirectoryButton"
 depends-top-level:
-- !private "NSString"
-- !private "UserDefaults"
-- "NSViewController"
 - !private "=="
 - "AssignmentPrecedence"
-- "CastingPrecedence"
-- !private "stride"
-- !private "NSMakeRange"
-- !private "+"
 - "NSPopUpButton"
+- "CastingPrecedence"
+- "PreferencesViewController"
+- !private "NSMakeRange"
+- !private "stride"
+- !private "NSString"
+- "String"
+- !private "BooleanLiteralType"
+- !private "UserDefaults"
+- !private "+"
+- !private "NSOpenPanel"
+- "NSViewController"
 - !private "StringLiteralType"
 - !private "print"
-- "PreferencesViewController"
-- !private "NSOpenPanel"
 - !private "-"
-- "String"
 - !private "UnicodeScalarType"
-- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "NSMakeRange"]
 - !private ["Ps9AnyObject", "NSOpenPanel"]

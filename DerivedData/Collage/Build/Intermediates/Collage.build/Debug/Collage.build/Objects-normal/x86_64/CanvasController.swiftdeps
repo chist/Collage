@@ -7,33 +7,32 @@ provides-member:
 - ["C7Collage16CanvasController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "-"
+- "CanvasController"
+- "AssignmentPrecedence"
+- "Bool"
 - "Container"
+- !private "=="
+- "MenuDelegate"
 - !private "<"
 - "NSPoint"
-- "AssignmentPrecedence"
-- !private "=="
-- !private "+"
-- "CGFloat"
-- "Bool"
-- "CGPoint"
-- !private "Rectangle"
-- !private "print"
-- "BooleanLiteralType"
-- "CanvasController"
-- !private "&&"
-- !private "StringLiteralType"
-- "NSView"
-- "PopupMenu"
 - !private ">"
+- "CGFloat"
+- !private "&&"
+- !private "print"
+- !private "Rectangle"
+- !private "+"
+- "NSView"
+- "BooleanLiteralType"
+- !private "StringLiteralType"
+- "CGPoint"
+- !private "-"
+- "Int"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps9AnyObject", "CGPoint"]
 - ["Ps9AnyObject", "Container"]
 - ["Ps9AnyObject", "NSPoint"]
-- ["Ps9AnyObject", "PopupMenu"]
 - !private ["Ps9AnyObject", "Rectangle"]
-- !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "border"]
 - !private ["Ps9AnyObject", "brother"]
 - !private ["Ps9AnyObject", "canvas"]
@@ -54,21 +53,15 @@ depends-member:
 - !private ["Ps9AnyObject", "frame"]
 - !private ["Ps9AnyObject", "frameSize"]
 - !private ["Ps9AnyObject", "framed"]
-- !private ["Ps9AnyObject", "getRectangle"]
-- !private ["Ps9AnyObject", "getView"]
-- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "initPoint"]
 - !private ["Ps9AnyObject", "largestContainerWithPointInFrame"]
-- !private ["Ps9AnyObject", "lock"]
-- !private ["Ps9AnyObject", "menu"]
+- ["Ps9AnyObject", "menuItemIsChosen"]
 - ["Ps9AnyObject", "minSize"]
-- !private ["Ps9AnyObject", "popup"]
 - !private ["Ps9AnyObject", "position"]
 - !private ["Ps9AnyObject", "print"]
-- !private ["Ps9AnyObject", "removeFromSuperview"]
 - !private ["Ps9AnyObject", "savedMouseLocation"]
 - !private ["Ps9AnyObject", "second"]
-- !private ["Ps9AnyObject", "selectOption"]
 - !private ["Ps9AnyObject", "updateScrollView"]
 - ["Ps9AnyObject", ""]
 - !private ["Ps19BinaryFloatingPoint", "Stride"]
@@ -84,32 +77,26 @@ depends-member:
 - !private ["VSC6CGRect", "contains"]
 - !private ["VSC6CGRect", "maxX"]
 - !private ["VSC6CGRect", "maxY"]
-- !private ["VSC6CGRect", "midX"]
-- !private ["VSC6CGRect", "midY"]
 - !private ["VSC6CGRect", "minX"]
 - !private ["VSC6CGRect", "minY"]
 - !private ["Ps7CVarArg", "Stride"]
-- !private ["Ps7CVarArg", "addSubview"]
 - !private ["Ps7CVarArg", "checkIfContains"]
 - !private ["Ps7CVarArg", "first"]
 - !private ["Ps7CVarArg", "frame"]
 - !private ["Ps7CVarArg", "framed"]
 - !private ["Ps7CVarArg", "init"]
-- !private ["Ps7CVarArg", "removeFromSuperview"]
 - !private ["Ps7CVarArg", "second"]
 - ["C7Collage16CanvasController", "Bool"]
 - ["C7Collage16CanvasController", "CGFloat"]
 - ["C7Collage16CanvasController", "CGPoint"]
 - ["C7Collage16CanvasController", "Container"]
+- ["C7Collage16CanvasController", "Int"]
 - ["C7Collage16CanvasController", "NSPoint"]
 - ["C7Collage16CanvasController", "NSView"]
-- ["C7Collage16CanvasController", "PopupMenu"]
 - !private ["C7Collage16CanvasController", "Rectangle"]
 - ["C7Collage16CanvasController", "canvas"]
 - ["C7Collage16CanvasController", "changeBorders"]
 - ["C7Collage16CanvasController", "checkIfRearrangeIsPossible"]
-- ["C7Collage16CanvasController", "click"]
-- ["C7Collage16CanvasController", "closeMenu"]
 - ["C7Collage16CanvasController", "container"]
 - ["C7Collage16CanvasController", "containsInFrame"]
 - ["C7Collage16CanvasController", "deinit"]
@@ -119,9 +106,8 @@ depends-member:
 - ["C7Collage16CanvasController", "isInExtraSpace"]
 - ["C7Collage16CanvasController", "largestContainerWithPointInFrame"]
 - ["C7Collage16CanvasController", "lock"]
-- ["C7Collage16CanvasController", "menu"]
+- ["C7Collage16CanvasController", "menuItemIsChosen"]
 - ["C7Collage16CanvasController", "minSize"]
-- ["C7Collage16CanvasController", "popup"]
 - !private ["C7Collage16CanvasController", "print"]
 - ["C7Collage16CanvasController", "rearrange"]
 - ["C7Collage16CanvasController", "savedMouseLocation"]
@@ -149,7 +135,6 @@ depends-member:
 - !private ["C7Collage9Container", "position"]
 - !private ["C7Collage9Container", "updateScrollView"]
 - !private ["Ps28CustomDebugStringConvertible", "Stride"]
-- !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "checkIfContains"]
 - !private ["Ps28CustomDebugStringConvertible", "contains"]
 - !private ["Ps28CustomDebugStringConvertible", "first"]
@@ -158,11 +143,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "maxX"]
 - !private ["Ps28CustomDebugStringConvertible", "maxY"]
-- !private ["Ps28CustomDebugStringConvertible", "midX"]
-- !private ["Ps28CustomDebugStringConvertible", "midY"]
 - !private ["Ps28CustomDebugStringConvertible", "minX"]
 - !private ["Ps28CustomDebugStringConvertible", "minY"]
-- !private ["Ps28CustomDebugStringConvertible", "removeFromSuperview"]
 - !private ["Ps28CustomDebugStringConvertible", "second"]
 - ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "x"]
@@ -173,8 +155,6 @@ depends-member:
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "maxX"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "maxY"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "midX"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "midY"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "minX"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "minY"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "x"]
@@ -185,8 +165,6 @@ depends-member:
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "maxX"]
 - !private ["Ps17CustomReflectable", "maxY"]
-- !private ["Ps17CustomReflectable", "midX"]
-- !private ["Ps17CustomReflectable", "midY"]
 - !private ["Ps17CustomReflectable", "minX"]
 - !private ["Ps17CustomReflectable", "minY"]
 - ["Ps17CustomReflectable", "some"]
@@ -194,19 +172,16 @@ depends-member:
 - !private ["Ps17CustomReflectable", "y"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "checkIfContains"]
 - !private ["Ps23CustomStringConvertible", "first"]
 - !private ["Ps23CustomStringConvertible", "frame"]
 - !private ["Ps23CustomStringConvertible", "framed"]
 - !private ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "removeFromSuperview"]
 - !private ["Ps23CustomStringConvertible", "second"]
 - !private ["Sd", "Stride"]
 - !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
-- !private ["Ps9Equatable", "addSubview"]
 - ["Ps9Equatable", "bottom"]
 - !private ["Ps9Equatable", "checkIfContains"]
 - !private ["Ps9Equatable", "contains"]
@@ -217,11 +192,8 @@ depends-member:
 - ["Ps9Equatable", "left"]
 - !private ["Ps9Equatable", "maxX"]
 - !private ["Ps9Equatable", "maxY"]
-- !private ["Ps9Equatable", "midX"]
-- !private ["Ps9Equatable", "midY"]
 - !private ["Ps9Equatable", "minX"]
 - !private ["Ps9Equatable", "minY"]
-- !private ["Ps9Equatable", "removeFromSuperview"]
 - ["Ps9Equatable", "right"]
 - !private ["Ps9Equatable", "second"]
 - ["Ps9Equatable", "top"]
@@ -238,7 +210,6 @@ depends-member:
 - !private ["Ps13FloatingPoint", "Stride"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
-- !private ["Ps8Hashable", "addSubview"]
 - ["Ps8Hashable", "bottom"]
 - !private ["Ps8Hashable", "checkIfContains"]
 - !private ["Ps8Hashable", "first"]
@@ -246,7 +217,6 @@ depends-member:
 - !private ["Ps8Hashable", "framed"]
 - !private ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "left"]
-- !private ["Ps8Hashable", "removeFromSuperview"]
 - ["Ps8Hashable", "right"]
 - !private ["Ps8Hashable", "second"]
 - ["Ps8Hashable", "top"]
@@ -257,66 +227,52 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "Stride"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["P7Collage12MenuDelegate", "CGPoint"]
+- ["P7Collage12MenuDelegate", "Container"]
+- ["P7Collage12MenuDelegate", "NSPoint"]
+- !private ["P7Collage12MenuDelegate", "Rectangle"]
+- !private ["P7Collage12MenuDelegate", "canvas"]
+- !private ["P7Collage12MenuDelegate", "container"]
+- !private ["P7Collage12MenuDelegate", "initPoint"]
+- !private ["P7Collage12MenuDelegate", "largestContainerWithPointInFrame"]
+- ["P7Collage12MenuDelegate", "menuItemIsChosen"]
+- !private ["P7Collage12MenuDelegate", "minSize"]
+- !private ["P7Collage12MenuDelegate", "print"]
+- !private ["P7Collage12MenuDelegate", "savedMouseLocation"]
+- ["P7Collage12MenuDelegate", ""]
 - !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "init"]
-- !private ["PSo15NSAccessibility", "addSubview"]
 - !private ["PSo15NSAccessibility", "frame"]
-- !private ["PSo15NSAccessibility", "removeFromSuperview"]
-- !private ["PSo30NSAccessibilityElementProtocol", "addSubview"]
 - !private ["PSo30NSAccessibilityElementProtocol", "frame"]
-- !private ["PSo30NSAccessibilityElementProtocol", "removeFromSuperview"]
-- !private ["PSo29NSAnimatablePropertyContainer", "addSubview"]
 - !private ["PSo29NSAnimatablePropertyContainer", "frame"]
-- !private ["PSo29NSAnimatablePropertyContainer", "removeFromSuperview"]
-- !private ["PSo25NSAppearanceCustomization", "addSubview"]
 - !private ["PSo25NSAppearanceCustomization", "frame"]
-- !private ["PSo25NSAppearanceCustomization", "removeFromSuperview"]
-- !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "frame"]
 - !private ["PSo8NSCoding", "init"]
-- !private ["PSo8NSCoding", "removeFromSuperview"]
 - !private ["PSo9NSCopying", "init"]
-- !private ["PSo21NSDraggingDestination", "addSubview"]
 - !private ["PSo21NSDraggingDestination", "frame"]
-- !private ["PSo21NSDraggingDestination", "removeFromSuperview"]
 - !private ["PSo16NSMutableCopying", "init"]
-- !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "checkIfContains"]
 - !private ["CSo8NSObject", "first"]
 - !private ["CSo8NSObject", "frame"]
 - !private ["CSo8NSObject", "framed"]
 - !private ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "removeFromSuperview"]
 - !private ["CSo8NSObject", "second"]
-- !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "checkIfContains"]
 - !private ["PSo16NSObjectProtocol", "first"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - !private ["PSo16NSObjectProtocol", "framed"]
 - !private ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "removeFromSuperview"]
 - !private ["PSo16NSObjectProtocol", "second"]
 - !private ["PSo19NSPasteboardReading", "init"]
 - !private ["PSo19NSPasteboardWriting", "init"]
-- !private ["CSo11NSResponder", "addSubview"]
 - !private ["CSo11NSResponder", "frame"]
-- !private ["CSo11NSResponder", "removeFromSuperview"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
-- !private ["PSo33NSUserInterfaceItemIdentification", "addSubview"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "frame"]
-- !private ["PSo33NSUserInterfaceItemIdentification", "removeFromSuperview"]
-- !private ["CSo6NSView", "addSubview"]
 - ["CSo6NSView", "deinit"]
 - !private ["CSo6NSView", "frame"]
-- !private ["CSo6NSView", "removeFromSuperview"]
 - ["Sq", "deinit"]
 - ["Sq", "some"]
-- ["C7Collage9PopupMenu", "deinit"]
-- !private ["C7Collage9PopupMenu", "getRectangle"]
-- !private ["C7Collage9PopupMenu", "getView"]
-- ["C7Collage9PopupMenu", "init"]
-- !private ["C7Collage9PopupMenu", "selectOption"]
 - ["O7Collage8Position", "bottom"]
 - ["O7Collage8Position", "deinit"]
 - ["O7Collage8Position", "left"]
@@ -337,9 +293,7 @@ depends-member:
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["Ps15_CVarArgAligned", "Stride"]
 - !private ["Ps22_CVarArgPassedAsDouble", "Stride"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "removeFromSuperview"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "Stride"]
@@ -350,7 +304,6 @@ depends-member:
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
-- !private ["Ps9_Hashable", "addSubview"]
 - ["Ps9_Hashable", "bottom"]
 - !private ["Ps9_Hashable", "checkIfContains"]
 - !private ["Ps9_Hashable", "first"]
@@ -358,7 +311,6 @@ depends-member:
 - !private ["Ps9_Hashable", "framed"]
 - !private ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "left"]
-- !private ["Ps9_Hashable", "removeFromSuperview"]
 - ["Ps9_Hashable", "right"]
 - !private ["Ps9_Hashable", "second"]
 - ["Ps9_Hashable", "top"]
@@ -403,6 +355,7 @@ depends-nominal:
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - !private "Ps25LosslessStringConvertible"
+- "P7Collage12MenuDelegate"
 - !private "Ps10MirrorPath"
 - !private "PSo15NSAccessibility"
 - !private "PSo30NSAccessibilityElementProtocol"
@@ -422,7 +375,6 @@ depends-nominal:
 - !private "PSo33NSUserInterfaceItemIdentification"
 - "CSo6NSView"
 - "Sq"
-- "C7Collage9PopupMenu"
 - "O7Collage8Position"
 - "C7Collage9Rectangle"
 - !private "Ps13SignedInteger"
@@ -463,4 +415,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "efa5b35e23ac49f6674e0c30e9b39c17"
+interface-hash: "54fb9662139ccbb311e92ae7b3804881"

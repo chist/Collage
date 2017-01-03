@@ -14,7 +14,7 @@ class Container {
     var outerView: NSView
     var isImage: Bool = false
     var image: NSImage?
-    var scrollView: NSScrollView?
+    var scrollView: MutableScrollView?
     var imageView: IKImageView?
     var isVertical: Bool = true
     var firstContainer: Container?
@@ -41,7 +41,6 @@ class Container {
     static let defaultImageQuantity = 11
     static var frameSize: CGFloat = 7
 
-    
     init(border: Rectangle, outerView: NSView, image: NSImage? = NSImage.init(named: "Non-existing image")) {
         isImage = true
         self.border = border
@@ -54,7 +53,7 @@ class Container {
         }
         
         if let image = self.image {
-            self.scrollView = ScrollViewCreator().make(image, border: self.border)
+            self.scrollView = MutableScrollView(image: image, border: self.border)
             outerView.addSubview(self.scrollView!)
         } else {
             print("Error: image not found.")
@@ -74,13 +73,14 @@ class Container {
         self.isImage = false
         self.scrollView?.removeFromSuperview()
         
-        let image1: NSImage, image2: NSImage
-        if self.image?.name()?.hasPrefix("default") == true {
+        var image1: NSImage, image2: NSImage
+        let cur_img: NSImage? = self.scrollView?.content.image
+        if cur_img?.name()?.hasPrefix("default") == true {
             image1 = getRandomImage()
             image2 = getRandomImage()
         } else {
-            image1 = self.image!
-            image2 = self.image!
+            image1 = cur_img!
+            image2 = cur_img!
         }
         
         if isVertical {
@@ -122,7 +122,7 @@ class Container {
                 parent.firstContainer = nil
                 parent.secondContainer = nil
                 parent.isImage = true
-                parent.scrollView = ScrollViewCreator().make(parent.image!, border: parent.border)
+                parent.scrollView = MutableScrollView(image: parent.image!, border: parent.border)
                 outerView.addSubview(parent.scrollView!)
              } else {
                  print("Error: no layer to merge with")
@@ -142,7 +142,7 @@ class Container {
             }
             
             selected.scrollView?.removeFromSuperview()
-            selected.scrollView = ScrollViewCreator().make(selected.image!, border: selected.border)
+            selected.scrollView = MutableScrollView(image: selected.image!, border: selected.border)
             outerView.addSubview(selected.scrollView!)
         default:
             return

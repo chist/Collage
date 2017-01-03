@@ -8,91 +8,44 @@
 
 import Foundation
 import Cocoa
-/*
+
 class PopUpMenuView: NSView {
+    var isActive = false // true if menu is visible
     let buttonNames = ["splitVertically", "splitHorizontally", "merge", "choosePhoto"]
-    let menuView = PopUpMenuView();
     let optionHeight: Int = 48
     let optionWidth: Int = 160
+    var delegate: MenuDelegate?
     
-    override init(frame frameRect: NSRect) {
-        super.init(frame: frameRect)
+    init(canvasController: CanvasController) {
+        super.init(frame: NSRect())
         self.becomeFirstResponder()
+        delegate = canvasController
         
-        menuView.frame = NSRect(x: 0, y: 0, width: optionWidth, height: optionHeight * buttonNames.count)
+        self.frame = NSRect(x: 0, y: 0, width: optionWidth, height: optionHeight * buttonNames.count)
         for i in 0...(buttonNames.count - 1) {
             let buttonView = NSImageView()
             buttonView.image = NSImage(named: buttonNames[i])
             buttonView.frame = NSRect(x: 0, y: i * optionHeight, width: optionWidth, height: optionHeight)
             buttonView.isEditable = false
-            menuView.addSubview(buttonView)
+            self.addSubview(buttonView)
         }
     }
+    
     required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        self.becomeFirstResponder()
-        
-        menuView.frame = NSRect(x: 0, y: 0, width: optionWidth, height: optionHeight * buttonNames.count)
-        for i in 0...(buttonNames.count - 1) {
-            let buttonView = NSImageView()
-            buttonView.image = NSImage(named: buttonNames[i])
-            buttonView.frame = NSRect(x: 0, y: i * optionHeight, width: optionWidth, height: optionHeight)
-            buttonView.isEditable = false
-            menuView.addSubview(buttonView)
-        }
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func mouseDown(with event: NSEvent) {
-        
+        let point = self.convert(event.locationInWindow, from: nil)
+        let mode: Int = Int(point.y) / optionHeight
+        delegate?.menuItemIsChosen(mode: mode)
+        self.removeFromSuperview()
+        self.isActive = false
     }
     
-    func selectOption(_ mouseLocation: NSPoint) -> Int {
-        return Int(mouseLocation.y - self.frame.minY) / optionHeight
-    }
-    
-    // returns rectangle to check if user clicks menuButton
-    func getRectangle() -> Rectangle {
-        return Rectangle(fromNSRect: self.frame)
-    }
-    
-    func getView(at point: CGPoint) -> NSView {
+    func locateView(at point: CGPoint) {
         let correctedPoint = CGPoint(x: Int(point.x) - optionWidth / 2,
                                      y: Int(point.y) - optionHeight * buttonNames.count / 2)
-        self.menuView.frame = NSRect(origin: correctedPoint, size: self.menuView.frame.size)
-        return menuView
-    }
-}*/
-
-class PopupMenu {
-    let buttonNames = ["splitVertically", "splitHorizontally", "merge", "choosePhoto"]
-    let menuView = NSView();
-    let optionHeight: Int = 48
-    let optionWidth: Int = 160
-    
-    init() {
-        menuView.frame = NSRect(x: 0, y: 0, width: optionWidth, height: optionHeight * buttonNames.count)
-        for i in 0...(buttonNames.count - 1) {
-            let buttonView = NSImageView()
-            buttonView.image = NSImage(named: buttonNames[i])
-            buttonView.frame = NSRect(x: 0, y: i * optionHeight, width: optionWidth, height: optionHeight)
-            buttonView.isEditable = false
-            menuView.addSubview(buttonView)
-        }
-    }
-    
-    func selectOption(_ mouseLocation: NSPoint) -> Int {
-        return Int(mouseLocation.y - menuView.frame.minY) / optionHeight
-    }
-    
-    // returns rectangle to check if user clicks menuButton
-    func getRectangle() -> Rectangle {
-        return Rectangle(fromNSRect: menuView.frame)
-    }
-    
-    func getView(at point: CGPoint) -> NSView {
-        let correctedPoint = CGPoint(x: Int(point.x) - optionWidth / 2,
-                                     y: Int(point.y) - optionHeight * buttonNames.count / 2)
-        self.menuView.frame = NSRect(origin: correctedPoint, size: self.menuView.frame.size)
-        return menuView
+        self.frame = NSRect(origin: correctedPoint, size: self.frame.size)
     }
 }

@@ -66,9 +66,6 @@ class Help {
     }
     
     func hide() {
-        if self.isActive == false {
-            return
-        }
         self.view.removeFromSuperview()
         self.isActive = false
     }

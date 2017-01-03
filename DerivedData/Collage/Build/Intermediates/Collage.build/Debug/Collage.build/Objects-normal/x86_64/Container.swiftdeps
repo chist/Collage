@@ -8,49 +8,48 @@ provides-member:
 - ["C7Collage9Container", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "getRandomImage"
 - "Container"
-- "BooleanLiteralType"
-- !private "*"
-- !private "ErrorType"
-- !private "-"
-- "NSView"
-- "NSScrollView"
-- !private "ScrollViewCreator"
-- !private "String"
-- "NSPoint"
-- "Position"
+- !private "/"
 - !private "print"
-- !private "+"
+- !private "*"
+- "BooleanLiteralType"
 - !private "<"
-- "CGPoint"
-- "Rectangle"
+- !private "-"
+- !private ">"
+- !private "arc4random"
+- "NSImage"
 - "Bool"
-- "IKImageView"
-- !private "%"
+- !private "String"
+- "Position"
+- !private "&&"
 - "StringLiteralType"
-- !private "UInt32"
+- "NSView"
+- !private "+"
+- "getRandomImage"
 - !private "~="
-- !private "==="
+- "CGPoint"
+- !private "ErrorType"
+- !private "max"
 - !private "=="
 - "AssignmentPrecedence"
-- "NSImage"
-- !private "max"
-- "CGFloat"
-- !private "&&"
-- !private "/"
+- "NSPoint"
+- "IKImageView"
 - "Int"
-- !private "arc4random"
+- "CGFloat"
+- !private "==="
 - !private "NSOpenPanel"
-- !private ">"
+- !private "UInt32"
+- "Rectangle"
+- !private "%"
+- "MutableScrollView"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps9AnyObject", "Container"]
 - !private ["Ps9AnyObject", "ErrorType"]
+- !private ["Ps9AnyObject", "MutableScrollView"]
 - !private ["Ps9AnyObject", "NSImage"]
 - !private ["Ps9AnyObject", "NSOpenPanel"]
 - !private ["Ps9AnyObject", "Position"]
-- !private ["Ps9AnyObject", "ScrollViewCreator"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "border"]
 - !private ["Ps9AnyObject", "bottomHalf"]
@@ -64,6 +63,7 @@ depends-member:
 - !private ["Ps9AnyObject", "checkAllOnRight"]
 - !private ["Ps9AnyObject", "checkAllOnTop"]
 - !private ["Ps9AnyObject", "checkIfContains"]
+- !private ["Ps9AnyObject", "content"]
 - !private ["Ps9AnyObject", "defaultImageQuantity"]
 - !private ["Ps9AnyObject", "findMinWindowXSize"]
 - !private ["Ps9AnyObject", "findMinWindowYSize"]
@@ -81,7 +81,6 @@ depends-member:
 - !private ["Ps9AnyObject", "largestContainerWithPointInFrame"]
 - !private ["Ps9AnyObject", "leftHalf"]
 - !private ["Ps9AnyObject", "magnification"]
-- !private ["Ps9AnyObject", "make"]
 - !private ["Ps9AnyObject", "makeChildren"]
 - !private ["Ps9AnyObject", "max"]
 - !private ["Ps9AnyObject", "maxX"]
@@ -128,11 +127,13 @@ depends-member:
 - !private ["Ps7CVarArg", "addSubview"]
 - !private ["Ps7CVarArg", "bottomHalf"]
 - !private ["Ps7CVarArg", "checkIfContains"]
+- !private ["Ps7CVarArg", "content"]
 - !private ["Ps7CVarArg", "first"]
 - !private ["Ps7CVarArg", "frame"]
 - !private ["Ps7CVarArg", "framed"]
 - !private ["Ps7CVarArg", "hasPrefix"]
 - !private ["Ps7CVarArg", "height"]
+- !private ["Ps7CVarArg", "image"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "leftHalf"]
 - !private ["Ps7CVarArg", "magnification"]
@@ -164,14 +165,13 @@ depends-member:
 - !private ["C7Collage9Container", "ErrorType"]
 - ["C7Collage9Container", "IKImageView"]
 - ["C7Collage9Container", "Int"]
+- ["C7Collage9Container", "MutableScrollView"]
 - ["C7Collage9Container", "NSImage"]
 - !private ["C7Collage9Container", "NSOpenPanel"]
 - ["C7Collage9Container", "NSPoint"]
-- ["C7Collage9Container", "NSScrollView"]
 - ["C7Collage9Container", "NSView"]
 - ["C7Collage9Container", "Position"]
 - ["C7Collage9Container", "Rectangle"]
-- !private ["C7Collage9Container", "ScrollViewCreator"]
 - ["C7Collage9Container", "border"]
 - ["C7Collage9Container", "brother"]
 - ["C7Collage9Container", "changeAllOnBottom"]
@@ -213,11 +213,13 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "bottomHalf"]
 - !private ["Ps28CustomDebugStringConvertible", "checkIfContains"]
+- !private ["Ps28CustomDebugStringConvertible", "content"]
 - !private ["Ps28CustomDebugStringConvertible", "first"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
 - !private ["Ps28CustomDebugStringConvertible", "framed"]
 - !private ["Ps28CustomDebugStringConvertible", "hasPrefix"]
 - !private ["Ps28CustomDebugStringConvertible", "height"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "leftHalf"]
 - !private ["Ps28CustomDebugStringConvertible", "magnification"]
@@ -264,11 +266,13 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "bottomHalf"]
 - !private ["Ps23CustomStringConvertible", "checkIfContains"]
+- !private ["Ps23CustomStringConvertible", "content"]
 - !private ["Ps23CustomStringConvertible", "first"]
 - !private ["Ps23CustomStringConvertible", "frame"]
 - !private ["Ps23CustomStringConvertible", "framed"]
 - !private ["Ps23CustomStringConvertible", "hasPrefix"]
 - !private ["Ps23CustomStringConvertible", "height"]
+- !private ["Ps23CustomStringConvertible", "image"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "leftHalf"]
 - !private ["Ps23CustomStringConvertible", "magnification"]
@@ -289,6 +293,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "url"]
 - !private ["Ps23CustomStringConvertible", "width"]
 - !private ["Sd", "deinit"]
+- ["C7Collage20DragAndDropImageView", "deinit"]
+- !private ["C7Collage20DragAndDropImageView", "image"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addSubview"]
@@ -296,11 +302,13 @@ depends-member:
 - !private ["Ps9Equatable", "bottom"]
 - !private ["Ps9Equatable", "bottomHalf"]
 - !private ["Ps9Equatable", "checkIfContains"]
+- !private ["Ps9Equatable", "content"]
 - !private ["Ps9Equatable", "first"]
 - !private ["Ps9Equatable", "frame"]
 - !private ["Ps9Equatable", "framed"]
 - !private ["Ps9Equatable", "hasPrefix"]
 - !private ["Ps9Equatable", "height"]
+- !private ["Ps9Equatable", "image"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "left"]
 - !private ["Ps9Equatable", "leftHalf"]
@@ -351,11 +359,13 @@ depends-member:
 - !private ["Ps8Hashable", "bottom"]
 - !private ["Ps8Hashable", "bottomHalf"]
 - !private ["Ps8Hashable", "checkIfContains"]
+- !private ["Ps8Hashable", "content"]
 - !private ["Ps8Hashable", "first"]
 - !private ["Ps8Hashable", "frame"]
 - !private ["Ps8Hashable", "framed"]
 - !private ["Ps8Hashable", "hasPrefix"]
 - !private ["Ps8Hashable", "height"]
+- !private ["Ps8Hashable", "image"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "left"]
 - !private ["Ps8Hashable", "leftHalf"]
@@ -395,8 +405,18 @@ depends-member:
 - !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "hasPrefix"]
 - !private ["Ps10MirrorPath", "init"]
+- !private ["C7Collage17MutableScrollView", "content"]
+- ["C7Collage17MutableScrollView", "deinit"]
+- !private ["C7Collage17MutableScrollView", "frame"]
+- !private ["C7Collage17MutableScrollView", "init"]
+- !private ["C7Collage17MutableScrollView", "magnification"]
+- !private ["C7Collage17MutableScrollView", "minMagnification"]
+- !private ["C7Collage17MutableScrollView", "removeFromSuperview"]
+- !private ["C7Collage17MutableScrollView", "updateLayer"]
 - !private ["PSo15NSAccessibility", "addSubview"]
+- !private ["PSo15NSAccessibility", "content"]
 - !private ["PSo15NSAccessibility", "frame"]
+- !private ["PSo15NSAccessibility", "image"]
 - !private ["PSo15NSAccessibility", "init"]
 - !private ["PSo15NSAccessibility", "magnification"]
 - !private ["PSo15NSAccessibility", "minMagnification"]
@@ -405,7 +425,9 @@ depends-member:
 - !private ["PSo15NSAccessibility", "updateLayer"]
 - !private ["PSo15NSAccessibility", "url"]
 - !private ["PSo30NSAccessibilityElementProtocol", "addSubview"]
+- !private ["PSo30NSAccessibilityElementProtocol", "content"]
 - !private ["PSo30NSAccessibilityElementProtocol", "frame"]
+- !private ["PSo30NSAccessibilityElementProtocol", "image"]
 - !private ["PSo30NSAccessibilityElementProtocol", "init"]
 - !private ["PSo30NSAccessibilityElementProtocol", "magnification"]
 - !private ["PSo30NSAccessibilityElementProtocol", "minMagnification"]
@@ -413,8 +435,11 @@ depends-member:
 - !private ["PSo30NSAccessibilityElementProtocol", "runModal"]
 - !private ["PSo30NSAccessibilityElementProtocol", "updateLayer"]
 - !private ["PSo30NSAccessibilityElementProtocol", "url"]
+- !private ["PSo20NSAccessibilityImage", "image"]
 - !private ["PSo29NSAnimatablePropertyContainer", "addSubview"]
+- !private ["PSo29NSAnimatablePropertyContainer", "content"]
 - !private ["PSo29NSAnimatablePropertyContainer", "frame"]
+- !private ["PSo29NSAnimatablePropertyContainer", "image"]
 - !private ["PSo29NSAnimatablePropertyContainer", "init"]
 - !private ["PSo29NSAnimatablePropertyContainer", "magnification"]
 - !private ["PSo29NSAnimatablePropertyContainer", "minMagnification"]
@@ -423,7 +448,9 @@ depends-member:
 - !private ["PSo29NSAnimatablePropertyContainer", "updateLayer"]
 - !private ["PSo29NSAnimatablePropertyContainer", "url"]
 - !private ["PSo25NSAppearanceCustomization", "addSubview"]
+- !private ["PSo25NSAppearanceCustomization", "content"]
 - !private ["PSo25NSAppearanceCustomization", "frame"]
+- !private ["PSo25NSAppearanceCustomization", "image"]
 - !private ["PSo25NSAppearanceCustomization", "init"]
 - !private ["PSo25NSAppearanceCustomization", "magnification"]
 - !private ["PSo25NSAppearanceCustomization", "minMagnification"]
@@ -432,8 +459,10 @@ depends-member:
 - !private ["PSo25NSAppearanceCustomization", "updateLayer"]
 - !private ["PSo25NSAppearanceCustomization", "url"]
 - !private ["PSo8NSCoding", "addSubview"]
+- !private ["PSo8NSCoding", "content"]
 - !private ["PSo8NSCoding", "frame"]
 - !private ["PSo8NSCoding", "hasPrefix"]
+- !private ["PSo8NSCoding", "image"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "magnification"]
 - !private ["PSo8NSCoding", "minMagnification"]
@@ -443,12 +472,16 @@ depends-member:
 - !private ["PSo8NSCoding", "size"]
 - !private ["PSo8NSCoding", "updateLayer"]
 - !private ["PSo8NSCoding", "url"]
+- !private ["CSo9NSControl", "image"]
 - !private ["PSo9NSCopying", "hasPrefix"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "name"]
 - !private ["PSo9NSCopying", "size"]
 - !private ["PSo21NSDraggingDestination", "addSubview"]
+- !private ["PSo21NSDraggingDestination", "content"]
 - !private ["PSo21NSDraggingDestination", "frame"]
+- !private ["PSo21NSDraggingDestination", "image"]
+- !private ["PSo21NSDraggingDestination", "init"]
 - !private ["PSo21NSDraggingDestination", "magnification"]
 - !private ["PSo21NSDraggingDestination", "minMagnification"]
 - !private ["PSo21NSDraggingDestination", "removeFromSuperview"]
@@ -457,16 +490,19 @@ depends-member:
 - !private ["CSo7NSImage", "init"]
 - !private ["CSo7NSImage", "name"]
 - !private ["CSo7NSImage", "size"]
+- !private ["CSo11NSImageView", "image"]
 - !private ["PSo16NSMutableCopying", "hasPrefix"]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "bottomHalf"]
 - !private ["CSo8NSObject", "checkIfContains"]
+- !private ["CSo8NSObject", "content"]
 - !private ["CSo8NSObject", "first"]
 - !private ["CSo8NSObject", "frame"]
 - !private ["CSo8NSObject", "framed"]
 - !private ["CSo8NSObject", "hasPrefix"]
 - !private ["CSo8NSObject", "height"]
+- !private ["CSo8NSObject", "image"]
 - !private ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "leftHalf"]
 - !private ["CSo8NSObject", "magnification"]
@@ -489,11 +525,13 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "bottomHalf"]
 - !private ["PSo16NSObjectProtocol", "checkIfContains"]
+- !private ["PSo16NSObjectProtocol", "content"]
 - !private ["PSo16NSObjectProtocol", "first"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - !private ["PSo16NSObjectProtocol", "framed"]
 - !private ["PSo16NSObjectProtocol", "hasPrefix"]
 - !private ["PSo16NSObjectProtocol", "height"]
+- !private ["PSo16NSObjectProtocol", "image"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "leftHalf"]
 - !private ["PSo16NSObjectProtocol", "magnification"]
@@ -529,7 +567,9 @@ depends-member:
 - !private ["PSo19NSPasteboardWriting", "name"]
 - !private ["PSo19NSPasteboardWriting", "size"]
 - !private ["CSo11NSResponder", "addSubview"]
+- !private ["CSo11NSResponder", "content"]
 - !private ["CSo11NSResponder", "frame"]
+- !private ["CSo11NSResponder", "image"]
 - !private ["CSo11NSResponder", "init"]
 - !private ["CSo11NSResponder", "magnification"]
 - !private ["CSo11NSResponder", "minMagnification"]
@@ -540,7 +580,7 @@ depends-member:
 - !private ["CSo11NSSavePanel", "init"]
 - !private ["CSo11NSSavePanel", "runModal"]
 - !private ["CSo11NSSavePanel", "url"]
-- ["CSo12NSScrollView", "deinit"]
+- !private ["CSo12NSScrollView", "content"]
 - !private ["CSo12NSScrollView", "frame"]
 - !private ["CSo12NSScrollView", "magnification"]
 - !private ["CSo12NSScrollView", "minMagnification"]
@@ -552,13 +592,17 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "size"]
 - !private ["CSo8NSString", "hasPrefix"]
 - !private ["CSo8NSString", "init"]
+- !private ["PSo24NSTextFinderBarContainer", "content"]
 - !private ["PSo24NSTextFinderBarContainer", "frame"]
+- !private ["PSo24NSTextFinderBarContainer", "init"]
 - !private ["PSo24NSTextFinderBarContainer", "magnification"]
 - !private ["PSo24NSTextFinderBarContainer", "minMagnification"]
 - !private ["PSo24NSTextFinderBarContainer", "removeFromSuperview"]
 - !private ["PSo24NSTextFinderBarContainer", "updateLayer"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "addSubview"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "content"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "frame"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "image"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "init"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "magnification"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "minMagnification"]
@@ -570,8 +614,10 @@ depends-member:
 - !private ["PSo26NSUserInterfaceValidations", "runModal"]
 - !private ["PSo26NSUserInterfaceValidations", "url"]
 - !private ["CSo6NSView", "addSubview"]
+- !private ["CSo6NSView", "content"]
 - ["CSo6NSView", "deinit"]
 - !private ["CSo6NSView", "frame"]
+- !private ["CSo6NSView", "image"]
 - !private ["CSo6NSView", "magnification"]
 - !private ["CSo6NSView", "minMagnification"]
 - !private ["CSo6NSView", "removeFromSuperview"]
@@ -604,9 +650,13 @@ depends-member:
 - !private ["C7Collage9Rectangle", "toNSRect"]
 - !private ["C7Collage9Rectangle", "topHalf"]
 - !private ["C7Collage9Rectangle", "width"]
-- ["C7Collage17ScrollViewCreator", "deinit"]
-- !private ["C7Collage17ScrollViewCreator", "init"]
-- !private ["C7Collage17ScrollViewCreator", "make"]
+- !private ["P7Collage18ScrollViewDelegate", "content"]
+- !private ["P7Collage18ScrollViewDelegate", "frame"]
+- !private ["P7Collage18ScrollViewDelegate", "init"]
+- !private ["P7Collage18ScrollViewDelegate", "magnification"]
+- !private ["P7Collage18ScrollViewDelegate", "minMagnification"]
+- !private ["P7Collage18ScrollViewDelegate", "removeFromSuperview"]
+- !private ["P7Collage18ScrollViewDelegate", "updateLayer"]
 - !private ["Ps13SignedInteger", "Stride"]
 - !private ["Ps12SignedNumber", "Stride"]
 - !private ["Ps10Strideable", "Stride"]
@@ -630,7 +680,10 @@ depends-member:
 - !private ["Ps15_CVarArgAligned", "Stride"]
 - !private ["Ps22_CVarArgPassedAsDouble", "Stride"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "content"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "magnification"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "minMagnification"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "removeFromSuperview"]
@@ -659,11 +712,13 @@ depends-member:
 - !private ["Ps9_Hashable", "bottom"]
 - !private ["Ps9_Hashable", "bottomHalf"]
 - !private ["Ps9_Hashable", "checkIfContains"]
+- !private ["Ps9_Hashable", "content"]
 - !private ["Ps9_Hashable", "first"]
 - !private ["Ps9_Hashable", "frame"]
 - !private ["Ps9_Hashable", "framed"]
 - !private ["Ps9_Hashable", "hasPrefix"]
 - !private ["Ps9_Hashable", "height"]
+- !private ["Ps9_Hashable", "image"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "left"]
 - !private ["Ps9_Hashable", "leftHalf"]
@@ -723,6 +778,7 @@ depends-nominal:
 - "Ps17CustomReflectable"
 - !private "Ps23CustomStringConvertible"
 - !private "Sd"
+- "C7Collage20DragAndDropImageView"
 - "Ps9Equatable"
 - "Ps5Error"
 - "O7Collage9ErrorType"
@@ -746,14 +802,18 @@ depends-nominal:
 - !private "Ps17IntegerArithmetic"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
+- "C7Collage17MutableScrollView"
 - !private "PSo15NSAccessibility"
 - !private "PSo30NSAccessibilityElementProtocol"
+- !private "PSo20NSAccessibilityImage"
 - !private "PSo29NSAnimatablePropertyContainer"
 - !private "PSo25NSAppearanceCustomization"
 - !private "PSo8NSCoding"
+- !private "CSo9NSControl"
 - !private "PSo9NSCopying"
 - !private "PSo21NSDraggingDestination"
 - "CSo7NSImage"
+- !private "CSo11NSImageView"
 - !private "PSo16NSMutableCopying"
 - !private "CSo8NSObject"
 - !private "PSo16NSObjectProtocol"
@@ -763,7 +823,7 @@ depends-nominal:
 - !private "PSo19NSPasteboardWriting"
 - !private "CSo11NSResponder"
 - !private "CSo11NSSavePanel"
-- "CSo12NSScrollView"
+- !private "CSo12NSScrollView"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - !private "PSo24NSTextFinderBarContainer"
@@ -775,7 +835,7 @@ depends-nominal:
 - "O7Collage8Position"
 - !private "Vs5Range"
 - "C7Collage9Rectangle"
-- "C7Collage17ScrollViewCreator"
+- !private "P7Collage18ScrollViewDelegate"
 - !private "Ps13SignedInteger"
 - !private "Ps12SignedNumber"
 - !private "Ps10Strideable"
@@ -824,4 +884,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "68efde09ebf25432e15228ab2b1dbcc0"
+interface-hash: "f0a627d4191c0cc2fca7875a70fafa35"

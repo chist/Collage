@@ -126,19 +126,26 @@ SWIFT_CLASS("_TtC7Collage11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSEvent;
 @class NSCoder;
-@class NSDraggingSession;
 
 SWIFT_CLASS("_TtC7Collage20DragAndDropImageView")
-@interface DragAndDropImageView : NSImageView <NSDraggingSource>
-@property (nonatomic, strong) NSEvent * _Nullable mouseDownEvent;
+@interface DragAndDropImageView : NSImageView
 - (nonnull instancetype)initWithFrame:(NSRect)frameRect OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (void)drawRect:(NSRect)dirtyRect;
-- (NSDragOperation)draggingSession:(NSDraggingSession * _Nonnull)session sourceOperationMaskForDraggingContext:(NSDraggingContext)context;
-- (void)mouseDown:(NSEvent * _Nonnull)event;
-- (void)mouseDragged:(NSEvent * _Nonnull)event;
+- (void)viewWillDraw;
+@end
+
+@class Rectangle;
+@class NSImage;
+
+SWIFT_CLASS("_TtC7Collage17MutableScrollView")
+@interface MutableScrollView : NSScrollView
+@property (nonatomic, readonly, strong) DragAndDropImageView * _Nonnull content;
+@property (nonatomic, readonly, strong) Rectangle * _Nonnull border;
+- (nonnull instancetype)initWithImage:(NSImage * _Nonnull)image border:(Rectangle * _Nonnull)border OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)update;
+- (nonnull instancetype)initWithFrame:(NSRect)frameRect SWIFT_UNAVAILABLE;
 @end
 
 
@@ -150,6 +157,20 @@ SWIFT_CLASS("_TtC7Collage20DragAndDropImageView")
 
 @interface NSView (SWIFT_EXTENSION(Collage))
 @property (nonatomic, readonly, strong) NSImage * _Nonnull snapshot;
+@end
+
+@class NSEvent;
+
+SWIFT_CLASS("_TtC7Collage13PopUpMenuView")
+@interface PopUpMenuView : NSView
+@property (nonatomic) BOOL isActive;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull buttonNames;
+@property (nonatomic, readonly) NSInteger optionHeight;
+@property (nonatomic, readonly) NSInteger optionWidth;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)mouseDown:(NSEvent * _Nonnull)event;
+- (void)locateViewAt:(CGPoint)point;
+- (nonnull instancetype)initWithFrame:(NSRect)frameRect SWIFT_UNAVAILABLE;
 @end
 
 @class NSPopUpButton;
@@ -201,6 +222,7 @@ SWIFT_CLASS("_TtC7Collage14ViewController")
 @property (nonatomic) NSInteger savedCount;
 @property (nonatomic) CGFloat xConstraint;
 @property (nonatomic) CGFloat yConstraint;
+@property (nonatomic, strong) PopUpMenuView * _Nullable popUpMenu;
 @property (nonatomic, strong) IBOutlet NSView * _Null_unspecified canvas;
 @property (nonatomic, strong) IBOutlet NSView * _Null_unspecified menuView;
 @property (nonatomic, strong) IBOutlet NSButton * _Null_unspecified menuButton;
@@ -226,12 +248,6 @@ SWIFT_CLASS("_TtC7Collage14ViewController")
 - (IBAction)helpButtonPressed:(NSButton * _Nonnull)sender;
 - (nullable instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC7Collage6Window")
-@interface Window : NSWindow
-- (nonnull instancetype)initWithContentRect:(NSRect)contentRect styleMask:(NSWindowStyleMask)style backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #pragma clang diagnostic pop
