@@ -1,0 +1,1 @@
+/Users/ivanchistyakov/Desktop/Collage/DerivedData/Collage/Build/Intermediates/ArchiveIntermediates/Collage/InstallationBuildProductsLocation/Applications/Collage.app

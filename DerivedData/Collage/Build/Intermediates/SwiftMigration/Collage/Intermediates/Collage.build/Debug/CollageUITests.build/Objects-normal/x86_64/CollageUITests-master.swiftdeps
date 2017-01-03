@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "2464799dd0b919e1b8d5c78b3499b0e7"
+build_time: [528215857, 111540000]
+inputs:
+  "/Users/ivanchistyakov/Desktop/Collage/CollageUITests/CollageUITests.swift": [525459518, 0]

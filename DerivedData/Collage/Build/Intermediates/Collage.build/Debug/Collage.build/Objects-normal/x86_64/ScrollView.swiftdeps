@@ -1,0 +1,359 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ScrollViewCreator"
+provides-nominal:
+- "C7Collage17ScrollViewCreator"
+provides-member:
+- ["C7Collage17ScrollViewCreator", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Rectangle"
+- !private "max"
+- !private "CGPoint"
+- "NSImage"
+- !private "DragAndDropImageView"
+- !private "BooleanLiteralType"
+- "ScrollViewCreator"
+- "NSScrollView"
+- !private "/"
+- !private "NSRect"
+- "AssignmentPrecedence"
+depends-member:
+- !private ["Ps9AnyObject", "CGPoint"]
+- !private ["Ps9AnyObject", "DragAndDropImageView"]
+- !private ["Ps9AnyObject", "NSRect"]
+- !private ["Ps9AnyObject", "NSScrollView"]
+- !private ["Ps9AnyObject", "allowsMagnification"]
+- !private ["Ps9AnyObject", "documentView"]
+- !private ["Ps9AnyObject", "drawsBackground"]
+- !private ["Ps9AnyObject", "frame"]
+- !private ["Ps9AnyObject", "framed"]
+- !private ["Ps9AnyObject", "image"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "magnification"]
+- !private ["Ps9AnyObject", "max"]
+- !private ["Ps9AnyObject", "maxMagnification"]
+- !private ["Ps9AnyObject", "minMagnification"]
+- !private ["Ps9AnyObject", "size"]
+- !private ["Ps9AnyObject", "toNSRect"]
+- ["Ps9AnyObject", ""]
+- ["Sb", "deinit"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- ["VSC7CGPoint", "deinit"]
+- !private ["VSC7CGPoint", "init"]
+- ["VSC6CGRect", "deinit"]
+- !private ["VSC6CGRect", "init"]
+- !private ["VSC6CGRect", "size"]
+- !private ["VSC6CGSize", "height"]
+- !private ["VSC6CGSize", "width"]
+- !private ["Ps7CVarArg", "allowsMagnification"]
+- !private ["Ps7CVarArg", "documentView"]
+- !private ["Ps7CVarArg", "drawsBackground"]
+- !private ["Ps7CVarArg", "frame"]
+- !private ["Ps7CVarArg", "framed"]
+- !private ["Ps7CVarArg", "image"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "magnification"]
+- !private ["Ps7CVarArg", "maxMagnification"]
+- !private ["Ps7CVarArg", "minMagnification"]
+- !private ["Ps7CVarArg", "size"]
+- !private ["Ps7CVarArg", "toNSRect"]
+- !private ["Ps28CustomDebugStringConvertible", "allowsMagnification"]
+- !private ["Ps28CustomDebugStringConvertible", "documentView"]
+- !private ["Ps28CustomDebugStringConvertible", "drawsBackground"]
+- !private ["Ps28CustomDebugStringConvertible", "frame"]
+- !private ["Ps28CustomDebugStringConvertible", "framed"]
+- !private ["Ps28CustomDebugStringConvertible", "height"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "magnification"]
+- !private ["Ps28CustomDebugStringConvertible", "maxMagnification"]
+- !private ["Ps28CustomDebugStringConvertible", "minMagnification"]
+- !private ["Ps28CustomDebugStringConvertible", "size"]
+- !private ["Ps28CustomDebugStringConvertible", "toNSRect"]
+- !private ["Ps28CustomDebugStringConvertible", "width"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "height"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "size"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "width"]
+- !private ["Ps17CustomReflectable", "height"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "size"]
+- !private ["Ps17CustomReflectable", "width"]
+- !private ["Ps23CustomStringConvertible", "allowsMagnification"]
+- !private ["Ps23CustomStringConvertible", "documentView"]
+- !private ["Ps23CustomStringConvertible", "drawsBackground"]
+- !private ["Ps23CustomStringConvertible", "frame"]
+- !private ["Ps23CustomStringConvertible", "framed"]
+- !private ["Ps23CustomStringConvertible", "image"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "magnification"]
+- !private ["Ps23CustomStringConvertible", "maxMagnification"]
+- !private ["Ps23CustomStringConvertible", "minMagnification"]
+- !private ["Ps23CustomStringConvertible", "size"]
+- !private ["Ps23CustomStringConvertible", "toNSRect"]
+- ["C7Collage20DragAndDropImageView", "deinit"]
+- !private ["C7Collage20DragAndDropImageView", "frame"]
+- !private ["C7Collage20DragAndDropImageView", "image"]
+- !private ["C7Collage20DragAndDropImageView", "init"]
+- !private ["Ps9Equatable", "allowsMagnification"]
+- !private ["Ps9Equatable", "documentView"]
+- !private ["Ps9Equatable", "drawsBackground"]
+- !private ["Ps9Equatable", "frame"]
+- !private ["Ps9Equatable", "framed"]
+- !private ["Ps9Equatable", "height"]
+- !private ["Ps9Equatable", "image"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "magnification"]
+- !private ["Ps9Equatable", "maxMagnification"]
+- !private ["Ps9Equatable", "minMagnification"]
+- !private ["Ps9Equatable", "size"]
+- !private ["Ps9Equatable", "toNSRect"]
+- !private ["Ps9Equatable", "width"]
+- !private ["Ps8Hashable", "allowsMagnification"]
+- !private ["Ps8Hashable", "documentView"]
+- !private ["Ps8Hashable", "drawsBackground"]
+- !private ["Ps8Hashable", "frame"]
+- !private ["Ps8Hashable", "framed"]
+- !private ["Ps8Hashable", "image"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "magnification"]
+- !private ["Ps8Hashable", "maxMagnification"]
+- !private ["Ps8Hashable", "minMagnification"]
+- !private ["Ps8Hashable", "size"]
+- !private ["Ps8Hashable", "toNSRect"]
+- ["Si", "deinit"]
+- !private ["PSo15NSAccessibility", "allowsMagnification"]
+- !private ["PSo15NSAccessibility", "documentView"]
+- !private ["PSo15NSAccessibility", "drawsBackground"]
+- !private ["PSo15NSAccessibility", "frame"]
+- !private ["PSo15NSAccessibility", "image"]
+- !private ["PSo15NSAccessibility", "init"]
+- !private ["PSo15NSAccessibility", "magnification"]
+- !private ["PSo15NSAccessibility", "maxMagnification"]
+- !private ["PSo15NSAccessibility", "minMagnification"]
+- !private ["PSo30NSAccessibilityElementProtocol", "allowsMagnification"]
+- !private ["PSo30NSAccessibilityElementProtocol", "documentView"]
+- !private ["PSo30NSAccessibilityElementProtocol", "drawsBackground"]
+- !private ["PSo30NSAccessibilityElementProtocol", "frame"]
+- !private ["PSo30NSAccessibilityElementProtocol", "image"]
+- !private ["PSo30NSAccessibilityElementProtocol", "init"]
+- !private ["PSo30NSAccessibilityElementProtocol", "magnification"]
+- !private ["PSo30NSAccessibilityElementProtocol", "maxMagnification"]
+- !private ["PSo30NSAccessibilityElementProtocol", "minMagnification"]
+- !private ["PSo20NSAccessibilityImage", "frame"]
+- !private ["PSo20NSAccessibilityImage", "image"]
+- !private ["PSo20NSAccessibilityImage", "init"]
+- !private ["PSo29NSAnimatablePropertyContainer", "allowsMagnification"]
+- !private ["PSo29NSAnimatablePropertyContainer", "documentView"]
+- !private ["PSo29NSAnimatablePropertyContainer", "drawsBackground"]
+- !private ["PSo29NSAnimatablePropertyContainer", "frame"]
+- !private ["PSo29NSAnimatablePropertyContainer", "image"]
+- !private ["PSo29NSAnimatablePropertyContainer", "init"]
+- !private ["PSo29NSAnimatablePropertyContainer", "magnification"]
+- !private ["PSo29NSAnimatablePropertyContainer", "maxMagnification"]
+- !private ["PSo29NSAnimatablePropertyContainer", "minMagnification"]
+- !private ["PSo25NSAppearanceCustomization", "allowsMagnification"]
+- !private ["PSo25NSAppearanceCustomization", "documentView"]
+- !private ["PSo25NSAppearanceCustomization", "drawsBackground"]
+- !private ["PSo25NSAppearanceCustomization", "frame"]
+- !private ["PSo25NSAppearanceCustomization", "image"]
+- !private ["PSo25NSAppearanceCustomization", "init"]
+- !private ["PSo25NSAppearanceCustomization", "magnification"]
+- !private ["PSo25NSAppearanceCustomization", "maxMagnification"]
+- !private ["PSo25NSAppearanceCustomization", "minMagnification"]
+- !private ["PSo8NSCoding", "allowsMagnification"]
+- !private ["PSo8NSCoding", "documentView"]
+- !private ["PSo8NSCoding", "drawsBackground"]
+- !private ["PSo8NSCoding", "frame"]
+- !private ["PSo8NSCoding", "image"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "magnification"]
+- !private ["PSo8NSCoding", "maxMagnification"]
+- !private ["PSo8NSCoding", "minMagnification"]
+- !private ["PSo8NSCoding", "size"]
+- !private ["CSo9NSControl", "frame"]
+- !private ["CSo9NSControl", "image"]
+- !private ["CSo9NSControl", "init"]
+- !private ["PSo9NSCopying", "size"]
+- !private ["PSo21NSDraggingDestination", "allowsMagnification"]
+- !private ["PSo21NSDraggingDestination", "documentView"]
+- !private ["PSo21NSDraggingDestination", "drawsBackground"]
+- !private ["PSo21NSDraggingDestination", "frame"]
+- !private ["PSo21NSDraggingDestination", "image"]
+- !private ["PSo21NSDraggingDestination", "init"]
+- !private ["PSo21NSDraggingDestination", "magnification"]
+- !private ["PSo21NSDraggingDestination", "maxMagnification"]
+- !private ["PSo21NSDraggingDestination", "minMagnification"]
+- !private ["PSo16NSDraggingSource", "frame"]
+- !private ["PSo16NSDraggingSource", "image"]
+- !private ["PSo16NSDraggingSource", "init"]
+- ["CSo7NSImage", "deinit"]
+- !private ["CSo7NSImage", "size"]
+- !private ["CSo11NSImageView", "frame"]
+- !private ["CSo11NSImageView", "image"]
+- !private ["CSo11NSImageView", "init"]
+- !private ["CSo8NSObject", "allowsMagnification"]
+- !private ["CSo8NSObject", "documentView"]
+- !private ["CSo8NSObject", "drawsBackground"]
+- !private ["CSo8NSObject", "frame"]
+- !private ["CSo8NSObject", "framed"]
+- !private ["CSo8NSObject", "image"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "magnification"]
+- !private ["CSo8NSObject", "maxMagnification"]
+- !private ["CSo8NSObject", "minMagnification"]
+- !private ["CSo8NSObject", "size"]
+- !private ["CSo8NSObject", "toNSRect"]
+- !private ["PSo16NSObjectProtocol", "allowsMagnification"]
+- !private ["PSo16NSObjectProtocol", "documentView"]
+- !private ["PSo16NSObjectProtocol", "drawsBackground"]
+- !private ["PSo16NSObjectProtocol", "frame"]
+- !private ["PSo16NSObjectProtocol", "framed"]
+- !private ["PSo16NSObjectProtocol", "image"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "magnification"]
+- !private ["PSo16NSObjectProtocol", "maxMagnification"]
+- !private ["PSo16NSObjectProtocol", "minMagnification"]
+- !private ["PSo16NSObjectProtocol", "size"]
+- !private ["PSo16NSObjectProtocol", "toNSRect"]
+- !private ["PSo19NSPasteboardReading", "size"]
+- !private ["PSo19NSPasteboardWriting", "size"]
+- !private ["CSo11NSResponder", "allowsMagnification"]
+- !private ["CSo11NSResponder", "documentView"]
+- !private ["CSo11NSResponder", "drawsBackground"]
+- !private ["CSo11NSResponder", "frame"]
+- !private ["CSo11NSResponder", "image"]
+- !private ["CSo11NSResponder", "init"]
+- !private ["CSo11NSResponder", "magnification"]
+- !private ["CSo11NSResponder", "maxMagnification"]
+- !private ["CSo11NSResponder", "minMagnification"]
+- !private ["CSo12NSScrollView", "allowsMagnification"]
+- ["CSo12NSScrollView", "deinit"]
+- !private ["CSo12NSScrollView", "documentView"]
+- !private ["CSo12NSScrollView", "drawsBackground"]
+- !private ["CSo12NSScrollView", "frame"]
+- !private ["CSo12NSScrollView", "init"]
+- !private ["CSo12NSScrollView", "magnification"]
+- !private ["CSo12NSScrollView", "maxMagnification"]
+- !private ["CSo12NSScrollView", "minMagnification"]
+- !private ["PSo14NSSecureCoding", "size"]
+- !private ["PSo24NSTextFinderBarContainer", "allowsMagnification"]
+- !private ["PSo24NSTextFinderBarContainer", "documentView"]
+- !private ["PSo24NSTextFinderBarContainer", "drawsBackground"]
+- !private ["PSo24NSTextFinderBarContainer", "frame"]
+- !private ["PSo24NSTextFinderBarContainer", "init"]
+- !private ["PSo24NSTextFinderBarContainer", "magnification"]
+- !private ["PSo24NSTextFinderBarContainer", "maxMagnification"]
+- !private ["PSo24NSTextFinderBarContainer", "minMagnification"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "allowsMagnification"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "documentView"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "drawsBackground"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "frame"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "image"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "init"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "magnification"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "maxMagnification"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "minMagnification"]
+- !private ["CSo6NSView", "allowsMagnification"]
+- !private ["CSo6NSView", "documentView"]
+- !private ["CSo6NSView", "drawsBackground"]
+- !private ["CSo6NSView", "frame"]
+- !private ["CSo6NSView", "image"]
+- !private ["CSo6NSView", "init"]
+- !private ["CSo6NSView", "magnification"]
+- !private ["CSo6NSView", "maxMagnification"]
+- !private ["CSo6NSView", "minMagnification"]
+- ["C7Collage9Rectangle", "deinit"]
+- !private ["C7Collage9Rectangle", "framed"]
+- !private ["C7Collage9Rectangle", "toNSRect"]
+- !private ["C7Collage17ScrollViewCreator", "CGPoint"]
+- !private ["C7Collage17ScrollViewCreator", "DragAndDropImageView"]
+- ["C7Collage17ScrollViewCreator", "NSImage"]
+- !private ["C7Collage17ScrollViewCreator", "NSRect"]
+- ["C7Collage17ScrollViewCreator", "NSScrollView"]
+- ["C7Collage17ScrollViewCreator", "Rectangle"]
+- ["C7Collage17ScrollViewCreator", "deinit"]
+- ["C7Collage17ScrollViewCreator", "init"]
+- ["C7Collage17ScrollViewCreator", "make"]
+- !private ["C7Collage17ScrollViewCreator", "max"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "allowsMagnification"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "documentView"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "drawsBackground"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "magnification"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "maxMagnification"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "minMagnification"]
+- !private ["Ps26_ExpressibleByImageLiteral", "size"]
+- !private ["Ps9_Hashable", "allowsMagnification"]
+- !private ["Ps9_Hashable", "documentView"]
+- !private ["Ps9_Hashable", "drawsBackground"]
+- !private ["Ps9_Hashable", "frame"]
+- !private ["Ps9_Hashable", "framed"]
+- !private ["Ps9_Hashable", "image"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "magnification"]
+- !private ["Ps9_Hashable", "maxMagnification"]
+- !private ["Ps9_Hashable", "minMagnification"]
+- !private ["Ps9_Hashable", "size"]
+- !private ["Ps9_Hashable", "toNSRect"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- "V12CoreGraphics7CGFloat"
+- "VSC7CGPoint"
+- "VSC6CGRect"
+- !private "VSC6CGSize"
+- !private "Ps7CVarArg"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- "C7Collage20DragAndDropImageView"
+- !private "Ps9Equatable"
+- !private "Ps8Hashable"
+- "Si"
+- !private "PSo15NSAccessibility"
+- !private "PSo30NSAccessibilityElementProtocol"
+- !private "PSo20NSAccessibilityImage"
+- !private "PSo29NSAnimatablePropertyContainer"
+- !private "PSo25NSAppearanceCustomization"
+- !private "PSo8NSCoding"
+- !private "CSo9NSControl"
+- !private "PSo9NSCopying"
+- !private "PSo21NSDraggingDestination"
+- !private "PSo16NSDraggingSource"
+- "CSo7NSImage"
+- !private "CSo11NSImageView"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo19NSPasteboardReading"
+- !private "PSo19NSPasteboardWriting"
+- !private "CSo11NSResponder"
+- "CSo12NSScrollView"
+- !private "PSo14NSSecureCoding"
+- !private "PSo24NSTextFinderBarContainer"
+- !private "PSo33NSUserInterfaceItemIdentification"
+- !private "CSo6NSView"
+- "C7Collage9Rectangle"
+- "C7Collage17ScrollViewCreator"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps26_ExpressibleByImageLiteral"
+- !private "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+interface-hash: "f540ac67675e0dddf083371b5dfb38dd"

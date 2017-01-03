@@ -1,0 +1,5 @@
+10:17:27.638 PM Xcode[28117:2041317] Beginning test session CollageTests-064BC97D-95E8-4B71-B024-BDFF1FC31A65 at 2016-11-04 10:17:27.637 PM with Xcode 8A218a on target <DVTLocalComputer: 0x7fca156ab980 (My Mac | x86_64h)> (10.11.6 (15G31))
+10:17:27.638 PM Xcode[28117:2041317] Launching with Xcode.DebuggerFoundation.Launcher.LLDB
+10:17:27.639 PM Xcode[28117:2041317] Initializing test infrastructure.
+10:17:37.762 PM Xcode[28117:2041317] Test operation failure: Test operation was canceled.
+10:17:37.762 PM Xcode[28117:2041317] _finishWithError:Error Domain=IDETestOperationsObserverErrorDomain Code=3 "Test operation was canceled." UserInfo={NSLocalizedDescription=Test operation was canceled.} didCancel: 1

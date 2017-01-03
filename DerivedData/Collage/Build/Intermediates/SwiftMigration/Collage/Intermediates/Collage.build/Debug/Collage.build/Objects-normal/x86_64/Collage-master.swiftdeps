@@ -1,0 +1,12 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "4069ed14bcefb11a15686cb0d8fa06d9"
+build_time: [528215851, 372802000]
+inputs:
+  "/Users/ivanchistyakov/Desktop/Collage/Collage/Error.swift": [528215048, 0]
+  "/Users/ivanchistyakov/Desktop/Collage/Collage/PopupMenu.swift": [528215048, 0]
+  "/Users/ivanchistyakov/Desktop/Collage/Collage/ScrollView.swift": [528215048, 0]
+  "/Users/ivanchistyakov/Desktop/Collage/Collage/Rectangle.swift": [528215048, 0]
+  "/Users/ivanchistyakov/Desktop/Collage/CanvasController.swift": [528215159, 0]
+  "/Users/ivanchistyakov/Desktop/Collage/Collage/ViewController.swift": [528215851, 0]
+  "/Users/ivanchistyakov/Desktop/Collage/Collage/Container.swift": [528215113, 0]
+  "/Users/ivanchistyakov/Desktop/Collage/Collage/AppDelegate.swift": [528215048, 0]

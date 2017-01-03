@@ -1,0 +1,538 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ErrorType"
+- "Error"
+- "=="
+provides-nominal:
+- "O7Collage9ErrorType"
+- "C7Collage5Error"
+provides-member:
+- ["O7Collage9ErrorType", ""]
+- ["C7Collage5Error", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "NSTextField"
+- !private "NSFont"
+- "AssignmentPrecedence"
+- "=="
+- "NSRect"
+- "String"
+- !private "NSColor"
+- !private "BooleanLiteralType"
+- "Error"
+- "NSView"
+- !private "print"
+- !private "StringLiteralType"
+- "Swift"
+- "ErrorType"
+depends-member:
+- !private ["Ps9AnyObject", "NSColor"]
+- !private ["Ps9AnyObject", "NSFont"]
+- ["Ps9AnyObject", "NSRect"]
+- ["Ps9AnyObject", "NSTextField"]
+- !private ["Ps9AnyObject", "addSubview"]
+- !private ["Ps9AnyObject", "backgroundColor"]
+- !private ["Ps9AnyObject", "black"]
+- !private ["Ps9AnyObject", "font"]
+- !private ["Ps9AnyObject", "frame"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isBordered"]
+- !private ["Ps9AnyObject", "isEditable"]
+- !private ["Ps9AnyObject", "isSelectable"]
+- !private ["Ps9AnyObject", "logSuperview"]
+- !private ["Ps9AnyObject", "logViewFrame"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "sizeToFit"]
+- !private ["Ps9AnyObject", "stringValue"]
+- !private ["Ps9AnyObject", "systemFont"]
+- !private ["Ps9AnyObject", "textColor"]
+- !private ["Ps9AnyObject", "textField"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- ["VSC6CGRect", "deinit"]
+- ["VSC6CGRect", "init"]
+- !private ["Ps7CVarArg", "addSubview"]
+- !private ["Ps7CVarArg", "backgroundColor"]
+- !private ["Ps7CVarArg", "black"]
+- !private ["Ps7CVarArg", "font"]
+- !private ["Ps7CVarArg", "frame"]
+- !private ["Ps7CVarArg", "hashValue"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isBordered"]
+- !private ["Ps7CVarArg", "isEditable"]
+- !private ["Ps7CVarArg", "isSelectable"]
+- !private ["Ps7CVarArg", "sizeToFit"]
+- !private ["Ps7CVarArg", "stringValue"]
+- !private ["Ps7CVarArg", "systemFont"]
+- !private ["Ps7CVarArg", "textColor"]
+- !private ["Ps10Comparable", "hashValue"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "addSubview"]
+- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
+- !private ["Ps28CustomDebugStringConvertible", "black"]
+- !private ["Ps28CustomDebugStringConvertible", "font"]
+- !private ["Ps28CustomDebugStringConvertible", "frame"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isBordered"]
+- !private ["Ps28CustomDebugStringConvertible", "isEditable"]
+- !private ["Ps28CustomDebugStringConvertible", "isSelectable"]
+- !private ["Ps28CustomDebugStringConvertible", "sizeToFit"]
+- !private ["Ps28CustomDebugStringConvertible", "stringValue"]
+- !private ["Ps28CustomDebugStringConvertible", "systemFont"]
+- !private ["Ps28CustomDebugStringConvertible", "textColor"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "hashValue"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addSubview"]
+- !private ["Ps23CustomStringConvertible", "backgroundColor"]
+- !private ["Ps23CustomStringConvertible", "black"]
+- !private ["Ps23CustomStringConvertible", "font"]
+- !private ["Ps23CustomStringConvertible", "frame"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isBordered"]
+- !private ["Ps23CustomStringConvertible", "isEditable"]
+- !private ["Ps23CustomStringConvertible", "isSelectable"]
+- !private ["Ps23CustomStringConvertible", "sizeToFit"]
+- !private ["Ps23CustomStringConvertible", "stringValue"]
+- !private ["Ps23CustomStringConvertible", "systemFont"]
+- !private ["Ps23CustomStringConvertible", "textColor"]
+- ["Ps9Equatable", "_code"]
+- ["Ps9Equatable", "_domain"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_getEmbeddedNSError"]
+- ["Ps9Equatable", "_toAnyHashable"]
+- ["Ps9Equatable", "_userInfo"]
+- !private ["Ps9Equatable", "addSubview"]
+- !private ["Ps9Equatable", "backgroundColor"]
+- !private ["Ps9Equatable", "black"]
+- !private ["Ps9Equatable", "font"]
+- !private ["Ps9Equatable", "frame"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isBordered"]
+- !private ["Ps9Equatable", "isEditable"]
+- !private ["Ps9Equatable", "isSelectable"]
+- !private ["Ps9Equatable", "sizeToFit"]
+- !private ["Ps9Equatable", "stringValue"]
+- !private ["Ps9Equatable", "systemFont"]
+- !private ["Ps9Equatable", "textColor"]
+- ["Ps9Equatable", ""]
+- !private ["C7Collage5Error", "NSColor"]
+- !private ["C7Collage5Error", "NSFont"]
+- ["C7Collage5Error", "NSRect"]
+- ["C7Collage5Error", "NSTextField"]
+- ["C7Collage5Error", "NSView"]
+- ["C7Collage5Error", "String"]
+- ["C7Collage5Error", "deinit"]
+- ["C7Collage5Error", "init"]
+- ["C7Collage5Error", "logSuperview"]
+- ["C7Collage5Error", "logViewFrame"]
+- ["C7Collage5Error", "out"]
+- !private ["C7Collage5Error", "print"]
+- ["C7Collage5Error", "setLogSuperview"]
+- ["C7Collage5Error", "textField"]
+- ["Ps5Error", "_code"]
+- ["Ps5Error", "_domain"]
+- ["Ps5Error", "_getEmbeddedNSError"]
+- ["Ps5Error", "_toAnyHashable"]
+- ["Ps5Error", "_userInfo"]
+- ["Ps5Error", "hashValue"]
+- ["Ps5Error", ""]
+- ["O7Collage9ErrorType", "=="]
+- ["O7Collage9ErrorType", "_code"]
+- ["O7Collage9ErrorType", "_domain"]
+- ["O7Collage9ErrorType", "_getEmbeddedNSError"]
+- ["O7Collage9ErrorType", "_toAnyHashable"]
+- ["O7Collage9ErrorType", "_userInfo"]
+- ["O7Collage9ErrorType", "borderViolation"]
+- ["O7Collage9ErrorType", "deinit"]
+- ["O7Collage9ErrorType", "hashValue"]
+- ["O7Collage9ErrorType", "unknownError"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Ps8Hashable", "_code"]
+- ["Ps8Hashable", "_domain"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_getEmbeddedNSError"]
+- ["Ps8Hashable", "_toAnyHashable"]
+- ["Ps8Hashable", "_userInfo"]
+- !private ["Ps8Hashable", "addSubview"]
+- !private ["Ps8Hashable", "backgroundColor"]
+- !private ["Ps8Hashable", "black"]
+- !private ["Ps8Hashable", "font"]
+- !private ["Ps8Hashable", "frame"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isBordered"]
+- !private ["Ps8Hashable", "isEditable"]
+- !private ["Ps8Hashable", "isSelectable"]
+- !private ["Ps8Hashable", "sizeToFit"]
+- !private ["Ps8Hashable", "stringValue"]
+- !private ["Ps8Hashable", "systemFont"]
+- !private ["Ps8Hashable", "textColor"]
+- ["Ps8Hashable", ""]
+- ["Si", "deinit"]
+- !private ["Si", "hashValue"]
+- !private ["Ps7Integer", "hashValue"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "hashValue"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo15NSAccessibility", "addSubview"]
+- !private ["PSo15NSAccessibility", "backgroundColor"]
+- !private ["PSo15NSAccessibility", "font"]
+- !private ["PSo15NSAccessibility", "frame"]
+- ["PSo15NSAccessibility", "init"]
+- !private ["PSo15NSAccessibility", "isBordered"]
+- !private ["PSo15NSAccessibility", "isEditable"]
+- !private ["PSo15NSAccessibility", "isSelectable"]
+- !private ["PSo15NSAccessibility", "sizeToFit"]
+- !private ["PSo15NSAccessibility", "stringValue"]
+- !private ["PSo15NSAccessibility", "textColor"]
+- !private ["PSo30NSAccessibilityElementProtocol", "addSubview"]
+- !private ["PSo30NSAccessibilityElementProtocol", "backgroundColor"]
+- !private ["PSo30NSAccessibilityElementProtocol", "font"]
+- !private ["PSo30NSAccessibilityElementProtocol", "frame"]
+- ["PSo30NSAccessibilityElementProtocol", "init"]
+- !private ["PSo30NSAccessibilityElementProtocol", "isBordered"]
+- !private ["PSo30NSAccessibilityElementProtocol", "isEditable"]
+- !private ["PSo30NSAccessibilityElementProtocol", "isSelectable"]
+- !private ["PSo30NSAccessibilityElementProtocol", "sizeToFit"]
+- !private ["PSo30NSAccessibilityElementProtocol", "stringValue"]
+- !private ["PSo30NSAccessibilityElementProtocol", "textColor"]
+- !private ["PSo34NSAccessibilityNavigableStaticText", "backgroundColor"]
+- !private ["PSo34NSAccessibilityNavigableStaticText", "font"]
+- !private ["PSo34NSAccessibilityNavigableStaticText", "frame"]
+- ["PSo34NSAccessibilityNavigableStaticText", "init"]
+- !private ["PSo34NSAccessibilityNavigableStaticText", "isBordered"]
+- !private ["PSo34NSAccessibilityNavigableStaticText", "isEditable"]
+- !private ["PSo34NSAccessibilityNavigableStaticText", "isSelectable"]
+- !private ["PSo34NSAccessibilityNavigableStaticText", "sizeToFit"]
+- !private ["PSo34NSAccessibilityNavigableStaticText", "stringValue"]
+- !private ["PSo34NSAccessibilityNavigableStaticText", "textColor"]
+- !private ["PSo25NSAccessibilityStaticText", "backgroundColor"]
+- !private ["PSo25NSAccessibilityStaticText", "font"]
+- !private ["PSo25NSAccessibilityStaticText", "frame"]
+- ["PSo25NSAccessibilityStaticText", "init"]
+- !private ["PSo25NSAccessibilityStaticText", "isBordered"]
+- !private ["PSo25NSAccessibilityStaticText", "isEditable"]
+- !private ["PSo25NSAccessibilityStaticText", "isSelectable"]
+- !private ["PSo25NSAccessibilityStaticText", "sizeToFit"]
+- !private ["PSo25NSAccessibilityStaticText", "stringValue"]
+- !private ["PSo25NSAccessibilityStaticText", "textColor"]
+- !private ["PSo29NSAnimatablePropertyContainer", "addSubview"]
+- !private ["PSo29NSAnimatablePropertyContainer", "backgroundColor"]
+- !private ["PSo29NSAnimatablePropertyContainer", "font"]
+- !private ["PSo29NSAnimatablePropertyContainer", "frame"]
+- ["PSo29NSAnimatablePropertyContainer", "init"]
+- !private ["PSo29NSAnimatablePropertyContainer", "isBordered"]
+- !private ["PSo29NSAnimatablePropertyContainer", "isEditable"]
+- !private ["PSo29NSAnimatablePropertyContainer", "isSelectable"]
+- !private ["PSo29NSAnimatablePropertyContainer", "sizeToFit"]
+- !private ["PSo29NSAnimatablePropertyContainer", "stringValue"]
+- !private ["PSo29NSAnimatablePropertyContainer", "textColor"]
+- !private ["PSo25NSAppearanceCustomization", "addSubview"]
+- !private ["PSo25NSAppearanceCustomization", "backgroundColor"]
+- !private ["PSo25NSAppearanceCustomization", "font"]
+- !private ["PSo25NSAppearanceCustomization", "frame"]
+- ["PSo25NSAppearanceCustomization", "init"]
+- !private ["PSo25NSAppearanceCustomization", "isBordered"]
+- !private ["PSo25NSAppearanceCustomization", "isEditable"]
+- !private ["PSo25NSAppearanceCustomization", "isSelectable"]
+- !private ["PSo25NSAppearanceCustomization", "sizeToFit"]
+- !private ["PSo25NSAppearanceCustomization", "stringValue"]
+- !private ["PSo25NSAppearanceCustomization", "textColor"]
+- !private ["PSo8NSCoding", "addSubview"]
+- !private ["PSo8NSCoding", "backgroundColor"]
+- !private ["PSo8NSCoding", "black"]
+- !private ["PSo8NSCoding", "font"]
+- !private ["PSo8NSCoding", "frame"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isBordered"]
+- !private ["PSo8NSCoding", "isEditable"]
+- !private ["PSo8NSCoding", "isSelectable"]
+- !private ["PSo8NSCoding", "sizeToFit"]
+- !private ["PSo8NSCoding", "stringValue"]
+- !private ["PSo8NSCoding", "systemFont"]
+- !private ["PSo8NSCoding", "textColor"]
+- !private ["CSo7NSColor", "black"]
+- ["CSo7NSColor", "deinit"]
+- !private ["CSo7NSColor", "init"]
+- !private ["CSo9NSControl", "backgroundColor"]
+- !private ["CSo9NSControl", "font"]
+- !private ["CSo9NSControl", "frame"]
+- ["CSo9NSControl", "init"]
+- !private ["CSo9NSControl", "isBordered"]
+- !private ["CSo9NSControl", "isEditable"]
+- !private ["CSo9NSControl", "isSelectable"]
+- !private ["CSo9NSControl", "sizeToFit"]
+- !private ["CSo9NSControl", "stringValue"]
+- !private ["CSo9NSControl", "textColor"]
+- !private ["PSo9NSCopying", "black"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "systemFont"]
+- !private ["PSo21NSDraggingDestination", "addSubview"]
+- !private ["PSo21NSDraggingDestination", "backgroundColor"]
+- !private ["PSo21NSDraggingDestination", "font"]
+- !private ["PSo21NSDraggingDestination", "frame"]
+- ["PSo21NSDraggingDestination", "init"]
+- !private ["PSo21NSDraggingDestination", "isBordered"]
+- !private ["PSo21NSDraggingDestination", "isEditable"]
+- !private ["PSo21NSDraggingDestination", "isSelectable"]
+- !private ["PSo21NSDraggingDestination", "sizeToFit"]
+- !private ["PSo21NSDraggingDestination", "stringValue"]
+- !private ["PSo21NSDraggingDestination", "textColor"]
+- ["CSo6NSFont", "deinit"]
+- !private ["CSo6NSFont", "systemFont"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "addSubview"]
+- !private ["CSo8NSObject", "backgroundColor"]
+- !private ["CSo8NSObject", "black"]
+- !private ["CSo8NSObject", "font"]
+- !private ["CSo8NSObject", "frame"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isBordered"]
+- !private ["CSo8NSObject", "isEditable"]
+- !private ["CSo8NSObject", "isSelectable"]
+- !private ["CSo8NSObject", "sizeToFit"]
+- !private ["CSo8NSObject", "stringValue"]
+- !private ["CSo8NSObject", "systemFont"]
+- !private ["CSo8NSObject", "textColor"]
+- !private ["PSo16NSObjectProtocol", "addSubview"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- !private ["PSo16NSObjectProtocol", "black"]
+- !private ["PSo16NSObjectProtocol", "font"]
+- !private ["PSo16NSObjectProtocol", "frame"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isBordered"]
+- !private ["PSo16NSObjectProtocol", "isEditable"]
+- !private ["PSo16NSObjectProtocol", "isSelectable"]
+- !private ["PSo16NSObjectProtocol", "sizeToFit"]
+- !private ["PSo16NSObjectProtocol", "stringValue"]
+- !private ["PSo16NSObjectProtocol", "systemFont"]
+- !private ["PSo16NSObjectProtocol", "textColor"]
+- !private ["PSo19NSPasteboardReading", "black"]
+- !private ["PSo19NSPasteboardReading", "init"]
+- !private ["PSo19NSPasteboardWriting", "black"]
+- !private ["PSo19NSPasteboardWriting", "init"]
+- !private ["CSo11NSResponder", "addSubview"]
+- !private ["CSo11NSResponder", "backgroundColor"]
+- !private ["CSo11NSResponder", "font"]
+- !private ["CSo11NSResponder", "frame"]
+- ["CSo11NSResponder", "init"]
+- !private ["CSo11NSResponder", "isBordered"]
+- !private ["CSo11NSResponder", "isEditable"]
+- !private ["CSo11NSResponder", "isSelectable"]
+- !private ["CSo11NSResponder", "sizeToFit"]
+- !private ["CSo11NSResponder", "stringValue"]
+- !private ["CSo11NSResponder", "textColor"]
+- !private ["PSo14NSSecureCoding", "black"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "systemFont"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo11NSTextField", "backgroundColor"]
+- ["CSo11NSTextField", "deinit"]
+- !private ["CSo11NSTextField", "font"]
+- !private ["CSo11NSTextField", "frame"]
+- ["CSo11NSTextField", "init"]
+- !private ["CSo11NSTextField", "isBordered"]
+- !private ["CSo11NSTextField", "isEditable"]
+- !private ["CSo11NSTextField", "isSelectable"]
+- !private ["CSo11NSTextField", "sizeToFit"]
+- !private ["CSo11NSTextField", "stringValue"]
+- !private ["CSo11NSTextField", "textColor"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "addSubview"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "backgroundColor"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "font"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "frame"]
+- ["PSo33NSUserInterfaceItemIdentification", "init"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "isBordered"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "isEditable"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "isSelectable"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "sizeToFit"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "stringValue"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "textColor"]
+- !private ["PSo26NSUserInterfaceValidations", "backgroundColor"]
+- !private ["PSo26NSUserInterfaceValidations", "font"]
+- !private ["PSo26NSUserInterfaceValidations", "frame"]
+- ["PSo26NSUserInterfaceValidations", "init"]
+- !private ["PSo26NSUserInterfaceValidations", "isBordered"]
+- !private ["PSo26NSUserInterfaceValidations", "isEditable"]
+- !private ["PSo26NSUserInterfaceValidations", "isSelectable"]
+- !private ["PSo26NSUserInterfaceValidations", "sizeToFit"]
+- !private ["PSo26NSUserInterfaceValidations", "stringValue"]
+- !private ["PSo26NSUserInterfaceValidations", "textColor"]
+- !private ["CSo6NSView", "addSubview"]
+- !private ["CSo6NSView", "backgroundColor"]
+- ["CSo6NSView", "deinit"]
+- !private ["CSo6NSView", "font"]
+- !private ["CSo6NSView", "frame"]
+- ["CSo6NSView", "init"]
+- !private ["CSo6NSView", "isBordered"]
+- !private ["CSo6NSView", "isEditable"]
+- !private ["CSo6NSView", "isSelectable"]
+- !private ["CSo6NSView", "sizeToFit"]
+- !private ["CSo6NSView", "stringValue"]
+- !private ["CSo6NSView", "textColor"]
+- ["Sq", "deinit"]
+- !private ["Ps13SignedInteger", "hashValue"]
+- !private ["Ps12SignedNumber", "hashValue"]
+- !private ["Ps10Strideable", "hashValue"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "font"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isBordered"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isEditable"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isSelectable"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "sizeToFit"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "stringValue"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textColor"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps26_ExpressibleByColorLiteral", "black"]
+- !private ["Ps26_ExpressibleByColorLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- ["Ps9_Hashable", "_code"]
+- ["Ps9_Hashable", "_domain"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "_getEmbeddedNSError"]
+- ["Ps9_Hashable", "_toAnyHashable"]
+- ["Ps9_Hashable", "_userInfo"]
+- !private ["Ps9_Hashable", "addSubview"]
+- !private ["Ps9_Hashable", "backgroundColor"]
+- !private ["Ps9_Hashable", "black"]
+- !private ["Ps9_Hashable", "font"]
+- !private ["Ps9_Hashable", "frame"]
+- ["Ps9_Hashable", "hashValue"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isBordered"]
+- !private ["Ps9_Hashable", "isEditable"]
+- !private ["Ps9_Hashable", "isSelectable"]
+- !private ["Ps9_Hashable", "sizeToFit"]
+- !private ["Ps9_Hashable", "stringValue"]
+- !private ["Ps9_Hashable", "systemFont"]
+- !private ["Ps9_Hashable", "textColor"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps8_Integer", "hashValue"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps14_SignedInteger", "hashValue"]
+- !private ["Ps11_Strideable", "hashValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps17BitwiseOperations"
+- "Sb"
+- "V12CoreGraphics7CGFloat"
+- "VSC6CGRect"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "C7Collage5Error"
+- "Ps5Error"
+- "O7Collage9ErrorType"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "PSo15NSAccessibility"
+- "PSo30NSAccessibilityElementProtocol"
+- "PSo34NSAccessibilityNavigableStaticText"
+- "PSo25NSAccessibilityStaticText"
+- "PSo29NSAnimatablePropertyContainer"
+- "PSo25NSAppearanceCustomization"
+- "PSo8NSCoding"
+- "CSo7NSColor"
+- "CSo9NSControl"
+- !private "PSo9NSCopying"
+- "PSo21NSDraggingDestination"
+- "CSo6NSFont"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo19NSPasteboardReading"
+- !private "PSo19NSPasteboardWriting"
+- "CSo11NSResponder"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "CSo11NSTextField"
+- "PSo33NSUserInterfaceItemIdentification"
+- "PSo26NSUserInterfaceValidations"
+- "CSo6NSView"
+- "Sq"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps26_ExpressibleByColorLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+interface-hash: "9936e4e7d381eaa244c6443afd69c4d6"

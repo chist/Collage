@@ -1,0 +1,654 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Saver"
+provides-nominal:
+- "C7Collage5Saver"
+provides-member:
+- ["C7Collage5Saver", ""]
+- ["CSo7NSImage", ""]
+- ["CSo6NSView", ""]
+- ["VSC6CGSize", ""]
+- ["CSo7NSImage", "imagePNGRepresentation"]
+- ["CSo7NSImage", "savePNG"]
+- ["CSo6NSView", "snapshot"]
+- ["VSC6CGSize", "doubleScale"]
+provides-dynamic-lookup:
+- "savePNG"
+- "snapshot"
+- "imagePNGRepresentation"
+depends-top-level:
+- "String"
+- "CGSize"
+- !private "URL"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- "NSView"
+- !private "print"
+- !private "FileManager"
+- "Saver"
+- !private "UserDefaults"
+- !private "NSCharacterSet"
+- !private "*"
+- !private "Dictionary"
+- !private "BooleanLiteralType"
+- "Data"
+- "StringLiteralType"
+- !private "NSBitmapImageRep"
+- !private "NSString"
+- "NSImage"
+- !private "+"
+- !private "UnicodeScalarType"
+- !private "arc4random"
+depends-member:
+- !private ["Ps9AnyObject", "FileManager"]
+- !private ["Ps9AnyObject", "NSBitmapImageRep"]
+- !private ["Ps9AnyObject", "NSCharacterSet"]
+- !private ["Ps9AnyObject", "NSImage"]
+- !private ["Ps9AnyObject", "NSString"]
+- !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "URL"]
+- !private ["Ps9AnyObject", "UserDefaults"]
+- !private ["Ps9AnyObject", "addRepresentation"]
+- !private ["Ps9AnyObject", "addingPercentEncoding"]
+- !private ["Ps9AnyObject", "arc4random"]
+- !private ["Ps9AnyObject", "bitmapImageRepForCachingDisplay"]
+- !private ["Ps9AnyObject", "bounds"]
+- !private ["Ps9AnyObject", "cacheDisplay"]
+- !private ["Ps9AnyObject", "createDirectory"]
+- !private ["Ps9AnyObject", "default"]
+- !private ["Ps9AnyObject", "directoryPath"]
+- !private ["Ps9AnyObject", "expandingTildeInPath"]
+- ["Ps9AnyObject", "imagePNGRepresentation"]
+- !private ["Ps9AnyObject", "imagePath"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "object"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "representation"]
+- ["Ps9AnyObject", "savePNG"]
+- !private ["Ps9AnyObject", "size"]
+- ["Ps9AnyObject", "snapshot"]
+- !private ["Ps9AnyObject", "standard"]
+- !private ["Ps9AnyObject", "tiffRepresentation"]
+- !private ["Ps9AnyObject", "updateDirectoryPath"]
+- !private ["Ps9AnyObject", "updateImagePath"]
+- !private ["Ps9AnyObject", "urlPathAllowed"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps23BidirectionalCollection", "write"]
+- !private ["Ps22BidirectionalIndexable", "write"]
+- ["Sb", "deinit"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC6CGRect", "size"]
+- ["VSC6CGSize", "CGSize"]
+- ["VSC6CGSize", "deinit"]
+- ["VSC6CGSize", "doubleScale"]
+- !private ["VSC6CGSize", "height"]
+- !private ["VSC6CGSize", "init"]
+- !private ["VSC6CGSize", "width"]
+- !private ["Ps7CVarArg", "Key"]
+- !private ["Ps7CVarArg", "NSBitmapImageRep"]
+- !private ["Ps7CVarArg", "NSImage"]
+- !private ["Ps7CVarArg", "URL"]
+- !private ["Ps7CVarArg", "Value"]
+- !private ["Ps7CVarArg", "addRepresentation"]
+- !private ["Ps7CVarArg", "addingPercentEncoding"]
+- !private ["Ps7CVarArg", "bitmapImageRepForCachingDisplay"]
+- !private ["Ps7CVarArg", "bounds"]
+- !private ["Ps7CVarArg", "cacheDisplay"]
+- !private ["Ps7CVarArg", "createDirectory"]
+- !private ["Ps7CVarArg", "default"]
+- !private ["Ps7CVarArg", "expandingTildeInPath"]
+- ["Ps7CVarArg", "imagePNGRepresentation"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "object"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "representation"]
+- ["Ps7CVarArg", "savePNG"]
+- !private ["Ps7CVarArg", "size"]
+- ["Ps7CVarArg", "snapshot"]
+- !private ["Ps7CVarArg", "standard"]
+- !private ["Ps7CVarArg", "tiffRepresentation"]
+- !private ["Ps7CVarArg", "urlPathAllowed"]
+- ["V10Foundation12CharacterSet", "deinit"]
+- !private ["Ps10Collection", "Key"]
+- !private ["Ps10Collection", "Value"]
+- !private ["Ps10Collection", "write"]
+- !private ["Ps10Comparable", "addingPercentEncoding"]
+- ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "CGSize"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "NSBitmapImageRep"]
+- !private ["Ps28CustomDebugStringConvertible", "NSImage"]
+- !private ["Ps28CustomDebugStringConvertible", "URL"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "addRepresentation"]
+- !private ["Ps28CustomDebugStringConvertible", "addingPercentEncoding"]
+- !private ["Ps28CustomDebugStringConvertible", "bitmapImageRepForCachingDisplay"]
+- !private ["Ps28CustomDebugStringConvertible", "bounds"]
+- !private ["Ps28CustomDebugStringConvertible", "cacheDisplay"]
+- !private ["Ps28CustomDebugStringConvertible", "createDirectory"]
+- !private ["Ps28CustomDebugStringConvertible", "default"]
+- !private ["Ps28CustomDebugStringConvertible", "doubleScale"]
+- !private ["Ps28CustomDebugStringConvertible", "expandingTildeInPath"]
+- !private ["Ps28CustomDebugStringConvertible", "height"]
+- ["Ps28CustomDebugStringConvertible", "imagePNGRepresentation"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "object"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "representation"]
+- ["Ps28CustomDebugStringConvertible", "savePNG"]
+- !private ["Ps28CustomDebugStringConvertible", "size"]
+- ["Ps28CustomDebugStringConvertible", "snapshot"]
+- ["Ps28CustomDebugStringConvertible", "some"]
+- !private ["Ps28CustomDebugStringConvertible", "standard"]
+- !private ["Ps28CustomDebugStringConvertible", "tiffRepresentation"]
+- !private ["Ps28CustomDebugStringConvertible", "urlPathAllowed"]
+- !private ["Ps28CustomDebugStringConvertible", "width"]
+- !private ["Ps28CustomDebugStringConvertible", "write"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "CGSize"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "addingPercentEncoding"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "doubleScale"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "expandingTildeInPath"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "height"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "size"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "width"]
+- !private ["Ps17CustomReflectable", "CGSize"]
+- !private ["Ps17CustomReflectable", "Key"]
+- !private ["Ps17CustomReflectable", "Value"]
+- !private ["Ps17CustomReflectable", "addingPercentEncoding"]
+- !private ["Ps17CustomReflectable", "doubleScale"]
+- !private ["Ps17CustomReflectable", "height"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "size"]
+- ["Ps17CustomReflectable", "some"]
+- !private ["Ps17CustomReflectable", "width"]
+- !private ["Ps17CustomReflectable", "write"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "NSBitmapImageRep"]
+- !private ["Ps23CustomStringConvertible", "NSImage"]
+- !private ["Ps23CustomStringConvertible", "URL"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "addRepresentation"]
+- !private ["Ps23CustomStringConvertible", "addingPercentEncoding"]
+- !private ["Ps23CustomStringConvertible", "bitmapImageRepForCachingDisplay"]
+- !private ["Ps23CustomStringConvertible", "bounds"]
+- !private ["Ps23CustomStringConvertible", "cacheDisplay"]
+- !private ["Ps23CustomStringConvertible", "createDirectory"]
+- !private ["Ps23CustomStringConvertible", "default"]
+- !private ["Ps23CustomStringConvertible", "expandingTildeInPath"]
+- ["Ps23CustomStringConvertible", "imagePNGRepresentation"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "object"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "representation"]
+- ["Ps23CustomStringConvertible", "savePNG"]
+- !private ["Ps23CustomStringConvertible", "size"]
+- ["Ps23CustomStringConvertible", "snapshot"]
+- !private ["Ps23CustomStringConvertible", "standard"]
+- !private ["Ps23CustomStringConvertible", "tiffRepresentation"]
+- !private ["Ps23CustomStringConvertible", "urlPathAllowed"]
+- !private ["Ps23CustomStringConvertible", "write"]
+- ["V10Foundation4Data", "deinit"]
+- !private ["V10Foundation4Data", "write"]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- ["Vs10Dictionary", "deinit"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "CGSize"]
+- !private ["Ps9Equatable", "NSBitmapImageRep"]
+- !private ["Ps9Equatable", "NSImage"]
+- !private ["Ps9Equatable", "PNG"]
+- !private ["Ps9Equatable", "URL"]
+- !private ["Ps9Equatable", "addRepresentation"]
+- !private ["Ps9Equatable", "addingPercentEncoding"]
+- !private ["Ps9Equatable", "bitmapImageRepForCachingDisplay"]
+- !private ["Ps9Equatable", "bounds"]
+- !private ["Ps9Equatable", "cacheDisplay"]
+- !private ["Ps9Equatable", "createDirectory"]
+- !private ["Ps9Equatable", "default"]
+- !private ["Ps9Equatable", "doubleScale"]
+- !private ["Ps9Equatable", "expandingTildeInPath"]
+- !private ["Ps9Equatable", "height"]
+- ["Ps9Equatable", "imagePNGRepresentation"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "object"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "representation"]
+- ["Ps9Equatable", "savePNG"]
+- !private ["Ps9Equatable", "size"]
+- ["Ps9Equatable", "snapshot"]
+- !private ["Ps9Equatable", "standard"]
+- !private ["Ps9Equatable", "tiffRepresentation"]
+- !private ["Ps9Equatable", "urlPathAllowed"]
+- !private ["Ps9Equatable", "width"]
+- !private ["Ps9Equatable", "write"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "addingPercentEncoding"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "expandingTildeInPath"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps23ExpressibleByNilLiteral", "some"]
+- !private ["Ps32ExpressibleByStringInterpolation", "addingPercentEncoding"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "addingPercentEncoding"]
+- !private ["Ps26ExpressibleByStringLiteral", "expandingTildeInPath"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "addingPercentEncoding"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "expandingTildeInPath"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["CSo11FileManager", "createDirectory"]
+- !private ["CSo11FileManager", "default"]
+- ["CSo11FileManager", "deinit"]
+- !private ["Ps8Hashable", "NSBitmapImageRep"]
+- !private ["Ps8Hashable", "NSImage"]
+- !private ["Ps8Hashable", "PNG"]
+- !private ["Ps8Hashable", "URL"]
+- !private ["Ps8Hashable", "addRepresentation"]
+- !private ["Ps8Hashable", "addingPercentEncoding"]
+- !private ["Ps8Hashable", "bitmapImageRepForCachingDisplay"]
+- !private ["Ps8Hashable", "bounds"]
+- !private ["Ps8Hashable", "cacheDisplay"]
+- !private ["Ps8Hashable", "createDirectory"]
+- !private ["Ps8Hashable", "default"]
+- !private ["Ps8Hashable", "expandingTildeInPath"]
+- ["Ps8Hashable", "imagePNGRepresentation"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "object"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "representation"]
+- ["Ps8Hashable", "savePNG"]
+- !private ["Ps8Hashable", "size"]
+- ["Ps8Hashable", "snapshot"]
+- !private ["Ps8Hashable", "standard"]
+- !private ["Ps8Hashable", "tiffRepresentation"]
+- !private ["Ps8Hashable", "urlPathAllowed"]
+- !private ["Ps8Hashable", "write"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["Ps9Indexable", "write"]
+- !private ["Ps13IndexableBase", "Key"]
+- !private ["Ps13IndexableBase", "Value"]
+- !private ["Ps13IndexableBase", "write"]
+- !private ["Si", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "addingPercentEncoding"]
+- ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "addingPercentEncoding"]
+- ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "write"]
+- !private ["Ps16MutableIndexable", "write"]
+- !private ["PSo15NSAccessibility", "NSImage"]
+- !private ["PSo15NSAccessibility", "bitmapImageRepForCachingDisplay"]
+- !private ["PSo15NSAccessibility", "bounds"]
+- !private ["PSo15NSAccessibility", "cacheDisplay"]
+- !private ["PSo15NSAccessibility", "snapshot"]
+- !private ["PSo30NSAccessibilityElementProtocol", "NSImage"]
+- !private ["PSo30NSAccessibilityElementProtocol", "bitmapImageRepForCachingDisplay"]
+- !private ["PSo30NSAccessibilityElementProtocol", "bounds"]
+- !private ["PSo30NSAccessibilityElementProtocol", "cacheDisplay"]
+- !private ["PSo30NSAccessibilityElementProtocol", "snapshot"]
+- !private ["PSo29NSAnimatablePropertyContainer", "NSImage"]
+- !private ["PSo29NSAnimatablePropertyContainer", "bitmapImageRepForCachingDisplay"]
+- !private ["PSo29NSAnimatablePropertyContainer", "bounds"]
+- !private ["PSo29NSAnimatablePropertyContainer", "cacheDisplay"]
+- !private ["PSo29NSAnimatablePropertyContainer", "snapshot"]
+- !private ["PSo25NSAppearanceCustomization", "NSImage"]
+- !private ["PSo25NSAppearanceCustomization", "bitmapImageRepForCachingDisplay"]
+- !private ["PSo25NSAppearanceCustomization", "bounds"]
+- !private ["PSo25NSAppearanceCustomization", "cacheDisplay"]
+- !private ["PSo25NSAppearanceCustomization", "snapshot"]
+- !private ["OSC21NSBitmapImageFileType", "PNG"]
+- ["OSC21NSBitmapImageFileType", "deinit"]
+- ["CSo16NSBitmapImageRep", "deinit"]
+- !private ["CSo16NSBitmapImageRep", "init"]
+- !private ["CSo16NSBitmapImageRep", "representation"]
+- !private ["CSo16NSBitmapImageRep", "size"]
+- !private ["CSo14NSCharacterSet", "urlPathAllowed"]
+- !private ["PSo8NSCoding", "NSBitmapImageRep"]
+- !private ["PSo8NSCoding", "NSImage"]
+- !private ["PSo8NSCoding", "URL"]
+- !private ["PSo8NSCoding", "addRepresentation"]
+- !private ["PSo8NSCoding", "addingPercentEncoding"]
+- !private ["PSo8NSCoding", "bitmapImageRepForCachingDisplay"]
+- !private ["PSo8NSCoding", "bounds"]
+- !private ["PSo8NSCoding", "cacheDisplay"]
+- !private ["PSo8NSCoding", "expandingTildeInPath"]
+- !private ["PSo8NSCoding", "imagePNGRepresentation"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "representation"]
+- !private ["PSo8NSCoding", "savePNG"]
+- !private ["PSo8NSCoding", "size"]
+- ["PSo8NSCoding", "snapshot"]
+- !private ["PSo8NSCoding", "tiffRepresentation"]
+- !private ["PSo8NSCoding", "urlPathAllowed"]
+- !private ["PSo9NSCopying", "NSBitmapImageRep"]
+- !private ["PSo9NSCopying", "URL"]
+- !private ["PSo9NSCopying", "addRepresentation"]
+- !private ["PSo9NSCopying", "addingPercentEncoding"]
+- !private ["PSo9NSCopying", "expandingTildeInPath"]
+- !private ["PSo9NSCopying", "imagePNGRepresentation"]
+- ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "print"]
+- !private ["PSo9NSCopying", "representation"]
+- !private ["PSo9NSCopying", "savePNG"]
+- !private ["PSo9NSCopying", "size"]
+- !private ["PSo9NSCopying", "tiffRepresentation"]
+- !private ["PSo9NSCopying", "urlPathAllowed"]
+- !private ["PSo21NSDraggingDestination", "NSImage"]
+- !private ["PSo21NSDraggingDestination", "bitmapImageRepForCachingDisplay"]
+- !private ["PSo21NSDraggingDestination", "bounds"]
+- !private ["PSo21NSDraggingDestination", "cacheDisplay"]
+- !private ["PSo21NSDraggingDestination", "snapshot"]
+- ["CSo7NSImage", "Data"]
+- !private ["CSo7NSImage", "NSBitmapImageRep"]
+- ["CSo7NSImage", "String"]
+- !private ["CSo7NSImage", "URL"]
+- !private ["CSo7NSImage", "addRepresentation"]
+- ["CSo7NSImage", "deinit"]
+- ["CSo7NSImage", "imagePNGRepresentation"]
+- !private ["CSo7NSImage", "init"]
+- !private ["CSo7NSImage", "print"]
+- ["CSo7NSImage", "savePNG"]
+- !private ["CSo7NSImage", "tiffRepresentation"]
+- !private ["CSo10NSImageRep", "init"]
+- !private ["CSo10NSImageRep", "representation"]
+- !private ["CSo10NSImageRep", "size"]
+- !private ["PSo16NSMutableCopying", "addingPercentEncoding"]
+- !private ["PSo16NSMutableCopying", "expandingTildeInPath"]
+- ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "urlPathAllowed"]
+- ["CSo8NSObject", "Data"]
+- !private ["CSo8NSObject", "NSBitmapImageRep"]
+- ["CSo8NSObject", "NSImage"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "URL"]
+- !private ["CSo8NSObject", "addRepresentation"]
+- !private ["CSo8NSObject", "addingPercentEncoding"]
+- !private ["CSo8NSObject", "bitmapImageRepForCachingDisplay"]
+- !private ["CSo8NSObject", "bounds"]
+- !private ["CSo8NSObject", "cacheDisplay"]
+- !private ["CSo8NSObject", "createDirectory"]
+- !private ["CSo8NSObject", "default"]
+- !private ["CSo8NSObject", "expandingTildeInPath"]
+- ["CSo8NSObject", "imagePNGRepresentation"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "object"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "representation"]
+- ["CSo8NSObject", "savePNG"]
+- !private ["CSo8NSObject", "size"]
+- ["CSo8NSObject", "snapshot"]
+- !private ["CSo8NSObject", "standard"]
+- !private ["CSo8NSObject", "tiffRepresentation"]
+- !private ["CSo8NSObject", "urlPathAllowed"]
+- !private ["PSo16NSObjectProtocol", "NSBitmapImageRep"]
+- !private ["PSo16NSObjectProtocol", "NSImage"]
+- !private ["PSo16NSObjectProtocol", "URL"]
+- !private ["PSo16NSObjectProtocol", "addRepresentation"]
+- !private ["PSo16NSObjectProtocol", "addingPercentEncoding"]
+- !private ["PSo16NSObjectProtocol", "bitmapImageRepForCachingDisplay"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- !private ["PSo16NSObjectProtocol", "cacheDisplay"]
+- !private ["PSo16NSObjectProtocol", "createDirectory"]
+- !private ["PSo16NSObjectProtocol", "default"]
+- !private ["PSo16NSObjectProtocol", "expandingTildeInPath"]
+- ["PSo16NSObjectProtocol", "imagePNGRepresentation"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "object"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "representation"]
+- ["PSo16NSObjectProtocol", "savePNG"]
+- !private ["PSo16NSObjectProtocol", "size"]
+- ["PSo16NSObjectProtocol", "snapshot"]
+- !private ["PSo16NSObjectProtocol", "standard"]
+- !private ["PSo16NSObjectProtocol", "tiffRepresentation"]
+- !private ["PSo16NSObjectProtocol", "urlPathAllowed"]
+- !private ["PSo19NSPasteboardReading", "NSBitmapImageRep"]
+- !private ["PSo19NSPasteboardReading", "URL"]
+- !private ["PSo19NSPasteboardReading", "addRepresentation"]
+- !private ["PSo19NSPasteboardReading", "addingPercentEncoding"]
+- !private ["PSo19NSPasteboardReading", "expandingTildeInPath"]
+- !private ["PSo19NSPasteboardReading", "imagePNGRepresentation"]
+- ["PSo19NSPasteboardReading", "init"]
+- !private ["PSo19NSPasteboardReading", "print"]
+- !private ["PSo19NSPasteboardReading", "savePNG"]
+- !private ["PSo19NSPasteboardReading", "tiffRepresentation"]
+- !private ["PSo19NSPasteboardWriting", "NSBitmapImageRep"]
+- !private ["PSo19NSPasteboardWriting", "URL"]
+- !private ["PSo19NSPasteboardWriting", "addRepresentation"]
+- !private ["PSo19NSPasteboardWriting", "addingPercentEncoding"]
+- !private ["PSo19NSPasteboardWriting", "expandingTildeInPath"]
+- !private ["PSo19NSPasteboardWriting", "imagePNGRepresentation"]
+- ["PSo19NSPasteboardWriting", "init"]
+- !private ["PSo19NSPasteboardWriting", "print"]
+- !private ["PSo19NSPasteboardWriting", "savePNG"]
+- !private ["PSo19NSPasteboardWriting", "tiffRepresentation"]
+- ["CSo11NSResponder", "NSImage"]
+- !private ["CSo11NSResponder", "bitmapImageRepForCachingDisplay"]
+- !private ["CSo11NSResponder", "bounds"]
+- !private ["CSo11NSResponder", "cacheDisplay"]
+- ["CSo11NSResponder", "snapshot"]
+- !private ["PSo14NSSecureCoding", "NSBitmapImageRep"]
+- !private ["PSo14NSSecureCoding", "URL"]
+- !private ["PSo14NSSecureCoding", "addRepresentation"]
+- !private ["PSo14NSSecureCoding", "addingPercentEncoding"]
+- !private ["PSo14NSSecureCoding", "expandingTildeInPath"]
+- !private ["PSo14NSSecureCoding", "imagePNGRepresentation"]
+- ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "print"]
+- !private ["PSo14NSSecureCoding", "representation"]
+- !private ["PSo14NSSecureCoding", "savePNG"]
+- !private ["PSo14NSSecureCoding", "size"]
+- !private ["PSo14NSSecureCoding", "tiffRepresentation"]
+- !private ["PSo14NSSecureCoding", "urlPathAllowed"]
+- !private ["CSo8NSString", "addingPercentEncoding"]
+- ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "expandingTildeInPath"]
+- ["CSo8NSString", "init"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "NSImage"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "bitmapImageRepForCachingDisplay"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "bounds"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "cacheDisplay"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "snapshot"]
+- ["CSo6NSView", "NSImage"]
+- !private ["CSo6NSView", "bitmapImageRepForCachingDisplay"]
+- !private ["CSo6NSView", "bounds"]
+- !private ["CSo6NSView", "cacheDisplay"]
+- ["CSo6NSView", "deinit"]
+- ["CSo6NSView", "snapshot"]
+- ["Sq", "deinit"]
+- ["Sq", "some"]
+- !private ["Ps22RandomAccessCollection", "write"]
+- !private ["Ps21RandomAccessIndexable", "write"]
+- !private ["Ps26RangeReplaceableCollection", "write"]
+- !private ["Ps25RangeReplaceableIndexable", "write"]
+- !private ["Ps16RawRepresentable", "PNG"]
+- !private ["P10Foundation20ReferenceConvertible", "init"]
+- !private ["P10Foundation20ReferenceConvertible", "write"]
+- !private ["C7Collage5Saver", "FileManager"]
+- !private ["C7Collage5Saver", "NSCharacterSet"]
+- ["C7Collage5Saver", "NSImage"]
+- !private ["C7Collage5Saver", "NSString"]
+- ["C7Collage5Saver", "NSView"]
+- ["C7Collage5Saver", "String"]
+- !private ["C7Collage5Saver", "UserDefaults"]
+- !private ["C7Collage5Saver", "arc4random"]
+- ["C7Collage5Saver", "deinit"]
+- ["C7Collage5Saver", "directoryPath"]
+- ["C7Collage5Saver", "getSnapshot"]
+- ["C7Collage5Saver", "imagePath"]
+- ["C7Collage5Saver", "init"]
+- !private ["C7Collage5Saver", "print"]
+- ["C7Collage5Saver", "save"]
+- ["C7Collage5Saver", "updateDirectoryPath"]
+- ["C7Collage5Saver", "updateImagePath"]
+- !private ["Ps8Sequence", "Key"]
+- !private ["Ps8Sequence", "Value"]
+- !private ["Ps8Sequence", "write"]
+- !private ["SS", "addingPercentEncoding"]
+- ["SS", "deinit"]
+- ["SS", "init"]
+- !private ["Ps16TextOutputStream", "addingPercentEncoding"]
+- ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "addingPercentEncoding"]
+- ["Ps20TextOutputStreamable", "init"]
+- ["Vs6UInt32", "deinit"]
+- ["V10Foundation3URL", "deinit"]
+- !private ["V10Foundation3URL", "init"]
+- ["CSo12UserDefaults", "deinit"]
+- !private ["CSo12UserDefaults", "object"]
+- !private ["CSo12UserDefaults", "standard"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "NSImage"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "bitmapImageRepForCachingDisplay"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "bounds"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "cacheDisplay"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "snapshot"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "addingPercentEncoding"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "addingPercentEncoding"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "addingPercentEncoding"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "addingPercentEncoding"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "init"]
+- !private ["Ps26_ExpressibleByImageLiteral", "NSBitmapImageRep"]
+- !private ["Ps26_ExpressibleByImageLiteral", "URL"]
+- !private ["Ps26_ExpressibleByImageLiteral", "addRepresentation"]
+- !private ["Ps26_ExpressibleByImageLiteral", "imagePNGRepresentation"]
+- !private ["Ps26_ExpressibleByImageLiteral", "init"]
+- !private ["Ps26_ExpressibleByImageLiteral", "print"]
+- !private ["Ps26_ExpressibleByImageLiteral", "savePNG"]
+- !private ["Ps26_ExpressibleByImageLiteral", "tiffRepresentation"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "addingPercentEncoding"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "expandingTildeInPath"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "urlPathAllowed"]
+- !private ["Ps9_Hashable", "NSBitmapImageRep"]
+- !private ["Ps9_Hashable", "NSImage"]
+- !private ["Ps9_Hashable", "PNG"]
+- !private ["Ps9_Hashable", "URL"]
+- !private ["Ps9_Hashable", "addRepresentation"]
+- !private ["Ps9_Hashable", "addingPercentEncoding"]
+- !private ["Ps9_Hashable", "bitmapImageRepForCachingDisplay"]
+- !private ["Ps9_Hashable", "bounds"]
+- !private ["Ps9_Hashable", "cacheDisplay"]
+- !private ["Ps9_Hashable", "createDirectory"]
+- !private ["Ps9_Hashable", "default"]
+- !private ["Ps9_Hashable", "expandingTildeInPath"]
+- ["Ps9_Hashable", "imagePNGRepresentation"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "object"]
+- !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "representation"]
+- ["Ps9_Hashable", "savePNG"]
+- !private ["Ps9_Hashable", "size"]
+- ["Ps9_Hashable", "snapshot"]
+- !private ["Ps9_Hashable", "standard"]
+- !private ["Ps9_Hashable", "tiffRepresentation"]
+- !private ["Ps9_Hashable", "urlPathAllowed"]
+- !private ["Ps9_Hashable", "write"]
+- !private ["P10Foundation18_MutablePairBoxing", "write"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps21_ObjectiveCBridgeable", "addingPercentEncoding"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "write"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
+- "Sb"
+- "V12CoreGraphics7CGFloat"
+- !private "VSC6CGRect"
+- "VSC6CGSize"
+- "Ps7CVarArg"
+- "V10Foundation12CharacterSet"
+- !private "Ps10Collection"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "V10Foundation4Data"
+- "Vs10Dictionary"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps23ExpressibleByNilLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "CSo11FileManager"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Si"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
+- !private "PSo15NSAccessibility"
+- !private "PSo30NSAccessibilityElementProtocol"
+- !private "PSo29NSAnimatablePropertyContainer"
+- !private "PSo25NSAppearanceCustomization"
+- "OSC21NSBitmapImageFileType"
+- "CSo16NSBitmapImageRep"
+- !private "CSo14NSCharacterSet"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- !private "PSo21NSDraggingDestination"
+- "CSo7NSImage"
+- !private "CSo10NSImageRep"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo19NSPasteboardReading"
+- "PSo19NSPasteboardWriting"
+- "CSo11NSResponder"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- !private "PSo33NSUserInterfaceItemIdentification"
+- "CSo6NSView"
+- "Sq"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
+- !private "Ps16RawRepresentable"
+- !private "P10Foundation20ReferenceConvertible"
+- "C7Collage5Saver"
+- !private "Ps8Sequence"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- "Vs6UInt32"
+- "V10Foundation3URL"
+- "CSo12UserDefaults"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps34_ExpressibleByFileReferenceLiteral"
+- !private "Ps26_ExpressibleByImageLiteral"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "P10Foundation18_MutablePairBoxing"
+- "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+interface-hash: "0f7a2ec26a7dfcc2e0c594a9c8d60717"
