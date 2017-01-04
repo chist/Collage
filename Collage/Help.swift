@@ -9,72 +9,53 @@
 import Foundation
 import Cocoa
 
-class Help {
+class Help: NSView {
     var isActive: Bool = false
-    var frame = NSRect()
-    let size = CGSize(width: 230, height: 300)
+    let size = CGSize(width: 230, height: 350)
     let background = NSImage(named: "helpBackground")
-    let view = NSView()
-    let superView: NSView
-    var hint: Hint
+    var hint: NSView?
     
-    let hintText = "Click right mouse button to see menu.\n\nDrag frame border to change proportions. You can also change it by resizing the app window.\n\nBy default your collages are saved in Documents folder but you can change it in app preferences."
+    let hintText = "Click with right mouse button to open / close menu.\nIt allows you to add new partitions and change photos.\n\nDrag frame borders to resize collage and partitions!\n\nYou can also drag-and-drop pictures from Finder!\n\nPress help button to show that again.\n\n"
     
     init(superView: NSView) {
-        self.superView = superView
+        super.init(frame: NSRect())
         
         // create view with appropriate frame and background
         let center = Rectangle.init(fromNSRect: superView.frame).getCenter();
         let origin = NSPoint(x: center.x - size.width / 2, y: center.y - size.height / 2)
         self.frame = NSRect(origin: origin, size: self.size)
-        self.view.frame = self.frame
+        self.frame = self.frame
         
         let backgroundFrame = NSRect(origin: CGPoint(x: 0, y: 0), size: self.size);
         let imageView = NSImageView(frame: backgroundFrame)
         imageView.image = self.background
         imageView.imageScaling = NSImageScaling.scaleAxesIndependently
-        self.view.addSubview(imageView)
+        self.addSubview(imageView)
         
         // add view with text
-        hint = Hint(with: hintText, toFit: self.size)
-        self.view.addSubview(hint.view)
+        hint = Hint(with: hintText, toFit: self.size).getView()
+        self.addSubview(hint!)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     func contains(point: NSPoint) -> Bool {
-        if Rectangle.init(fromNSRect: view.frame).checkIfContains(point) {
+        if Rectangle.init(fromNSRect: self.frame).checkIfContains(point) {
             return true
         }
         return false
     }
     
-    func show() {
-        if self.isActive {
-            return
-        }
+    func locateView(at point: CGPoint) {
+        let correctedPoint = CGPoint(x: point.x - self.frame.width / 2,
+                                     y: point.y - self.frame.height / 2)
+        self.frame = NSRect(origin: correctedPoint, size: self.frame.size)
         
-        // calculate appropriate help view position
-        self.view.frame = NSRect(origin: CGPoint(x: superView.frame.midX - view.frame.width / 2, y: superView.frame.midY - view.frame.height / 2), size: size)
-        self.superView.addSubview(self.view)
-        
-        // create new hint view to avoid font bugs
-        hint.view.removeFromSuperview()
-        hint = Hint(with: hintText, toFit: size)
-        self.view.addSubview(hint.view)
-        
-        // change state
-        self.isActive = true
-    }
-    
-    func hide() {
-        self.view.removeFromSuperview()
-        self.isActive = false
-    }
-    
-    func changeState() {
-        if self.isActive {
-            self.hide()
-        } else {
-            self.show()
-        }
+        // update hint to get smooth text on the screen
+        hint?.removeFromSuperview()
+        hint = Hint(with: hintText, toFit: self.size).getView()
+        self.addSubview(hint!)
     }
 }

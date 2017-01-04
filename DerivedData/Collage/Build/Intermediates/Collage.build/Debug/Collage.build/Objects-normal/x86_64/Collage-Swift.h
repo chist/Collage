@@ -128,12 +128,14 @@ SWIFT_CLASS("_TtC7Collage11AppDelegate")
 
 @class NSCoder;
 @class NSImage;
+@class NSEvent;
 
 SWIFT_CLASS("_TtC7Collage20DragAndDropImageView")
 @interface DragAndDropImageView : NSImageView
 - (nonnull instancetype)initWithFrame:(NSRect)frameRect OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, strong) NSImage * _Nullable image;
+- (void)mouseDown:(NSEvent * _Nonnull)event;
 @end
 
 @class NSView;
@@ -154,6 +156,21 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger removeTime
 + (void)outWithString:(NSString * _Nonnull)string;
 + (void)removeMessage;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Collage4Help")
+@interface Help : NSView
+@property (nonatomic) BOOL isActive;
+@property (nonatomic, readonly) CGSize size;
+@property (nonatomic, readonly, strong) NSImage * _Nullable background;
+@property (nonatomic, strong) NSView * _Nullable hint;
+@property (nonatomic, readonly, copy) NSString * _Nonnull hintText;
+- (nonnull instancetype)initWithSuperView:(NSView * _Nonnull)superView OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)containsWithPoint:(NSPoint)point;
+- (void)locateViewAt:(CGPoint)point;
+- (nonnull instancetype)initWithFrame:(NSRect)frameRect SWIFT_UNAVAILABLE;
 @end
 
 @class Rectangle;
@@ -179,7 +196,6 @@ SWIFT_CLASS("_TtC7Collage17MutableScrollView")
 @property (nonatomic, readonly, strong) NSImage * _Nonnull snapshot;
 @end
 
-@class NSEvent;
 
 SWIFT_CLASS("_TtC7Collage13PopUpMenuView")
 @interface PopUpMenuView : NSView
@@ -230,6 +246,7 @@ SWIFT_CLASS("_TtC7Collage14ViewController")
 @property (nonatomic) NSInteger savedCount;
 @property (nonatomic) CGFloat xConstraint;
 @property (nonatomic) CGFloat yConstraint;
+@property (nonatomic, strong) Help * _Nullable help;
 @property (nonatomic, strong) PopUpMenuView * _Nullable popUpMenu;
 @property (nonatomic) CGColorRef _Nonnull currentColor;
 @property (nonatomic, strong) IBOutlet NSView * _Null_unspecified canvas;

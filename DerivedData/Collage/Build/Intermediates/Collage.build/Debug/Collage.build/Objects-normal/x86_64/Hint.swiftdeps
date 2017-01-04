@@ -7,21 +7,19 @@ provides-member:
 - ["C7Collage4Hint", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Hint"
-- "AssignmentPrecedence"
-- !private "NSPoint"
-- "CGFloat"
-- "NSSize"
-- !private "-"
-- !private "*"
 - !private "NSFont"
-- "String"
-- "NSTextView"
-- !private "BooleanLiteralType"
+- "AssignmentPrecedence"
+- !private "NSRect"
+- "NSSize"
+- !private "NSTextAlignment"
+- "Hint"
 - "NSView"
 - !private "NSColor"
-- !private "NSTextAlignment"
-- !private "NSRect"
+- !private "BooleanLiteralType"
+- !private "NSPoint"
+- "String"
+- !private "StringLiteralType"
+- "NSTextView"
 depends-member:
 - !private ["Ps9AnyObject", "NSColor"]
 - !private ["Ps9AnyObject", "NSFont"]
@@ -40,12 +38,9 @@ depends-member:
 - !private ["Ps9AnyObject", "isSelectable"]
 - !private ["Ps9AnyObject", "sizeToFit"]
 - !private ["Ps9AnyObject", "string"]
-- !private ["Ps9AnyObject", "systemFont"]
 - !private ["Ps9AnyObject", "textColor"]
 - !private ["Ps9AnyObject", "textView"]
 - !private ["Ps9AnyObject", "view"]
-- !private ["Ps9AnyObject", "xIndent"]
-- !private ["Ps9AnyObject", "yIndent"]
 - ["Ps9AnyObject", ""]
 - ["Sb", "deinit"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
@@ -54,8 +49,6 @@ depends-member:
 - ["VSC6CGRect", "deinit"]
 - !private ["VSC6CGRect", "init"]
 - ["VSC6CGSize", "deinit"]
-- !private ["VSC6CGSize", "height"]
-- !private ["VSC6CGSize", "width"]
 - !private ["Ps7CVarArg", "addSubview"]
 - !private ["Ps7CVarArg", "alignment"]
 - !private ["Ps7CVarArg", "backgroundColor"]
@@ -66,28 +59,21 @@ depends-member:
 - !private ["Ps7CVarArg", "isSelectable"]
 - !private ["Ps7CVarArg", "sizeToFit"]
 - !private ["Ps7CVarArg", "string"]
-- !private ["Ps7CVarArg", "systemFont"]
 - !private ["Ps7CVarArg", "textColor"]
+- !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "alignment"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "font"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
-- !private ["Ps28CustomDebugStringConvertible", "height"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "isEditable"]
 - !private ["Ps28CustomDebugStringConvertible", "isSelectable"]
 - !private ["Ps28CustomDebugStringConvertible", "sizeToFit"]
 - !private ["Ps28CustomDebugStringConvertible", "string"]
-- !private ["Ps28CustomDebugStringConvertible", "systemFont"]
 - !private ["Ps28CustomDebugStringConvertible", "textColor"]
-- !private ["Ps28CustomDebugStringConvertible", "width"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "height"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "width"]
-- !private ["Ps17CustomReflectable", "height"]
 - !private ["Ps17CustomReflectable", "init"]
-- !private ["Ps17CustomReflectable", "width"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "alignment"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
@@ -98,7 +84,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "isSelectable"]
 - !private ["Ps23CustomStringConvertible", "sizeToFit"]
 - !private ["Ps23CustomStringConvertible", "string"]
-- !private ["Ps23CustomStringConvertible", "systemFont"]
 - !private ["Ps23CustomStringConvertible", "textColor"]
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "alignment"]
@@ -106,15 +91,16 @@ depends-member:
 - !private ["Ps9Equatable", "center"]
 - !private ["Ps9Equatable", "font"]
 - !private ["Ps9Equatable", "frame"]
-- !private ["Ps9Equatable", "height"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "isEditable"]
 - !private ["Ps9Equatable", "isSelectable"]
 - !private ["Ps9Equatable", "sizeToFit"]
 - !private ["Ps9Equatable", "string"]
-- !private ["Ps9Equatable", "systemFont"]
 - !private ["Ps9Equatable", "textColor"]
-- !private ["Ps9Equatable", "width"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "alignment"]
 - !private ["Ps8Hashable", "backgroundColor"]
@@ -126,9 +112,7 @@ depends-member:
 - !private ["Ps8Hashable", "isSelectable"]
 - !private ["Ps8Hashable", "sizeToFit"]
 - !private ["Ps8Hashable", "string"]
-- !private ["Ps8Hashable", "systemFont"]
 - !private ["Ps8Hashable", "textColor"]
-- ["C7Collage4Hint", "CGFloat"]
 - !private ["C7Collage4Hint", "NSColor"]
 - !private ["C7Collage4Hint", "NSFont"]
 - !private ["C7Collage4Hint", "NSPoint"]
@@ -143,8 +127,8 @@ depends-member:
 - ["C7Collage4Hint", "init"]
 - ["C7Collage4Hint", "textView"]
 - ["C7Collage4Hint", "view"]
-- ["C7Collage4Hint", "xIndent"]
-- ["C7Collage4Hint", "yIndent"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
 - !private ["PSo15NSAccessibility", "addSubview"]
 - !private ["PSo15NSAccessibility", "alignment"]
 - !private ["PSo15NSAccessibility", "backgroundColor"]
@@ -229,12 +213,10 @@ depends-member:
 - !private ["PSo8NSCoding", "isSelectable"]
 - !private ["PSo8NSCoding", "sizeToFit"]
 - !private ["PSo8NSCoding", "string"]
-- !private ["PSo8NSCoding", "systemFont"]
 - !private ["PSo8NSCoding", "textColor"]
 - ["CSo7NSColor", "deinit"]
 - !private ["CSo7NSColor", "init"]
 - !private ["PSo9NSCopying", "init"]
-- !private ["PSo9NSCopying", "systemFont"]
 - !private ["PSo21NSDraggingDestination", "addSubview"]
 - !private ["PSo21NSDraggingDestination", "alignment"]
 - !private ["PSo21NSDraggingDestination", "backgroundColor"]
@@ -256,8 +238,7 @@ depends-member:
 - !private ["PSo16NSDraggingSource", "sizeToFit"]
 - !private ["PSo16NSDraggingSource", "string"]
 - !private ["PSo16NSDraggingSource", "textColor"]
-- ["CSo6NSFont", "deinit"]
-- !private ["CSo6NSFont", "systemFont"]
+- !private ["CSo6NSFont", "init"]
 - !private ["PSo23NSIgnoreMisspelledWords", "alignment"]
 - !private ["PSo23NSIgnoreMisspelledWords", "backgroundColor"]
 - !private ["PSo23NSIgnoreMisspelledWords", "font"]
@@ -268,6 +249,7 @@ depends-member:
 - !private ["PSo23NSIgnoreMisspelledWords", "sizeToFit"]
 - !private ["PSo23NSIgnoreMisspelledWords", "string"]
 - !private ["PSo23NSIgnoreMisspelledWords", "textColor"]
+- !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "alignment"]
 - !private ["CSo8NSObject", "backgroundColor"]
@@ -278,7 +260,6 @@ depends-member:
 - !private ["CSo8NSObject", "isSelectable"]
 - !private ["CSo8NSObject", "sizeToFit"]
 - !private ["CSo8NSObject", "string"]
-- !private ["CSo8NSObject", "systemFont"]
 - !private ["CSo8NSObject", "textColor"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "alignment"]
@@ -290,7 +271,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "isSelectable"]
 - !private ["PSo16NSObjectProtocol", "sizeToFit"]
 - !private ["PSo16NSObjectProtocol", "string"]
-- !private ["PSo16NSObjectProtocol", "systemFont"]
 - !private ["PSo16NSObjectProtocol", "textColor"]
 - !private ["PSo19NSPasteboardReading", "init"]
 - !private ["PSo19NSPasteboardWriting", "init"]
@@ -306,7 +286,7 @@ depends-member:
 - !private ["CSo11NSResponder", "string"]
 - !private ["CSo11NSResponder", "textColor"]
 - !private ["PSo14NSSecureCoding", "init"]
-- !private ["PSo14NSSecureCoding", "systemFont"]
+- !private ["CSo8NSString", "init"]
 - !private ["CSo6NSText", "alignment"]
 - !private ["CSo6NSText", "backgroundColor"]
 - !private ["CSo6NSText", "font"]
@@ -393,8 +373,12 @@ depends-member:
 - !private ["CSo6NSView", "sizeToFit"]
 - !private ["CSo6NSView", "string"]
 - !private ["CSo6NSView", "textColor"]
+- ["Sq", "deinit"]
 - !private ["Ps16RawRepresentable", "center"]
 - ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "alignment"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
@@ -406,7 +390,12 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "sizeToFit"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "string"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textColor"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps26_ExpressibleByColorLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "addSubview"]
 - !private ["Ps9_Hashable", "alignment"]
 - !private ["Ps9_Hashable", "backgroundColor"]
@@ -418,8 +407,8 @@ depends-member:
 - !private ["Ps9_Hashable", "isSelectable"]
 - !private ["Ps9_Hashable", "sizeToFit"]
 - !private ["Ps9_Hashable", "string"]
-- !private ["Ps9_Hashable", "systemFont"]
 - !private ["Ps9_Hashable", "textColor"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
 - "Sb"
@@ -428,13 +417,20 @@ depends-nominal:
 - "VSC6CGRect"
 - "VSC6CGSize"
 - "Ps7CVarArg"
+- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
 - "C7Collage4Hint"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
 - "PSo15NSAccessibility"
 - "PSo30NSAccessibilityElementProtocol"
 - "PSo34NSAccessibilityNavigableStaticText"
@@ -447,14 +443,16 @@ depends-nominal:
 - !private "PSo9NSCopying"
 - "PSo21NSDraggingDestination"
 - "PSo16NSDraggingSource"
-- "CSo6NSFont"
+- !private "CSo6NSFont"
 - "PSo23NSIgnoreMisspelledWords"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo19NSPasteboardReading"
 - !private "PSo19NSPasteboardWriting"
 - "CSo11NSResponder"
 - !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
 - "CSo6NSText"
 - "OSC15NSTextAlignment"
 - "PSo11NSTextInput"
@@ -464,11 +462,20 @@ depends-nominal:
 - "PSo33NSUserInterfaceItemIdentification"
 - "PSo26NSUserInterfaceValidations"
 - "CSo6NSView"
+- "Sq"
 - !private "Ps16RawRepresentable"
 - "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
 - !private "Ps26_ExpressibleByColorLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
@@ -483,4 +490,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "eddafbf81c02f10a2abc2c07c141a7d0"
+interface-hash: "8ac873d985b6474aee8a7cfba00cf1c9"

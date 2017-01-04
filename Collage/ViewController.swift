@@ -17,7 +17,7 @@ enum Position {
     case undefined
 }
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, MouseClickDelegate {
     let menuSize: CGFloat = 200
     let minCanvasXSize: CGFloat = 300
     let minCanvasYSize: CGFloat = 500
@@ -61,9 +61,17 @@ class ViewController: NSViewController {
         
         self.view.window?.isRestorable = false
         
+        // set up error output
         let errorView = NSView(frame: NSRect(x: 0, y: 0, width: 300, height: 30))
         self.view.addSubview(errorView)
         Error.setLogSuperview(view: errorView)
+        
+        // show help at first launch
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        if !launchedBefore {
+            self.helpButtonPressed(NSButton())
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
+        }
     }
     
     override func viewWillAppear() {
@@ -78,7 +86,8 @@ class ViewController: NSViewController {
         
         popUpMenu?.removeFromSuperview()
         popUpMenu?.isActive = false
-        help?.hide()
+        help?.removeFromSuperview()
+        help?.isActive = false
         
         // if user changes frame color
         let point = NSPoint(x: mouseLocation.x - canvas.frame.width, y: mouseLocation.y)
@@ -110,7 +119,8 @@ class ViewController: NSViewController {
             popUpMenu?.locateView(at: CGPoint(x: canvas.frame.width / 2, y: canvas.frame.height / 2))
             self.view.addSubview(popUpMenu!)
             popUpMenu?.isActive = true
-            help?.hide()
+            help?.removeFromSuperview()
+            help?.isActive = false
         }
     }
     
@@ -220,6 +230,9 @@ class ViewController: NSViewController {
     override func viewDidLayout() {
         super.viewDidLayout()
         
+        popUpMenu?.locateView(at: NSPoint(x: canvas.frame.midX, y: canvas.frame.midY))
+        help?.locateView(at: NSPoint(x: canvas.frame.midX, y: canvas.frame.midY))
+        
         // resize canvas and its subviews
         self.canvas.frame = NSRect(x: 0, y: 0, width: self.view.frame.width - self.menuSize, height: self.view.frame.height)
         self.view.setFrameOrigin(NSPoint(x: 0, y: 0))
@@ -247,7 +260,8 @@ class ViewController: NSViewController {
     }
     
     @IBAction func shareOnSocialNetwork(_ sender: NSButton) {
-        help?.hide()
+        help?.removeFromSuperview()
+        help?.isActive = false
         let text = "I made a beautiful picture using this Collage app!"
         let content: [Any] = [text, saver.getSnapshot(view: self.canvas)]
         switch sender.tag {
@@ -263,6 +277,13 @@ class ViewController: NSViewController {
     @IBAction func helpButtonPressed(_ sender: NSButton) {
         popUpMenu?.removeFromSuperview()
         popUpMenu?.isActive = false
-        help?.changeState()
+        if help!.isActive {
+            help!.removeFromSuperview()
+            help!.isActive = false
+        } else {
+            help!.locateView(at: NSPoint(x: canvas.frame.midX, y: canvas.frame.midY))
+            canvas.addSubview(help!)
+            help!.isActive = true
+        }
     }
 }

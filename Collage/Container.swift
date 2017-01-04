@@ -38,7 +38,7 @@ class Container {
         return Position.undefined
     }
     static let minSize: CGFloat = 80
-    static let defaultImageQuantity = 11
+    static let defaultImageQuantity = 10
     static var frameSize: CGFloat = 7
 
     init(border: Rectangle, outerView: NSView, image: NSImage? = NSImage.init(named: "Non-existing image")) {
@@ -382,11 +382,13 @@ class Container {
             return
         }
         if let scrollView = self.scrollView, let image = self.image {
-            let magnification = scrollView.magnification
+            /*let magnification = scrollView.magnification
             scrollView.frame = self.border.framed().toNSRect()
             scrollView.updateLayer()
             scrollView.minMagnification = max(scrollView.frame.size.height / image.size.height, scrollView.frame.size.width / image.size.width)
-            scrollView.magnification = magnification
+            scrollView.magnification = max(magnification, scrollView.minMagnification)*/
+            //scrollView.frame = self.border.framed().toNSRect()
+            scrollView.update()
         }
     }
 }
