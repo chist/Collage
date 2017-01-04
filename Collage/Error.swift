@@ -14,10 +14,11 @@ enum ErrorType: Swift.Error {
     case unknownError
 }
 
-class Error {
+class Error: NSObject {
     static let logViewFrame = NSRect(x: 0, y: 0, width: 300, height: 25)
     static var logSuperview: NSView?
     static let textField = NSTextField()
+    static let removeTime = 3
     
     static func setLogSuperview(view: NSView) {
         self.logSuperview = view
@@ -28,16 +29,24 @@ class Error {
             print("No logSuperview found!")
             return
         }
-        
         textField.frame = self.logViewFrame
+        
+        Error.textField.textColor = NSColor.black
+        Error.textField.font = NSFont.systemFont(ofSize: 16)
+        Error.textField.isEditable = false
+        Error.textField.isSelectable = false
+        
         textField.stringValue = string
-        textField.textColor = NSColor.black
-        textField.font = NSFont.systemFont(ofSize: 14)
-        textField.isEditable = false
-        textField.isSelectable = false
-        textField.backgroundColor = NSColor(calibratedRed: 0.6, green: 0.6, blue: 0.6, alpha: 1)
-        textField.isBordered = false
-        textField.sizeToFit()
-        logSuperview!.addSubview(textField)
+        
+        if textField.superview == nil {
+            logSuperview!.addSubview(textField)
+        }
+        
+        Timer.scheduledTimer(timeInterval: TimeInterval(removeTime), target: self, selector: #selector(removeMessage), userInfo: nil, repeats: false)
+    }
+    
+    
+    static func removeMessage() {
+        Error.textField.removeFromSuperview()
     }
 }

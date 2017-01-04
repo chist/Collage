@@ -21,11 +21,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
-                                            <connections>
-                                                <segue destination="Eam-3b-h2a" kind="show" id="8KU-dW-ejG"/>
-                                            </connections>
-                                        </menuItem>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
                                         <menuItem title="Services" id="NMo-om-nkz">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -650,70 +646,6 @@
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
         <!--Window Controller-->
-        <scene sceneID="t2b-Lx-fzx">
-            <objects>
-                <windowController showSeguePresentationStyle="single" id="Eam-3b-h2a" sceneMemberID="viewController">
-                    <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="0P8-nm-nx3">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="488" y="461" width="480" height="200"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
-                        <value key="minSize" type="size" width="480" height="200"/>
-                        <value key="maxSize" type="size" width="480" height="200"/>
-                    </window>
-                    <connections>
-                        <segue destination="A4g-QF-R0x" kind="relationship" relationship="window.shadowedContentViewController" id="8ri-Xz-q5n"/>
-                    </connections>
-                </windowController>
-                <customObject id="o4i-aC-Pzz" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="663" y="71"/>
-        </scene>
-        <!--Preferences View Controller-->
-        <scene sceneID="GDi-LF-bqV">
-            <objects>
-                <viewController id="A4g-QF-R0x" customClass="PreferencesViewController" customModule="Collage" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="A0b-Z2-B5j">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="200"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PBi-cP-dBH">
-                                <rect key="frame" x="69" y="144" width="173" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Directory for saved files:" id="IbT-4g-kQr">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WcG-8K-lK6">
-                                <rect key="frame" x="242" y="139" width="160" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <popUpButtonCell key="cell" type="push" title="Documents" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="WhQ-I6-ABY" id="sHj-As-iit">
-                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="menu"/>
-                                    <menu key="menu" id="Qkv-94-mX9">
-                                        <items>
-                                            <menuItem title="Documents" state="on" id="WhQ-I6-ABY"/>
-                                            <menuItem title="Choose another..." tag="1" id="a4N-y7-FPw"/>
-                                        </items>
-                                    </menu>
-                                </popUpButtonCell>
-                                <connections>
-                                    <action selector="chooseDirectoryButtonPressed:" target="A4g-QF-R0x" id="kVY-yw-QNT"/>
-                                </connections>
-                            </popUpButton>
-                        </subviews>
-                    </view>
-                    <connections>
-                        <outlet property="chooseDirectoryButton" destination="WcG-8K-lK6" id="yTx-HU-tkT"/>
-                    </connections>
-                </viewController>
-                <customObject id="w4A-Dj-lQg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="663" y="519"/>
-        </scene>
-        <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController showSeguePresentationStyle="single" id="B8D-0N-5wS" sceneMemberID="viewController">
@@ -730,7 +662,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-11" y="519"/>
+            <point key="canvasLocation" x="84" y="346"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">

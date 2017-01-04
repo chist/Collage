@@ -7,23 +7,23 @@ provides-member:
 - ["C7Collage4Help", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "NSImage"
 - "Hint"
-- "NSRect"
-- "NSPoint"
-- "BooleanLiteralType"
 - !private "NSImageView"
+- "NSPoint"
 - "StringLiteralType"
-- !private "/"
-- "AssignmentPrecedence"
-- !private "Rectangle"
-- "Bool"
-- !private "NSImageScaling"
-- "CGSize"
-- "NSView"
 - "Help"
+- "BooleanLiteralType"
+- !private "/"
+- "NSImage"
+- "NSView"
+- "CGSize"
+- "NSRect"
+- !private "Rectangle"
 - !private "-"
 - !private "CGPoint"
+- "Bool"
+- "AssignmentPrecedence"
+- !private "NSImageScaling"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps9AnyObject", "CGPoint"]

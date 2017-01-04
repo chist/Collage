@@ -6,12 +6,12 @@ provides-nominal:
 provides-member:
 - ["C7Collage11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidFinishLaunching"
 - "applicationWillTerminate"
+- "applicationDidFinishLaunching"
 depends-top-level:
-- "AppDelegate"
-- "NSObject"
 - "Notification"
+- "NSObject"
+- "AppDelegate"
 - "NSApplicationDelegate"
 depends-member:
 - ["Ps9AnyObject", "application"]

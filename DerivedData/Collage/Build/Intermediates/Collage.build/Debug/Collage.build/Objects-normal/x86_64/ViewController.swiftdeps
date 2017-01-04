@@ -2,7 +2,6 @@
 provides-top-level:
 - "Position"
 - "ViewController"
-- "distance"
 - "=="
 provides-nominal:
 - "O7Collage8Position"
@@ -11,97 +10,99 @@ provides-member:
 - ["O7Collage8Position", ""]
 - ["C7Collage14ViewController", ""]
 provides-dynamic-lookup:
-- "minCanvasYSize"
-- "frameWidthSliderChanged"
+- "savedCount"
+- "detectMouseDrag"
+- "minCanvasXSize"
 - "colorPanel"
-- "helpButtonPressed"
-- "locationStarted"
 - "popUpMenu"
-- "isTracking"
-- "canvas"
-- "viewDidLayout"
 - "menuButton"
+- "canvas"
+- "yConstraint"
+- "helpButtonPressed"
+- "viewDidLoad"
+- "rightMouseDown"
+- "updateConstrains"
+- "locationStarted"
+- "shareOnSocialNetwork"
+- "frameWidthSlider"
+- "saveButtonPressed"
+- "isTracking"
+- "menuView"
+- "currentColor"
+- "count"
+- "frameWidthSliderChanged"
+- "mouseDown"
+- "mouseLocation"
+- "viewDidLayout"
+- "minCanvasYSize"
+- "mouseUp"
+- "mouseDragged"
+- "menuBackground"
+- "actionStarted"
 - "xConstraint"
 - "menuSize"
-- "count"
-- "rightMouseDown"
-- "mouseDown"
-- "yConstraint"
-- "viewDidLoad"
-- "saveButtonPressed"
-- "actionStarted"
-- "updateConstrains"
-- "frameWidthSlider"
-- "shareOnSocialNetwork"
-- "mouseDragged"
-- "detectMouseDrag"
-- "mouseUp"
-- "menuBackground"
-- "minCanvasXSize"
-- "mouseLocation"
-- "menuView"
 - "startedInExtra"
-- "savedCount"
+- "viewWillAppear"
 depends-top-level:
-- !private "||"
-- !private "NSColor"
-- "NSView"
-- "CGPoint"
-- !private ">"
-- "NSButton"
-- "NSSliderCell"
-- "CanvasController"
-- "CGFloat"
-- !private "max"
-- !private "-"
+- !private "~="
 - !private "-="
 - !private "&&"
-- !private "UserDefaults"
-- "distance"
-- "BooleanLiteralType"
-- "Help"
-- !private "NSRect"
-- !private "StringLiteralType"
-- !private "Timer"
-- !private "<"
+- !private "||"
 - !private "NSSharingServiceNamePostOnTwitter"
-- !private "+"
-- "Saver"
-- "ViewController"
-- !private "~="
+- "CGColor"
 - !private "NSSharingServiceNamePostOnFacebook"
-- "NSImageView"
-- !private "sqrt"
+- "NSEvent"
+- !private "NSColor"
+- !private ">"
 - "AssignmentPrecedence"
 - "=="
-- "Int"
-- !private "print"
-- !private "atan2"
-- "NSEvent"
-- "NSPoint"
-- "AnyObject"
-- !private "CGSize"
-- !private "*"
-- !private "/"
-- !private "Array"
-- !private "+="
-- !private "NSSharingService"
-- "NSViewController"
-- !private "Container"
+- !private "CGPoint"
+- "NSButton"
 - "PopUpMenuView"
-- !private "CGColor"
+- "NSSliderCell"
+- !private "atan2"
+- !private "max"
+- "CGFloat"
+- "Saver"
+- !private "CGSize"
+- "NSPoint"
 - "Position"
+- "NSImageView"
+- "AnyObject"
+- !private "hypot"
+- "NSView"
+- !private "*"
+- !private "Error"
+- "BooleanLiteralType"
+- !private "NSRect"
+- "Help"
+- "ViewController"
+- !private "/"
+- "NSViewController"
+- !private "+"
+- !private "Array"
+- !private "Container"
+- !private "StringLiteralType"
+- !private "UserDefaults"
+- !private "-"
+- !private "Timer"
+- !private "+="
+- !private "<"
+- !private "NSSharingService"
+- "Int"
+- "CanvasController"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps16AbsoluteValuable", "pi"]
 - !private ["Ps9AnyObject", "Array"]
-- !private ["Ps9AnyObject", "CGColor"]
+- ["Ps9AnyObject", "CGColor"]
 - !private ["Ps9AnyObject", "CGFloat"]
 - !private ["Ps9AnyObject", "CGPoint"]
 - !private ["Ps9AnyObject", "CGSize"]
 - !private ["Ps9AnyObject", "CanvasController"]
 - !private ["Ps9AnyObject", "Container"]
+- !private ["Ps9AnyObject", "Error"]
 - !private ["Ps9AnyObject", "Help"]
 - !private ["Ps9AnyObject", "NSColor"]
 - !private ["Ps9AnyObject", "NSEvent"]
@@ -110,6 +111,7 @@ depends-member:
 - !private ["Ps9AnyObject", "NSSharingService"]
 - !private ["Ps9AnyObject", "NSSharingServiceNamePostOnFacebook"]
 - !private ["Ps9AnyObject", "NSSharingServiceNamePostOnTwitter"]
+- !private ["Ps9AnyObject", "NSView"]
 - !private ["Ps9AnyObject", "PopUpMenuView"]
 - ["Ps9AnyObject", "Position"]
 - ["Ps9AnyObject", "Saver"]
@@ -130,9 +132,9 @@ depends-member:
 - !private ["Ps9AnyObject", "containsInFrame"]
 - !private ["Ps9AnyObject", "contentMinSize"]
 - ["Ps9AnyObject", "count"]
+- ["Ps9AnyObject", "currentColor"]
 - ["Ps9AnyObject", "detectMouseDrag"]
 - !private ["Ps9AnyObject", "dictionaryRepresentation"]
-- !private ["Ps9AnyObject", "distance"]
 - !private ["Ps9AnyObject", "doubleValue"]
 - !private ["Ps9AnyObject", "findMinWindowSize"]
 - !private ["Ps9AnyObject", "first"]
@@ -144,6 +146,7 @@ depends-member:
 - ["Ps9AnyObject", "help"]
 - ["Ps9AnyObject", "helpButtonPressed"]
 - !private ["Ps9AnyObject", "hide"]
+- !private ["Ps9AnyObject", "hypot"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isActive"]
 - !private ["Ps9AnyObject", "isInExtraSpace"]
@@ -169,7 +172,6 @@ depends-member:
 - !private ["Ps9AnyObject", "perform"]
 - ["Ps9AnyObject", "popUpMenu"]
 - ["Ps9AnyObject", "position"]
-- !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "rearrange"]
 - !private ["Ps9AnyObject", "removeFromSuperview"]
 - !private ["Ps9AnyObject", "removeObject"]
@@ -183,6 +185,7 @@ depends-member:
 - !private ["Ps9AnyObject", "second"]
 - !private ["Ps9AnyObject", "setFrame"]
 - !private ["Ps9AnyObject", "setFrameOrigin"]
+- !private ["Ps9AnyObject", "setLogSuperview"]
 - ["Ps9AnyObject", "shareOnSocialNetwork"]
 - !private ["Ps9AnyObject", "standard"]
 - ["Ps9AnyObject", "startedInExtra"]
@@ -191,6 +194,8 @@ depends-member:
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLayout"]
 - ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", "viewWillAppear"]
+- !private ["Ps9AnyObject", "wantsLayer"]
 - !private ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", "xConstraint"]
 - ["Ps9AnyObject", "yConstraint"]
@@ -216,7 +221,7 @@ depends-member:
 - !private ["CSo7CALayer", "backgroundColor"]
 - !private ["PSo13CAMediaTiming", "backgroundColor"]
 - ["CSo7CGColor", "deinit"]
-- !private ["CSo7CGColor", "init"]
+- ["CSo7CGColor", "init"]
 - !private ["V12CoreGraphics7CGFloat", "Stride"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["V12CoreGraphics7CGFloat", "init"]
@@ -239,12 +244,13 @@ depends-member:
 - !private ["VSC6CGSize", "init"]
 - !private ["VSC6CGSize", "width"]
 - !private ["Ps7CVarArg", "Array"]
-- !private ["Ps7CVarArg", "CGColor"]
+- ["Ps7CVarArg", "CGColor"]
 - !private ["Ps7CVarArg", "CGFloat"]
 - !private ["Ps7CVarArg", "CGPoint"]
 - !private ["Ps7CVarArg", "CGSize"]
 - !private ["Ps7CVarArg", "CanvasController"]
 - !private ["Ps7CVarArg", "Container"]
+- !private ["Ps7CVarArg", "Error"]
 - !private ["Ps7CVarArg", "Help"]
 - !private ["Ps7CVarArg", "Iterator"]
 - !private ["Ps7CVarArg", "NSColor"]
@@ -254,6 +260,7 @@ depends-member:
 - !private ["Ps7CVarArg", "NSSharingService"]
 - !private ["Ps7CVarArg", "NSSharingServiceNamePostOnFacebook"]
 - !private ["Ps7CVarArg", "NSSharingServiceNamePostOnTwitter"]
+- !private ["Ps7CVarArg", "NSView"]
 - !private ["Ps7CVarArg", "PopUpMenuView"]
 - ["Ps7CVarArg", "Position"]
 - ["Ps7CVarArg", "Saver"]
@@ -272,9 +279,9 @@ depends-member:
 - ["Ps7CVarArg", "colorPanel"]
 - !private ["Ps7CVarArg", "contentMinSize"]
 - ["Ps7CVarArg", "count"]
+- ["Ps7CVarArg", "currentColor"]
 - ["Ps7CVarArg", "detectMouseDrag"]
 - !private ["Ps7CVarArg", "dictionaryRepresentation"]
-- !private ["Ps7CVarArg", "distance"]
 - !private ["Ps7CVarArg", "doubleValue"]
 - !private ["Ps7CVarArg", "first"]
 - !private ["Ps7CVarArg", "frame"]
@@ -283,6 +290,7 @@ depends-member:
 - !private ["Ps7CVarArg", "hashValue"]
 - ["Ps7CVarArg", "help"]
 - ["Ps7CVarArg", "helpButtonPressed"]
+- !private ["Ps7CVarArg", "hypot"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "isActive"]
 - !private ["Ps7CVarArg", "isRestorable"]
@@ -309,7 +317,6 @@ depends-member:
 - !private ["Ps7CVarArg", "pi"]
 - ["Ps7CVarArg", "popUpMenu"]
 - ["Ps7CVarArg", "position"]
-- !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "removeFromSuperview"]
 - !private ["Ps7CVarArg", "removeObject"]
 - ["Ps7CVarArg", "rightMouseDown"]
@@ -320,6 +327,7 @@ depends-member:
 - !private ["Ps7CVarArg", "second"]
 - !private ["Ps7CVarArg", "setFrame"]
 - !private ["Ps7CVarArg", "setFrameOrigin"]
+- !private ["Ps7CVarArg", "setLogSuperview"]
 - ["Ps7CVarArg", "shareOnSocialNetwork"]
 - !private ["Ps7CVarArg", "standard"]
 - ["Ps7CVarArg", "startedInExtra"]
@@ -328,6 +336,8 @@ depends-member:
 - !private ["Ps7CVarArg", "view"]
 - ["Ps7CVarArg", "viewDidLayout"]
 - ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", "viewWillAppear"]
+- !private ["Ps7CVarArg", "wantsLayer"]
 - !private ["Ps7CVarArg", "window"]
 - ["Ps7CVarArg", "xConstraint"]
 - ["Ps7CVarArg", "yConstraint"]
@@ -357,12 +367,13 @@ depends-member:
 - !private ["Vs20CountableClosedRange", "deinit"]
 - !private ["Vs14CountableRange", "deinit"]
 - !private ["Ps28CustomDebugStringConvertible", "Array"]
-- !private ["Ps28CustomDebugStringConvertible", "CGColor"]
+- ["Ps28CustomDebugStringConvertible", "CGColor"]
 - !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
 - !private ["Ps28CustomDebugStringConvertible", "CGPoint"]
 - !private ["Ps28CustomDebugStringConvertible", "CGSize"]
 - !private ["Ps28CustomDebugStringConvertible", "CanvasController"]
 - !private ["Ps28CustomDebugStringConvertible", "Container"]
+- !private ["Ps28CustomDebugStringConvertible", "Error"]
 - !private ["Ps28CustomDebugStringConvertible", "Help"]
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "NSColor"]
@@ -372,6 +383,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSSharingService"]
 - !private ["Ps28CustomDebugStringConvertible", "NSSharingServiceNamePostOnFacebook"]
 - !private ["Ps28CustomDebugStringConvertible", "NSSharingServiceNamePostOnTwitter"]
+- !private ["Ps28CustomDebugStringConvertible", "NSView"]
 - !private ["Ps28CustomDebugStringConvertible", "PopUpMenuView"]
 - ["Ps28CustomDebugStringConvertible", "Position"]
 - ["Ps28CustomDebugStringConvertible", "Saver"]
@@ -390,9 +402,9 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "contains"]
 - !private ["Ps28CustomDebugStringConvertible", "contentMinSize"]
 - ["Ps28CustomDebugStringConvertible", "count"]
+- ["Ps28CustomDebugStringConvertible", "currentColor"]
 - ["Ps28CustomDebugStringConvertible", "detectMouseDrag"]
 - !private ["Ps28CustomDebugStringConvertible", "dictionaryRepresentation"]
-- !private ["Ps28CustomDebugStringConvertible", "distance"]
 - !private ["Ps28CustomDebugStringConvertible", "doubleValue"]
 - !private ["Ps28CustomDebugStringConvertible", "first"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
@@ -401,6 +413,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "height"]
 - ["Ps28CustomDebugStringConvertible", "help"]
 - ["Ps28CustomDebugStringConvertible", "helpButtonPressed"]
+- !private ["Ps28CustomDebugStringConvertible", "hypot"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "isActive"]
 - !private ["Ps28CustomDebugStringConvertible", "isRestorable"]
@@ -430,7 +443,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "perform"]
 - ["Ps28CustomDebugStringConvertible", "popUpMenu"]
 - ["Ps28CustomDebugStringConvertible", "position"]
-- !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "removeFromSuperview"]
 - !private ["Ps28CustomDebugStringConvertible", "removeObject"]
 - ["Ps28CustomDebugStringConvertible", "rightMouseDown"]
@@ -441,6 +453,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "second"]
 - !private ["Ps28CustomDebugStringConvertible", "setFrame"]
 - !private ["Ps28CustomDebugStringConvertible", "setFrameOrigin"]
+- !private ["Ps28CustomDebugStringConvertible", "setLogSuperview"]
 - ["Ps28CustomDebugStringConvertible", "shareOnSocialNetwork"]
 - ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "standard"]
@@ -450,6 +463,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLayout"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
+- !private ["Ps28CustomDebugStringConvertible", "wantsLayer"]
 - !private ["Ps28CustomDebugStringConvertible", "width"]
 - !private ["Ps28CustomDebugStringConvertible", "window"]
 - !private ["Ps28CustomDebugStringConvertible", "x"]
@@ -492,12 +507,13 @@ depends-member:
 - !private ["Ps17CustomReflectable", "x"]
 - !private ["Ps17CustomReflectable", "y"]
 - !private ["Ps23CustomStringConvertible", "Array"]
-- !private ["Ps23CustomStringConvertible", "CGColor"]
+- ["Ps23CustomStringConvertible", "CGColor"]
 - !private ["Ps23CustomStringConvertible", "CGFloat"]
 - !private ["Ps23CustomStringConvertible", "CGPoint"]
 - !private ["Ps23CustomStringConvertible", "CGSize"]
 - !private ["Ps23CustomStringConvertible", "CanvasController"]
 - !private ["Ps23CustomStringConvertible", "Container"]
+- !private ["Ps23CustomStringConvertible", "Error"]
 - !private ["Ps23CustomStringConvertible", "Help"]
 - !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "NSColor"]
@@ -507,6 +523,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "NSSharingService"]
 - !private ["Ps23CustomStringConvertible", "NSSharingServiceNamePostOnFacebook"]
 - !private ["Ps23CustomStringConvertible", "NSSharingServiceNamePostOnTwitter"]
+- !private ["Ps23CustomStringConvertible", "NSView"]
 - !private ["Ps23CustomStringConvertible", "PopUpMenuView"]
 - ["Ps23CustomStringConvertible", "Position"]
 - ["Ps23CustomStringConvertible", "Saver"]
@@ -526,9 +543,9 @@ depends-member:
 - ["Ps23CustomStringConvertible", "colorPanel"]
 - !private ["Ps23CustomStringConvertible", "contentMinSize"]
 - ["Ps23CustomStringConvertible", "count"]
+- ["Ps23CustomStringConvertible", "currentColor"]
 - ["Ps23CustomStringConvertible", "detectMouseDrag"]
 - !private ["Ps23CustomStringConvertible", "dictionaryRepresentation"]
-- !private ["Ps23CustomStringConvertible", "distance"]
 - !private ["Ps23CustomStringConvertible", "doubleValue"]
 - !private ["Ps23CustomStringConvertible", "first"]
 - !private ["Ps23CustomStringConvertible", "frame"]
@@ -537,6 +554,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "hashValue"]
 - ["Ps23CustomStringConvertible", "help"]
 - ["Ps23CustomStringConvertible", "helpButtonPressed"]
+- !private ["Ps23CustomStringConvertible", "hypot"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "isActive"]
 - !private ["Ps23CustomStringConvertible", "isRestorable"]
@@ -563,7 +581,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "pi"]
 - ["Ps23CustomStringConvertible", "popUpMenu"]
 - ["Ps23CustomStringConvertible", "position"]
-- !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "removeFromSuperview"]
 - !private ["Ps23CustomStringConvertible", "removeObject"]
 - ["Ps23CustomStringConvertible", "rightMouseDown"]
@@ -574,6 +591,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "second"]
 - !private ["Ps23CustomStringConvertible", "setFrame"]
 - !private ["Ps23CustomStringConvertible", "setFrameOrigin"]
+- !private ["Ps23CustomStringConvertible", "setLogSuperview"]
 - ["Ps23CustomStringConvertible", "shareOnSocialNetwork"]
 - !private ["Ps23CustomStringConvertible", "standard"]
 - ["Ps23CustomStringConvertible", "startedInExtra"]
@@ -582,6 +600,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLayout"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", "viewWillAppear"]
+- !private ["Ps23CustomStringConvertible", "wantsLayer"]
 - !private ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", "xConstraint"]
 - ["Ps23CustomStringConvertible", "yConstraint"]
@@ -595,12 +615,13 @@ depends-member:
 - !private ["Sd", "Stride"]
 - ["Sd", "deinit"]
 - !private ["Ps9Equatable", "Array"]
-- !private ["Ps9Equatable", "CGColor"]
+- ["Ps9Equatable", "CGColor"]
 - !private ["Ps9Equatable", "CGFloat"]
 - !private ["Ps9Equatable", "CGPoint"]
 - !private ["Ps9Equatable", "CGSize"]
 - !private ["Ps9Equatable", "CanvasController"]
 - !private ["Ps9Equatable", "Container"]
+- !private ["Ps9Equatable", "Error"]
 - !private ["Ps9Equatable", "Help"]
 - !private ["Ps9Equatable", "NSColor"]
 - !private ["Ps9Equatable", "NSEvent"]
@@ -609,6 +630,7 @@ depends-member:
 - !private ["Ps9Equatable", "NSSharingService"]
 - !private ["Ps9Equatable", "NSSharingServiceNamePostOnFacebook"]
 - !private ["Ps9Equatable", "NSSharingServiceNamePostOnTwitter"]
+- !private ["Ps9Equatable", "NSView"]
 - !private ["Ps9Equatable", "PopUpMenuView"]
 - ["Ps9Equatable", "Position"]
 - ["Ps9Equatable", "Saver"]
@@ -630,9 +652,9 @@ depends-member:
 - !private ["Ps9Equatable", "contains"]
 - !private ["Ps9Equatable", "contentMinSize"]
 - ["Ps9Equatable", "count"]
+- ["Ps9Equatable", "currentColor"]
 - ["Ps9Equatable", "detectMouseDrag"]
 - !private ["Ps9Equatable", "dictionaryRepresentation"]
-- !private ["Ps9Equatable", "distance"]
 - !private ["Ps9Equatable", "doubleValue"]
 - !private ["Ps9Equatable", "first"]
 - !private ["Ps9Equatable", "frame"]
@@ -642,6 +664,7 @@ depends-member:
 - !private ["Ps9Equatable", "height"]
 - ["Ps9Equatable", "help"]
 - ["Ps9Equatable", "helpButtonPressed"]
+- !private ["Ps9Equatable", "hypot"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "isActive"]
 - !private ["Ps9Equatable", "isRestorable"]
@@ -672,7 +695,6 @@ depends-member:
 - !private ["Ps9Equatable", "pi"]
 - ["Ps9Equatable", "popUpMenu"]
 - ["Ps9Equatable", "position"]
-- !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "removeFromSuperview"]
 - !private ["Ps9Equatable", "removeObject"]
 - ["Ps9Equatable", "right"]
@@ -684,6 +706,7 @@ depends-member:
 - !private ["Ps9Equatable", "second"]
 - !private ["Ps9Equatable", "setFrame"]
 - !private ["Ps9Equatable", "setFrameOrigin"]
+- !private ["Ps9Equatable", "setLogSuperview"]
 - ["Ps9Equatable", "shareOnSocialNetwork"]
 - !private ["Ps9Equatable", "standard"]
 - ["Ps9Equatable", "startedInExtra"]
@@ -693,6 +716,8 @@ depends-member:
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLayout"]
 - ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", "viewWillAppear"]
+- !private ["Ps9Equatable", "wantsLayer"]
 - !private ["Ps9Equatable", "width"]
 - !private ["Ps9Equatable", "window"]
 - !private ["Ps9Equatable", "x"]
@@ -700,6 +725,7 @@ depends-member:
 - !private ["Ps9Equatable", "y"]
 - ["Ps9Equatable", "yConstraint"]
 - ["Ps9Equatable", ""]
+- !private ["C7Collage5Error", "setLogSuperview"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
 - !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "init"]
@@ -727,12 +753,13 @@ depends-member:
 - !private ["Ps13FloatingPoint", "init"]
 - !private ["Ps13FloatingPoint", "pi"]
 - !private ["Ps8Hashable", "Array"]
-- !private ["Ps8Hashable", "CGColor"]
+- ["Ps8Hashable", "CGColor"]
 - !private ["Ps8Hashable", "CGFloat"]
 - !private ["Ps8Hashable", "CGPoint"]
 - !private ["Ps8Hashable", "CGSize"]
 - !private ["Ps8Hashable", "CanvasController"]
 - !private ["Ps8Hashable", "Container"]
+- !private ["Ps8Hashable", "Error"]
 - !private ["Ps8Hashable", "Help"]
 - !private ["Ps8Hashable", "NSColor"]
 - !private ["Ps8Hashable", "NSEvent"]
@@ -741,6 +768,7 @@ depends-member:
 - !private ["Ps8Hashable", "NSSharingService"]
 - !private ["Ps8Hashable", "NSSharingServiceNamePostOnFacebook"]
 - !private ["Ps8Hashable", "NSSharingServiceNamePostOnTwitter"]
+- !private ["Ps8Hashable", "NSView"]
 - !private ["Ps8Hashable", "PopUpMenuView"]
 - ["Ps8Hashable", "Position"]
 - ["Ps8Hashable", "Saver"]
@@ -761,9 +789,9 @@ depends-member:
 - ["Ps8Hashable", "colorPanel"]
 - !private ["Ps8Hashable", "contentMinSize"]
 - ["Ps8Hashable", "count"]
+- ["Ps8Hashable", "currentColor"]
 - ["Ps8Hashable", "detectMouseDrag"]
 - !private ["Ps8Hashable", "dictionaryRepresentation"]
-- !private ["Ps8Hashable", "distance"]
 - !private ["Ps8Hashable", "doubleValue"]
 - !private ["Ps8Hashable", "first"]
 - !private ["Ps8Hashable", "frame"]
@@ -772,6 +800,7 @@ depends-member:
 - ["Ps8Hashable", "hashValue"]
 - ["Ps8Hashable", "help"]
 - ["Ps8Hashable", "helpButtonPressed"]
+- !private ["Ps8Hashable", "hypot"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "isActive"]
 - !private ["Ps8Hashable", "isRestorable"]
@@ -798,7 +827,6 @@ depends-member:
 - !private ["Ps8Hashable", "pi"]
 - ["Ps8Hashable", "popUpMenu"]
 - ["Ps8Hashable", "position"]
-- !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "removeFromSuperview"]
 - !private ["Ps8Hashable", "removeObject"]
 - ["Ps8Hashable", "right"]
@@ -810,6 +838,7 @@ depends-member:
 - !private ["Ps8Hashable", "second"]
 - !private ["Ps8Hashable", "setFrame"]
 - !private ["Ps8Hashable", "setFrameOrigin"]
+- !private ["Ps8Hashable", "setLogSuperview"]
 - ["Ps8Hashable", "shareOnSocialNetwork"]
 - !private ["Ps8Hashable", "standard"]
 - ["Ps8Hashable", "startedInExtra"]
@@ -819,6 +848,8 @@ depends-member:
 - !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLayout"]
 - ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", "viewWillAppear"]
+- !private ["Ps8Hashable", "wantsLayer"]
 - !private ["Ps8Hashable", "window"]
 - ["Ps8Hashable", "xConstraint"]
 - ["Ps8Hashable", "yConstraint"]
@@ -827,7 +858,6 @@ depends-member:
 - ["C7Collage4Help", "deinit"]
 - !private ["C7Collage4Help", "hide"]
 - !private ["C7Collage4Help", "init"]
-- !private ["C7Collage4Help", "isActive"]
 - ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Iterator"]
 - !private ["Ps9Indexable", "_Element"]
@@ -897,6 +927,7 @@ depends-member:
 - !private ["PSo15NSAccessibility", "setFrame"]
 - !private ["PSo15NSAccessibility", "setFrameOrigin"]
 - !private ["PSo15NSAccessibility", "tag"]
+- !private ["PSo15NSAccessibility", "wantsLayer"]
 - !private ["PSo15NSAccessibility", "window"]
 - !private ["PSo21NSAccessibilityButton", "tag"]
 - !private ["PSo30NSAccessibilityElementProtocol", "addSubview"]
@@ -914,6 +945,7 @@ depends-member:
 - !private ["PSo30NSAccessibilityElementProtocol", "setFrame"]
 - !private ["PSo30NSAccessibilityElementProtocol", "setFrameOrigin"]
 - !private ["PSo30NSAccessibilityElementProtocol", "tag"]
+- !private ["PSo30NSAccessibilityElementProtocol", "wantsLayer"]
 - !private ["PSo30NSAccessibilityElementProtocol", "window"]
 - !private ["PSo20NSAccessibilityImage", "frame"]
 - !private ["CSo12NSActionCell", "doubleValue"]
@@ -931,6 +963,7 @@ depends-member:
 - !private ["PSo29NSAnimatablePropertyContainer", "setFrame"]
 - !private ["PSo29NSAnimatablePropertyContainer", "setFrameOrigin"]
 - !private ["PSo29NSAnimatablePropertyContainer", "tag"]
+- !private ["PSo29NSAnimatablePropertyContainer", "wantsLayer"]
 - !private ["PSo29NSAnimatablePropertyContainer", "window"]
 - !private ["PSo25NSAppearanceCustomization", "addSubview"]
 - !private ["PSo25NSAppearanceCustomization", "contentMinSize"]
@@ -946,18 +979,20 @@ depends-member:
 - !private ["PSo25NSAppearanceCustomization", "setFrame"]
 - !private ["PSo25NSAppearanceCustomization", "setFrameOrigin"]
 - !private ["PSo25NSAppearanceCustomization", "tag"]
+- !private ["PSo25NSAppearanceCustomization", "wantsLayer"]
 - !private ["PSo25NSAppearanceCustomization", "window"]
 - ["CSo8NSButton", "deinit"]
 - !private ["CSo8NSButton", "tag"]
 - !private ["CSo6NSCell", "doubleValue"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "Array"]
-- !private ["PSo8NSCoding", "CGColor"]
+- ["PSo8NSCoding", "CGColor"]
 - !private ["PSo8NSCoding", "CGFloat"]
 - !private ["PSo8NSCoding", "CGPoint"]
 - !private ["PSo8NSCoding", "CGSize"]
 - !private ["PSo8NSCoding", "CanvasController"]
 - !private ["PSo8NSCoding", "Container"]
+- !private ["PSo8NSCoding", "Error"]
 - !private ["PSo8NSCoding", "Help"]
 - !private ["PSo8NSCoding", "NSColor"]
 - !private ["PSo8NSCoding", "NSEvent"]
@@ -966,6 +1001,7 @@ depends-member:
 - !private ["PSo8NSCoding", "NSSharingService"]
 - !private ["PSo8NSCoding", "NSSharingServiceNamePostOnFacebook"]
 - !private ["PSo8NSCoding", "NSSharingServiceNamePostOnTwitter"]
+- !private ["PSo8NSCoding", "NSView"]
 - !private ["PSo8NSCoding", "PopUpMenuView"]
 - ["PSo8NSCoding", "Position"]
 - ["PSo8NSCoding", "Saver"]
@@ -981,14 +1017,15 @@ depends-member:
 - ["PSo8NSCoding", "colorPanel"]
 - !private ["PSo8NSCoding", "contentMinSize"]
 - ["PSo8NSCoding", "count"]
+- ["PSo8NSCoding", "currentColor"]
 - ["PSo8NSCoding", "detectMouseDrag"]
-- !private ["PSo8NSCoding", "distance"]
 - !private ["PSo8NSCoding", "doubleValue"]
 - !private ["PSo8NSCoding", "frame"]
 - ["PSo8NSCoding", "frameWidthSlider"]
 - ["PSo8NSCoding", "frameWidthSliderChanged"]
 - ["PSo8NSCoding", "help"]
 - ["PSo8NSCoding", "helpButtonPressed"]
+- !private ["PSo8NSCoding", "hypot"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "isActive"]
 - !private ["PSo8NSCoding", "isRestorable"]
@@ -1012,7 +1049,6 @@ depends-member:
 - ["PSo8NSCoding", "mouseUp"]
 - ["PSo8NSCoding", "popUpMenu"]
 - ["PSo8NSCoding", "position"]
-- !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "removeFromSuperview"]
 - ["PSo8NSCoding", "rightMouseDown"]
 - ["PSo8NSCoding", "saveButtonPressed"]
@@ -1027,6 +1063,8 @@ depends-member:
 - !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLayout"]
 - ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", "viewWillAppear"]
+- !private ["PSo8NSCoding", "wantsLayer"]
 - !private ["PSo8NSCoding", "window"]
 - ["PSo8NSCoding", "xConstraint"]
 - ["PSo8NSCoding", "yConstraint"]
@@ -1050,17 +1088,19 @@ depends-member:
 - !private ["PSo21NSDraggingDestination", "removeFromSuperview"]
 - !private ["PSo21NSDraggingDestination", "setFrameOrigin"]
 - !private ["PSo21NSDraggingDestination", "tag"]
+- !private ["PSo21NSDraggingDestination", "wantsLayer"]
 - !private ["PSo21NSDraggingDestination", "window"]
 - ["CSo7NSEvent", "deinit"]
 - !private ["CSo7NSEvent", "locationInWindow"]
 - !private ["CSo7NSEvent", "mouseLocation"]
 - !private ["PSo26NSExtensionRequestHandling", "Array"]
-- !private ["PSo26NSExtensionRequestHandling", "CGColor"]
+- ["PSo26NSExtensionRequestHandling", "CGColor"]
 - !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
 - !private ["PSo26NSExtensionRequestHandling", "CGPoint"]
 - !private ["PSo26NSExtensionRequestHandling", "CGSize"]
 - !private ["PSo26NSExtensionRequestHandling", "CanvasController"]
 - !private ["PSo26NSExtensionRequestHandling", "Container"]
+- !private ["PSo26NSExtensionRequestHandling", "Error"]
 - !private ["PSo26NSExtensionRequestHandling", "Help"]
 - !private ["PSo26NSExtensionRequestHandling", "NSColor"]
 - !private ["PSo26NSExtensionRequestHandling", "NSEvent"]
@@ -1069,6 +1109,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSSharingService"]
 - !private ["PSo26NSExtensionRequestHandling", "NSSharingServiceNamePostOnFacebook"]
 - !private ["PSo26NSExtensionRequestHandling", "NSSharingServiceNamePostOnTwitter"]
+- !private ["PSo26NSExtensionRequestHandling", "NSView"]
 - !private ["PSo26NSExtensionRequestHandling", "PopUpMenuView"]
 - ["PSo26NSExtensionRequestHandling", "Position"]
 - ["PSo26NSExtensionRequestHandling", "Saver"]
@@ -1080,12 +1121,13 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "canvasController"]
 - ["PSo26NSExtensionRequestHandling", "colorPanel"]
 - ["PSo26NSExtensionRequestHandling", "count"]
+- ["PSo26NSExtensionRequestHandling", "currentColor"]
 - ["PSo26NSExtensionRequestHandling", "detectMouseDrag"]
-- !private ["PSo26NSExtensionRequestHandling", "distance"]
 - ["PSo26NSExtensionRequestHandling", "frameWidthSlider"]
 - ["PSo26NSExtensionRequestHandling", "frameWidthSliderChanged"]
 - ["PSo26NSExtensionRequestHandling", "help"]
 - ["PSo26NSExtensionRequestHandling", "helpButtonPressed"]
+- !private ["PSo26NSExtensionRequestHandling", "hypot"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "isTracking"]
 - ["PSo26NSExtensionRequestHandling", "locationStarted"]
@@ -1102,7 +1144,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "mouseUp"]
 - ["PSo26NSExtensionRequestHandling", "popUpMenu"]
 - ["PSo26NSExtensionRequestHandling", "position"]
-- !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "rightMouseDown"]
 - ["PSo26NSExtensionRequestHandling", "saveButtonPressed"]
 - ["PSo26NSExtensionRequestHandling", "savedCount"]
@@ -1113,6 +1154,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLayout"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", "xConstraint"]
 - ["PSo26NSExtensionRequestHandling", "yConstraint"]
 - ["PSo26NSExtensionRequestHandling", ""]
@@ -1121,12 +1163,13 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "Array"]
-- !private ["CSo8NSObject", "CGColor"]
+- ["CSo8NSObject", "CGColor"]
 - ["CSo8NSObject", "CGFloat"]
 - !private ["CSo8NSObject", "CGPoint"]
 - !private ["CSo8NSObject", "CGSize"]
 - ["CSo8NSObject", "CanvasController"]
 - !private ["CSo8NSObject", "Container"]
+- !private ["CSo8NSObject", "Error"]
 - ["CSo8NSObject", "Help"]
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "NSButton"]
@@ -1155,9 +1198,9 @@ depends-member:
 - ["CSo8NSObject", "colorPanel"]
 - !private ["CSo8NSObject", "contentMinSize"]
 - ["CSo8NSObject", "count"]
+- ["CSo8NSObject", "currentColor"]
 - ["CSo8NSObject", "detectMouseDrag"]
 - !private ["CSo8NSObject", "dictionaryRepresentation"]
-- !private ["CSo8NSObject", "distance"]
 - !private ["CSo8NSObject", "doubleValue"]
 - !private ["CSo8NSObject", "first"]
 - !private ["CSo8NSObject", "frame"]
@@ -1165,6 +1208,7 @@ depends-member:
 - ["CSo8NSObject", "frameWidthSliderChanged"]
 - ["CSo8NSObject", "help"]
 - ["CSo8NSObject", "helpButtonPressed"]
+- !private ["CSo8NSObject", "hypot"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "isActive"]
 - !private ["CSo8NSObject", "isRestorable"]
@@ -1189,7 +1233,6 @@ depends-member:
 - !private ["CSo8NSObject", "perform"]
 - ["CSo8NSObject", "popUpMenu"]
 - ["CSo8NSObject", "position"]
-- !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "removeFromSuperview"]
 - !private ["CSo8NSObject", "removeObject"]
 - ["CSo8NSObject", "rightMouseDown"]
@@ -1200,6 +1243,7 @@ depends-member:
 - !private ["CSo8NSObject", "second"]
 - !private ["CSo8NSObject", "setFrame"]
 - !private ["CSo8NSObject", "setFrameOrigin"]
+- !private ["CSo8NSObject", "setLogSuperview"]
 - ["CSo8NSObject", "shareOnSocialNetwork"]
 - !private ["CSo8NSObject", "standard"]
 - ["CSo8NSObject", "startedInExtra"]
@@ -1208,16 +1252,19 @@ depends-member:
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLayout"]
 - ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "viewWillAppear"]
+- !private ["CSo8NSObject", "wantsLayer"]
 - !private ["CSo8NSObject", "window"]
 - ["CSo8NSObject", "xConstraint"]
 - ["CSo8NSObject", "yConstraint"]
 - !private ["PSo16NSObjectProtocol", "Array"]
-- !private ["PSo16NSObjectProtocol", "CGColor"]
+- ["PSo16NSObjectProtocol", "CGColor"]
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
 - !private ["PSo16NSObjectProtocol", "CGPoint"]
 - !private ["PSo16NSObjectProtocol", "CGSize"]
 - !private ["PSo16NSObjectProtocol", "CanvasController"]
 - !private ["PSo16NSObjectProtocol", "Container"]
+- !private ["PSo16NSObjectProtocol", "Error"]
 - !private ["PSo16NSObjectProtocol", "Help"]
 - !private ["PSo16NSObjectProtocol", "NSColor"]
 - !private ["PSo16NSObjectProtocol", "NSEvent"]
@@ -1226,6 +1273,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSSharingService"]
 - !private ["PSo16NSObjectProtocol", "NSSharingServiceNamePostOnFacebook"]
 - !private ["PSo16NSObjectProtocol", "NSSharingServiceNamePostOnTwitter"]
+- !private ["PSo16NSObjectProtocol", "NSView"]
 - !private ["PSo16NSObjectProtocol", "PopUpMenuView"]
 - ["PSo16NSObjectProtocol", "Position"]
 - ["PSo16NSObjectProtocol", "Saver"]
@@ -1241,9 +1289,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "colorPanel"]
 - !private ["PSo16NSObjectProtocol", "contentMinSize"]
 - ["PSo16NSObjectProtocol", "count"]
+- ["PSo16NSObjectProtocol", "currentColor"]
 - ["PSo16NSObjectProtocol", "detectMouseDrag"]
 - !private ["PSo16NSObjectProtocol", "dictionaryRepresentation"]
-- !private ["PSo16NSObjectProtocol", "distance"]
 - !private ["PSo16NSObjectProtocol", "doubleValue"]
 - !private ["PSo16NSObjectProtocol", "first"]
 - !private ["PSo16NSObjectProtocol", "frame"]
@@ -1251,6 +1299,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "frameWidthSliderChanged"]
 - ["PSo16NSObjectProtocol", "help"]
 - ["PSo16NSObjectProtocol", "helpButtonPressed"]
+- !private ["PSo16NSObjectProtocol", "hypot"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "isActive"]
 - !private ["PSo16NSObjectProtocol", "isRestorable"]
@@ -1275,7 +1324,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "perform"]
 - ["PSo16NSObjectProtocol", "popUpMenu"]
 - ["PSo16NSObjectProtocol", "position"]
-- !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "removeFromSuperview"]
 - !private ["PSo16NSObjectProtocol", "removeObject"]
 - ["PSo16NSObjectProtocol", "rightMouseDown"]
@@ -1286,6 +1334,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "second"]
 - !private ["PSo16NSObjectProtocol", "setFrame"]
 - !private ["PSo16NSObjectProtocol", "setFrameOrigin"]
+- !private ["PSo16NSObjectProtocol", "setLogSuperview"]
 - ["PSo16NSObjectProtocol", "shareOnSocialNetwork"]
 - !private ["PSo16NSObjectProtocol", "standard"]
 - ["PSo16NSObjectProtocol", "startedInExtra"]
@@ -1294,6 +1343,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLayout"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "viewWillAppear"]
+- !private ["PSo16NSObjectProtocol", "wantsLayer"]
 - !private ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", "xConstraint"]
 - ["PSo16NSObjectProtocol", "yConstraint"]
@@ -1304,12 +1355,13 @@ depends-member:
 - !private ["PSo19NSPasteboardWriting", "init"]
 - ["CSo11NSResponder", "AnyObject"]
 - !private ["CSo11NSResponder", "Array"]
-- !private ["CSo11NSResponder", "CGColor"]
+- ["CSo11NSResponder", "CGColor"]
 - ["CSo11NSResponder", "CGFloat"]
 - !private ["CSo11NSResponder", "CGPoint"]
 - !private ["CSo11NSResponder", "CGSize"]
 - ["CSo11NSResponder", "CanvasController"]
 - !private ["CSo11NSResponder", "Container"]
+- !private ["CSo11NSResponder", "Error"]
 - ["CSo11NSResponder", "Help"]
 - ["CSo11NSResponder", "Int"]
 - ["CSo11NSResponder", "NSButton"]
@@ -1336,13 +1388,14 @@ depends-member:
 - ["CSo11NSResponder", "colorPanel"]
 - !private ["CSo11NSResponder", "contentMinSize"]
 - ["CSo11NSResponder", "count"]
+- ["CSo11NSResponder", "currentColor"]
 - ["CSo11NSResponder", "detectMouseDrag"]
-- !private ["CSo11NSResponder", "distance"]
 - !private ["CSo11NSResponder", "frame"]
 - ["CSo11NSResponder", "frameWidthSlider"]
 - ["CSo11NSResponder", "frameWidthSliderChanged"]
 - ["CSo11NSResponder", "help"]
 - ["CSo11NSResponder", "helpButtonPressed"]
+- !private ["CSo11NSResponder", "hypot"]
 - ["CSo11NSResponder", "init"]
 - !private ["CSo11NSResponder", "isActive"]
 - !private ["CSo11NSResponder", "isRestorable"]
@@ -1365,7 +1418,6 @@ depends-member:
 - ["CSo11NSResponder", "mouseUp"]
 - ["CSo11NSResponder", "popUpMenu"]
 - ["CSo11NSResponder", "position"]
-- !private ["CSo11NSResponder", "print"]
 - !private ["CSo11NSResponder", "removeFromSuperview"]
 - ["CSo11NSResponder", "rightMouseDown"]
 - ["CSo11NSResponder", "saveButtonPressed"]
@@ -1380,18 +1432,21 @@ depends-member:
 - !private ["CSo11NSResponder", "view"]
 - ["CSo11NSResponder", "viewDidLayout"]
 - ["CSo11NSResponder", "viewDidLoad"]
+- ["CSo11NSResponder", "viewWillAppear"]
+- !private ["CSo11NSResponder", "wantsLayer"]
 - !private ["CSo11NSResponder", "window"]
 - ["CSo11NSResponder", "xConstraint"]
 - ["CSo11NSResponder", "yConstraint"]
 - !private ["PSo14NSSecureCoding", "cgColor"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo17NSSeguePerforming", "Array"]
-- !private ["PSo17NSSeguePerforming", "CGColor"]
+- ["PSo17NSSeguePerforming", "CGColor"]
 - !private ["PSo17NSSeguePerforming", "CGFloat"]
 - !private ["PSo17NSSeguePerforming", "CGPoint"]
 - !private ["PSo17NSSeguePerforming", "CGSize"]
 - !private ["PSo17NSSeguePerforming", "CanvasController"]
 - !private ["PSo17NSSeguePerforming", "Container"]
+- !private ["PSo17NSSeguePerforming", "Error"]
 - !private ["PSo17NSSeguePerforming", "Help"]
 - !private ["PSo17NSSeguePerforming", "NSColor"]
 - !private ["PSo17NSSeguePerforming", "NSEvent"]
@@ -1400,6 +1455,7 @@ depends-member:
 - !private ["PSo17NSSeguePerforming", "NSSharingService"]
 - !private ["PSo17NSSeguePerforming", "NSSharingServiceNamePostOnFacebook"]
 - !private ["PSo17NSSeguePerforming", "NSSharingServiceNamePostOnTwitter"]
+- !private ["PSo17NSSeguePerforming", "NSView"]
 - !private ["PSo17NSSeguePerforming", "PopUpMenuView"]
 - ["PSo17NSSeguePerforming", "Position"]
 - ["PSo17NSSeguePerforming", "Saver"]
@@ -1411,12 +1467,13 @@ depends-member:
 - ["PSo17NSSeguePerforming", "canvasController"]
 - ["PSo17NSSeguePerforming", "colorPanel"]
 - ["PSo17NSSeguePerforming", "count"]
+- ["PSo17NSSeguePerforming", "currentColor"]
 - ["PSo17NSSeguePerforming", "detectMouseDrag"]
-- !private ["PSo17NSSeguePerforming", "distance"]
 - ["PSo17NSSeguePerforming", "frameWidthSlider"]
 - ["PSo17NSSeguePerforming", "frameWidthSliderChanged"]
 - ["PSo17NSSeguePerforming", "help"]
 - ["PSo17NSSeguePerforming", "helpButtonPressed"]
+- !private ["PSo17NSSeguePerforming", "hypot"]
 - !private ["PSo17NSSeguePerforming", "init"]
 - ["PSo17NSSeguePerforming", "isTracking"]
 - ["PSo17NSSeguePerforming", "locationStarted"]
@@ -1433,7 +1490,6 @@ depends-member:
 - ["PSo17NSSeguePerforming", "mouseUp"]
 - ["PSo17NSSeguePerforming", "popUpMenu"]
 - ["PSo17NSSeguePerforming", "position"]
-- !private ["PSo17NSSeguePerforming", "print"]
 - ["PSo17NSSeguePerforming", "rightMouseDown"]
 - ["PSo17NSSeguePerforming", "saveButtonPressed"]
 - ["PSo17NSSeguePerforming", "savedCount"]
@@ -1444,6 +1500,7 @@ depends-member:
 - !private ["PSo17NSSeguePerforming", "view"]
 - ["PSo17NSSeguePerforming", "viewDidLayout"]
 - ["PSo17NSSeguePerforming", "viewDidLoad"]
+- ["PSo17NSSeguePerforming", "viewWillAppear"]
 - ["PSo17NSSeguePerforming", "xConstraint"]
 - ["PSo17NSSeguePerforming", "yConstraint"]
 - ["PSo17NSSeguePerforming", ""]
@@ -1453,12 +1510,13 @@ depends-member:
 - !private ["CSo12NSSliderCell", "doubleValue"]
 - !private ["CSo8NSString", "init"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "Array"]
-- !private ["PSo33NSUserInterfaceItemIdentification", "CGColor"]
+- ["PSo33NSUserInterfaceItemIdentification", "CGColor"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "CGFloat"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "CGPoint"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "CGSize"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "CanvasController"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "Container"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "Error"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "Help"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "NSColor"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "NSEvent"]
@@ -1467,6 +1525,7 @@ depends-member:
 - !private ["PSo33NSUserInterfaceItemIdentification", "NSSharingService"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "NSSharingServiceNamePostOnFacebook"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "NSSharingServiceNamePostOnTwitter"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "NSView"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "PopUpMenuView"]
 - ["PSo33NSUserInterfaceItemIdentification", "Position"]
 - ["PSo33NSUserInterfaceItemIdentification", "Saver"]
@@ -1480,14 +1539,15 @@ depends-member:
 - ["PSo33NSUserInterfaceItemIdentification", "colorPanel"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "contentMinSize"]
 - ["PSo33NSUserInterfaceItemIdentification", "count"]
+- ["PSo33NSUserInterfaceItemIdentification", "currentColor"]
 - ["PSo33NSUserInterfaceItemIdentification", "detectMouseDrag"]
-- !private ["PSo33NSUserInterfaceItemIdentification", "distance"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "doubleValue"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "frame"]
 - ["PSo33NSUserInterfaceItemIdentification", "frameWidthSlider"]
 - ["PSo33NSUserInterfaceItemIdentification", "frameWidthSliderChanged"]
 - ["PSo33NSUserInterfaceItemIdentification", "help"]
 - ["PSo33NSUserInterfaceItemIdentification", "helpButtonPressed"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "hypot"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "init"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "isActive"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "isRestorable"]
@@ -1510,7 +1570,6 @@ depends-member:
 - ["PSo33NSUserInterfaceItemIdentification", "mouseUp"]
 - ["PSo33NSUserInterfaceItemIdentification", "popUpMenu"]
 - ["PSo33NSUserInterfaceItemIdentification", "position"]
-- !private ["PSo33NSUserInterfaceItemIdentification", "print"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "removeFromSuperview"]
 - ["PSo33NSUserInterfaceItemIdentification", "rightMouseDown"]
 - ["PSo33NSUserInterfaceItemIdentification", "saveButtonPressed"]
@@ -1525,6 +1584,8 @@ depends-member:
 - !private ["PSo33NSUserInterfaceItemIdentification", "view"]
 - ["PSo33NSUserInterfaceItemIdentification", "viewDidLayout"]
 - ["PSo33NSUserInterfaceItemIdentification", "viewDidLoad"]
+- ["PSo33NSUserInterfaceItemIdentification", "viewWillAppear"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "wantsLayer"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "window"]
 - ["PSo33NSUserInterfaceItemIdentification", "xConstraint"]
 - ["PSo33NSUserInterfaceItemIdentification", "yConstraint"]
@@ -1537,22 +1598,26 @@ depends-member:
 - !private ["PSo26NSUserInterfaceValidations", "setFrame"]
 - !private ["PSo26NSUserInterfaceValidations", "tag"]
 - !private ["CSo6NSView", "addSubview"]
+- ["CSo6NSView", "deinit"]
 - !private ["CSo6NSView", "frame"]
+- !private ["CSo6NSView", "init"]
 - !private ["CSo6NSView", "isActive"]
 - !private ["CSo6NSView", "layer"]
 - !private ["CSo6NSView", "locateView"]
 - !private ["CSo6NSView", "removeFromSuperview"]
 - !private ["CSo6NSView", "setFrameOrigin"]
 - !private ["CSo6NSView", "tag"]
+- !private ["CSo6NSView", "wantsLayer"]
 - !private ["CSo6NSView", "window"]
 - ["CSo16NSViewController", "AnyObject"]
 - !private ["CSo16NSViewController", "Array"]
-- !private ["CSo16NSViewController", "CGColor"]
+- ["CSo16NSViewController", "CGColor"]
 - ["CSo16NSViewController", "CGFloat"]
 - !private ["CSo16NSViewController", "CGPoint"]
 - !private ["CSo16NSViewController", "CGSize"]
 - ["CSo16NSViewController", "CanvasController"]
 - !private ["CSo16NSViewController", "Container"]
+- !private ["CSo16NSViewController", "Error"]
 - ["CSo16NSViewController", "Help"]
 - ["CSo16NSViewController", "Int"]
 - ["CSo16NSViewController", "NSButton"]
@@ -1577,13 +1642,14 @@ depends-member:
 - ["CSo16NSViewController", "canvasController"]
 - ["CSo16NSViewController", "colorPanel"]
 - ["CSo16NSViewController", "count"]
+- ["CSo16NSViewController", "currentColor"]
 - ["CSo16NSViewController", "deinit"]
 - ["CSo16NSViewController", "detectMouseDrag"]
-- !private ["CSo16NSViewController", "distance"]
 - ["CSo16NSViewController", "frameWidthSlider"]
 - ["CSo16NSViewController", "frameWidthSliderChanged"]
 - ["CSo16NSViewController", "help"]
 - ["CSo16NSViewController", "helpButtonPressed"]
+- !private ["CSo16NSViewController", "hypot"]
 - ["CSo16NSViewController", "init"]
 - ["CSo16NSViewController", "isTracking"]
 - ["CSo16NSViewController", "locationStarted"]
@@ -1600,7 +1666,6 @@ depends-member:
 - ["CSo16NSViewController", "mouseUp"]
 - ["CSo16NSViewController", "popUpMenu"]
 - ["CSo16NSViewController", "position"]
-- !private ["CSo16NSViewController", "print"]
 - ["CSo16NSViewController", "rightMouseDown"]
 - ["CSo16NSViewController", "saveButtonPressed"]
 - ["CSo16NSViewController", "savedCount"]
@@ -1611,6 +1676,7 @@ depends-member:
 - !private ["CSo16NSViewController", "view"]
 - ["CSo16NSViewController", "viewDidLayout"]
 - ["CSo16NSViewController", "viewDidLoad"]
+- ["CSo16NSViewController", "viewWillAppear"]
 - ["CSo16NSViewController", "xConstraint"]
 - ["CSo16NSViewController", "yConstraint"]
 - ["CSo16NSViewController", ""]
@@ -1702,12 +1768,13 @@ depends-member:
 - !private ["CSo12UserDefaults", "standard"]
 - ["C7Collage14ViewController", "AnyObject"]
 - !private ["C7Collage14ViewController", "Array"]
-- !private ["C7Collage14ViewController", "CGColor"]
+- ["C7Collage14ViewController", "CGColor"]
 - ["C7Collage14ViewController", "CGFloat"]
 - !private ["C7Collage14ViewController", "CGPoint"]
 - !private ["C7Collage14ViewController", "CGSize"]
 - ["C7Collage14ViewController", "CanvasController"]
 - !private ["C7Collage14ViewController", "Container"]
+- !private ["C7Collage14ViewController", "Error"]
 - ["C7Collage14ViewController", "Help"]
 - ["C7Collage14ViewController", "Int"]
 - ["C7Collage14ViewController", "NSButton"]
@@ -1732,13 +1799,14 @@ depends-member:
 - ["C7Collage14ViewController", "canvasController"]
 - ["C7Collage14ViewController", "colorPanel"]
 - ["C7Collage14ViewController", "count"]
+- ["C7Collage14ViewController", "currentColor"]
 - ["C7Collage14ViewController", "deinit"]
 - ["C7Collage14ViewController", "detectMouseDrag"]
-- !private ["C7Collage14ViewController", "distance"]
 - ["C7Collage14ViewController", "frameWidthSlider"]
 - ["C7Collage14ViewController", "frameWidthSliderChanged"]
 - ["C7Collage14ViewController", "help"]
 - ["C7Collage14ViewController", "helpButtonPressed"]
+- !private ["C7Collage14ViewController", "hypot"]
 - ["C7Collage14ViewController", "init"]
 - ["C7Collage14ViewController", "isTracking"]
 - ["C7Collage14ViewController", "locationStarted"]
@@ -1755,7 +1823,6 @@ depends-member:
 - ["C7Collage14ViewController", "mouseUp"]
 - ["C7Collage14ViewController", "popUpMenu"]
 - ["C7Collage14ViewController", "position"]
-- !private ["C7Collage14ViewController", "print"]
 - ["C7Collage14ViewController", "rightMouseDown"]
 - ["C7Collage14ViewController", "saveButtonPressed"]
 - ["C7Collage14ViewController", "savedCount"]
@@ -1766,6 +1833,7 @@ depends-member:
 - !private ["C7Collage14ViewController", "view"]
 - ["C7Collage14ViewController", "viewDidLayout"]
 - ["C7Collage14ViewController", "viewDidLoad"]
+- ["C7Collage14ViewController", "viewWillAppear"]
 - ["C7Collage14ViewController", "xConstraint"]
 - ["C7Collage14ViewController", "yConstraint"]
 - !private ["Ps14_ArrayProtocol", "Iterator"]
@@ -1787,6 +1855,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "removeFromSuperview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setFrameOrigin"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "tag"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "wantsLayer"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "window"]
 - !private ["Ps24_DestructorSafeContainer", "Iterator"]
 - !private ["Ps24_DestructorSafeContainer", "_Element"]
@@ -1806,12 +1875,13 @@ depends-member:
 - !private ["Ps26_ExpressibleByColorLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "Array"]
-- !private ["Ps9_Hashable", "CGColor"]
+- ["Ps9_Hashable", "CGColor"]
 - !private ["Ps9_Hashable", "CGFloat"]
 - !private ["Ps9_Hashable", "CGPoint"]
 - !private ["Ps9_Hashable", "CGSize"]
 - !private ["Ps9_Hashable", "CanvasController"]
 - !private ["Ps9_Hashable", "Container"]
+- !private ["Ps9_Hashable", "Error"]
 - !private ["Ps9_Hashable", "Help"]
 - !private ["Ps9_Hashable", "NSColor"]
 - !private ["Ps9_Hashable", "NSEvent"]
@@ -1820,6 +1890,7 @@ depends-member:
 - !private ["Ps9_Hashable", "NSSharingService"]
 - !private ["Ps9_Hashable", "NSSharingServiceNamePostOnFacebook"]
 - !private ["Ps9_Hashable", "NSSharingServiceNamePostOnTwitter"]
+- !private ["Ps9_Hashable", "NSView"]
 - !private ["Ps9_Hashable", "PopUpMenuView"]
 - ["Ps9_Hashable", "Position"]
 - ["Ps9_Hashable", "Saver"]
@@ -1840,9 +1911,9 @@ depends-member:
 - ["Ps9_Hashable", "colorPanel"]
 - !private ["Ps9_Hashable", "contentMinSize"]
 - ["Ps9_Hashable", "count"]
+- ["Ps9_Hashable", "currentColor"]
 - ["Ps9_Hashable", "detectMouseDrag"]
 - !private ["Ps9_Hashable", "dictionaryRepresentation"]
-- !private ["Ps9_Hashable", "distance"]
 - !private ["Ps9_Hashable", "doubleValue"]
 - !private ["Ps9_Hashable", "first"]
 - !private ["Ps9_Hashable", "frame"]
@@ -1851,6 +1922,7 @@ depends-member:
 - ["Ps9_Hashable", "hashValue"]
 - ["Ps9_Hashable", "help"]
 - ["Ps9_Hashable", "helpButtonPressed"]
+- !private ["Ps9_Hashable", "hypot"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "isActive"]
 - !private ["Ps9_Hashable", "isRestorable"]
@@ -1877,7 +1949,6 @@ depends-member:
 - !private ["Ps9_Hashable", "pi"]
 - ["Ps9_Hashable", "popUpMenu"]
 - ["Ps9_Hashable", "position"]
-- !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "removeFromSuperview"]
 - !private ["Ps9_Hashable", "removeObject"]
 - ["Ps9_Hashable", "right"]
@@ -1889,6 +1960,7 @@ depends-member:
 - !private ["Ps9_Hashable", "second"]
 - !private ["Ps9_Hashable", "setFrame"]
 - !private ["Ps9_Hashable", "setFrameOrigin"]
+- !private ["Ps9_Hashable", "setLogSuperview"]
 - ["Ps9_Hashable", "shareOnSocialNetwork"]
 - !private ["Ps9_Hashable", "standard"]
 - ["Ps9_Hashable", "startedInExtra"]
@@ -1898,6 +1970,8 @@ depends-member:
 - !private ["Ps9_Hashable", "view"]
 - ["Ps9_Hashable", "viewDidLayout"]
 - ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", "viewWillAppear"]
+- !private ["Ps9_Hashable", "wantsLayer"]
 - !private ["Ps9_Hashable", "window"]
 - ["Ps9_Hashable", "xConstraint"]
 - ["Ps9_Hashable", "yConstraint"]
@@ -1963,6 +2037,7 @@ depends-nominal:
 - !private "Vs18DictionaryIterator"
 - "Sd"
 - "Ps9Equatable"
+- !private "C7Collage5Error"
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps30ExpressibleByDictionaryLiteral"
@@ -2032,7 +2107,7 @@ depends-nominal:
 - !private "CSo8NSString"
 - "PSo33NSUserInterfaceItemIdentification"
 - !private "PSo26NSUserInterfaceValidations"
-- !private "CSo6NSView"
+- "CSo6NSView"
 - "CSo16NSViewController"
 - "CSo8NSWindow"
 - "Sq"
@@ -2100,4 +2175,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "96f5f89ef842cd7d1b98ebf41c32575c"
+interface-hash: "4ef0990014aede0a9aa2210e6ab08901"

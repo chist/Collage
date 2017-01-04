@@ -19,8 +19,10 @@ class DragAndDropImageView: NSImageView {
         self.isEditable = true
     }
     
-    override func viewWillDraw() {
-        super.viewWillDraw()
-        delegate?.update()
+    override var image: NSImage? {
+        didSet {
+            super.image = image
+            delegate?.update()
+        }
     }
 }

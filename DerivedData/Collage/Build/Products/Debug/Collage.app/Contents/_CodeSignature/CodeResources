@@ -12,20 +12,11 @@
 		<data>
 		EPFPdZs0BBri1Xrzu2Mm63Ox3Io=
 		</data>
-		<key>Resources/en.lproj/Main.storyboardc/A4g-QF-R0x-view-A0b-Z2-B5j.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			same4Pl7lLb0rgQmIPgRW0TLcZE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>Resources/en.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ImxdyPXSsbsFmp9W3BzDicGkK94=
+			kA27zA5CyZqYiGkv9h3jP6Zn84c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -34,7 +25,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AtOrOJ+lmd+JHXBIiwKyNmKimsw=
+			XWNORZawg8ey8rwupLOdga9flNI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -43,16 +34,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			i5SXgNKJs+n7+/Y0ZpNyHdCK8mg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/en.lproj/Main.storyboardc/NSWindowController-Eam-3b-h2a.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VZXc04dosxpXTA5JOfURuJmcgvI=
+			aCTtlvt9b/up2NZYrCWeEGbQWOs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -61,7 +43,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hNWgM6FLmGgZGqfC6CWxAj7Iip8=
+			J5JOT89PzEkUtQxEwYaFU9hNrsc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -212,28 +194,15 @@
 			lA35lSyDDTkKXEzYJR7AuY53ZE+0AQ0yDD/BU7EKmbU=
 			</data>
 		</dict>
-		<key>Resources/en.lproj/Main.storyboardc/A4g-QF-R0x-view-A0b-Z2-B5j.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			same4Pl7lLb0rgQmIPgRW0TLcZE=
-			</data>
-			<key>hash2</key>
-			<data>
-			KKi3RV2NmlUKgUErMEKRoiOTkyzPYk12Lv0UJZ2O+Ro=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>Resources/en.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ImxdyPXSsbsFmp9W3BzDicGkK94=
+			kA27zA5CyZqYiGkv9h3jP6Zn84c=
 			</data>
 			<key>hash2</key>
 			<data>
-			cjz2muPw4jQcnvFY48wCtig39JnHe4wASWQZDYjZ9iE=
+			XIbyuTjWElGyQNhK/5VXmA1m6k/iRwxYN+jzgM6Wjvc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -242,11 +211,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AtOrOJ+lmd+JHXBIiwKyNmKimsw=
+			XWNORZawg8ey8rwupLOdga9flNI=
 			</data>
 			<key>hash2</key>
 			<data>
-			wcooxHKeNFGu1wnDdck2Vm7trmQb4x49hEsxTS/7dC8=
+			++9ZV3SE0IDion6A4yssuqIF/X/Z5keE9nb+GGKlWrY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -255,24 +224,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			i5SXgNKJs+n7+/Y0ZpNyHdCK8mg=
+			aCTtlvt9b/up2NZYrCWeEGbQWOs=
 			</data>
 			<key>hash2</key>
 			<data>
-			yCUEf9xCNJ2fJi4zmEpA9S+jOE2Bi4YQLdajHck8sTQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/en.lproj/Main.storyboardc/NSWindowController-Eam-3b-h2a.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VZXc04dosxpXTA5JOfURuJmcgvI=
-			</data>
-			<key>hash2</key>
-			<data>
-			LZLFNMfPJd3Smmp8bcHFvCqOk/Ms5wM3aeQeKdjTsvQ=
+			rkUAbDozHenQnrK2lM4SUgzyMQb2q/tSIWNCywU7crE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -281,11 +237,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hNWgM6FLmGgZGqfC6CWxAj7Iip8=
+			J5JOT89PzEkUtQxEwYaFU9hNrsc=
 			</data>
 			<key>hash2</key>
 			<data>
-			2AzibbN1cPEdUWn8VEhT8zn0kTMRrTN0BJfCrfAbJ8I=
+			eTb5LbZ/60vid/lTRtNpnunAZQkmIh6JZOKxzYrTIQU=
 			</data>
 			<key>optional</key>
 			<true/>

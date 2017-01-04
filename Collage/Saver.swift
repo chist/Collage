@@ -10,44 +10,33 @@ import Foundation
 import Cocoa
 
 class Saver {
-    var directoryPath: String
-    var imagePath: String = "0.png"
+    func save(view: NSView) {
+        if let directoryPath = chooseDirectoryPath() {
+            //let image = NSImage.init(data: myViewCopy.dataWithPDF(inside: myViewCopy.bounds))!
+            
+            let image = view.snapshot
+            let randNum = String(arc4random())
+            let imageName = randNum + ".png"
+            var imagePath = String(describing: directoryPath) + "/" + imageName
+            imagePath = imagePath.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlPathAllowed)!
+            image.savePNG(imagePath)
+        }
+        
+    }
     
-    init() {
-        directoryPath = NSString(string: "~/Documents/").expandingTildeInPath
-        let manager = FileManager.default
-        do {
-            try manager.createDirectory(atPath: directoryPath, withIntermediateDirectories: true, attributes: nil)
-        } catch {
-            print("Error: can't create directory.")
+    func chooseDirectoryPath() -> URL? {
+        let myFileDialog: NSOpenPanel = NSOpenPanel()
+        myFileDialog.canChooseDirectories = true
+        myFileDialog.canChooseFiles = false
+        if myFileDialog.runModal() == NSModalResponseCancel {
+            return nil
+        } else {
+            return myFileDialog.url
         }
     }
-    
-    func save(view: NSView) {
-        let image = view.snapshot
-        updateImagePath()
-        image.savePNG(imagePath)
-    }
-    
+
     func getSnapshot(view: NSView) -> NSImage {
         return view.snapshot
-    }
-    
-    func updateDirectoryPath() {
-        if let path = UserDefaults.standard.object(forKey: "savingPath") {
-            print(path)
-            directoryPath = (path as! NSString).expandingTildeInPath
-            print(directoryPath)
-        }
-    }
-    
-    func updateImagePath() {
-        updateDirectoryPath()
-        let randNum = String(arc4random())
-        let imageName = randNum + ".png"
-        imagePath = directoryPath + "/" + imageName
-        imagePath = imagePath.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlPathAllowed)!
-        print("imagePath: ", imagePath)
     }
 }
 
@@ -61,21 +50,22 @@ extension NSImage {
             if let url = URL(string: path) {
                 try imagePNGRepresentation.write(to: url);
             } else {
-                print("Error saving collage: path is underfined.");
+                Error.out(string: "Error: path is underfined.");
             }
         } catch {
-            print("Error saving collage.");
+            Error.out(string: "Error saving collage.");
         }
     }
 }
 
+// gist.github.com/kaishin/d4df8fc6c701ca635e25
 extension NSView {
     var snapshot: NSImage {
         guard let bitmapRep = bitmapImageRepForCachingDisplay(in: bounds) else { return NSImage() }
+        bitmapRep.size = bounds.size
         cacheDisplay(in: bounds, to: bitmapRep)
-        let image = NSImage()
+        let image = NSImage(size: bounds.size)
         image.addRepresentation(bitmapRep)
-        bitmapRep.size = bounds.size.doubleScale()
         return image
     }
 }

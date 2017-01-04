@@ -14,7 +14,6 @@
 		4F857B5F1D7041390072762D /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F857B5E1D7041390072762D /* Quartz.framework */; };
 		4F857B631D7070030072762D /* CanvasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F857B621D7070030072762D /* CanvasController.swift */; };
 		4F9B4A4E1D9AFDCD00ADD3E9 /* Saver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B4A4D1D9AFDCD00ADD3E9 /* Saver.swift */; };
-		4F9B4A501D9B09FD00ADD3E9 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B4A4F1D9B09FD00ADD3E9 /* PreferencesViewController.swift */; };
 		4F9E1CF71D8004D9000D6C69 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9E1CF61D8004D9000D6C69 /* Error.swift */; };
 		4FB62C341D6F5B3E00FE2BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB62C331D6F5B3E00FE2BD3 /* AppDelegate.swift */; };
 		4FB62C361D6F5B3E00FE2BD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB62C351D6F5B3E00FE2BD3 /* ViewController.swift */; };
@@ -54,7 +53,6 @@
 		4F857B5E1D7041390072762D /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		4F857B621D7070030072762D /* CanvasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CanvasController.swift; path = ../CanvasController.swift; sourceTree = "<group>"; };
 		4F9B4A4D1D9AFDCD00ADD3E9 /* Saver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Saver.swift; sourceTree = "<group>"; };
-		4F9B4A4F1D9B09FD00ADD3E9 /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		4F9E1CF61D8004D9000D6C69 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		4FB62C301D6F5B3E00FE2BD3 /* Collage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FB62C331D6F5B3E00FE2BD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -159,7 +157,6 @@
 				4F6893E11E1C03B000D387B2 /* Container Contents */,
 				4F6893E21E1C188200D387B2 /* PopUp menu */,
 				4FB8A3261DCC01CC00317161 /* Help */,
-				4F9B4A4F1D9B09FD00ADD3E9 /* PreferencesViewController.swift */,
 				4F9B4A4D1D9AFDCD00ADD3E9 /* Saver.swift */,
 				4FF368501D6F66650049E699 /* Rectangle.swift */,
 				4FB62C371D6F5B3E00FE2BD3 /* Assets.xcassets */,
@@ -344,7 +341,6 @@
 				4F2C828D1D7E01E500D9D852 /* ScrollView.swift in Sources */,
 				4FF368511D6F66650049E699 /* Rectangle.swift in Sources */,
 				4F857B631D7070030072762D /* CanvasController.swift in Sources */,
-				4F9B4A501D9B09FD00ADD3E9 /* PreferencesViewController.swift in Sources */,
 				4F6893E01E1BFCD200D387B2 /* ScrollViewDelegate.swift in Sources */,
 				4FB62C361D6F5B3E00FE2BD3 /* ViewController.swift in Sources */,
 				4FCA9CBD1E167B190022ED87 /* DragAndDropImageView.swift in Sources */,

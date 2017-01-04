@@ -27,12 +27,13 @@ class ViewController: NSViewController {
     // minimum window size
     var xConstraint: CGFloat = 500
     var yConstraint: CGFloat = 500
-    // maximum window size defined in storyboard
     
     var canvasController: CanvasController?
     var help: Help?
     let saver = Saver()
     var popUpMenu: PopUpMenuView?
+    
+    var currentColor = CGColor(red: 255, green: 255, blue: 255, alpha: 255)
     
     @IBOutlet var canvas: NSView!
     @IBOutlet var menuView: NSView!
@@ -51,7 +52,8 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.canvas.layer?.backgroundColor = CGColor(red: 255, green: 255, blue: 255, alpha: 1)
+        self.view.wantsLayer = true
+        
         canvasController = CanvasController(canvas: canvas)
         Timer.scheduledTimer(timeInterval: 0.005, target: self, selector: #selector(detectMouseDrag), userInfo: nil, repeats: true)
         help = Help(superView: self.canvas)
@@ -59,9 +61,13 @@ class ViewController: NSViewController {
         
         self.view.window?.isRestorable = false
         
-        for key in Array(UserDefaults.standard.dictionaryRepresentation().keys) {
-            UserDefaults.standard.removeObject(forKey: key)
-        }
+        let errorView = NSView(frame: NSRect(x: 0, y: 0, width: 300, height: 30))
+        self.view.addSubview(errorView)
+        Error.setLogSuperview(view: errorView)
+    }
+    
+    override func viewWillAppear() {
+        self.canvas.layer?.backgroundColor = currentColor
     }
     
     override func mouseDown(with event: NSEvent) {
@@ -79,13 +85,15 @@ class ViewController: NSViewController {
         if colorPanel.frame.contains(point) {
             let center = NSPoint(x: colorPanel.frame.width / 2, y: colorPanel.frame.height / 2)
             let insidePoint = NSPoint(x: point.x - colorPanel.frame.minX, y: point.y - colorPanel.frame.minY)
-            let curRadius = distance(first: center, second: insidePoint)
+            let curRadius = hypot(center.x - insidePoint.x, center.y - insidePoint.y)
             if curRadius > colorPanel.frame.width / 2 {
                 return
             }
             let h = (atan2(-insidePoint.x + center.x, -insidePoint.y + center.y) + CGFloat.pi) / (2 * CGFloat.pi)
             let color = NSColor.init(hue: h, saturation: curRadius / center.y, brightness: 1, alpha: 1)
-            self.canvas.layer?.backgroundColor = color.cgColor
+            
+            currentColor = color.cgColor
+            self.canvas.layer?.backgroundColor = currentColor
         }
     }
  
@@ -257,8 +265,4 @@ class ViewController: NSViewController {
         popUpMenu?.isActive = false
         help?.changeState()
     }
-}
-
-func distance(first: CGPoint, second: CGPoint) -> CGFloat {
-    return sqrt((first.x - second.x) * (first.x - second.x) + (first.y - second.y) * (first.y - second.y))
 }

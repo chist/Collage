@@ -7,24 +7,24 @@ provides-member:
 - ["C7Collage17MutableScrollView", ""]
 provides-dynamic-lookup:
 - "border"
-- "update"
 - "content"
+- "update"
 depends-top-level:
-- !private "CGPoint"
-- !private "NSRect"
 - !private "max"
-- "AssignmentPrecedence"
-- "Rectangle"
-- "NSImage"
+- "DragAndDropImageView"
 - "NSCoder"
-- "MutableScrollView"
-- !private "/"
 - "NSScrollView"
 - !private "BooleanLiteralType"
-- "ScrollViewDelegate"
-- !private "fatalError"
 - !private "StringLiteralType"
-- "DragAndDropImageView"
+- !private "/"
+- "AssignmentPrecedence"
+- !private "NSRect"
+- "Rectangle"
+- "MutableScrollView"
+- "NSImage"
+- "ScrollViewDelegate"
+- !private "CGPoint"
+- !private "fatalError"
 depends-member:
 - !private ["Ps9AnyObject", "CGPoint"]
 - ["Ps9AnyObject", "DragAndDropImageView"]
