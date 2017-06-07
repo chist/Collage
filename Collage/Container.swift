@@ -381,15 +381,7 @@ class Container {
             self.secondContainer?.updateScrollView()
             return
         }
-        if let scrollView = self.scrollView, let image = self.image {
-            /*let magnification = scrollView.magnification
-            scrollView.frame = self.border.framed().toNSRect()
-            scrollView.updateLayer()
-            scrollView.minMagnification = max(scrollView.frame.size.height / image.size.height, scrollView.frame.size.width / image.size.width)
-            scrollView.magnification = max(magnification, scrollView.minMagnification)*/
-            //scrollView.frame = self.border.framed().toNSRect()
-            scrollView.update()
-        }
+        scrollView?.update()
     }
 }
 

@@ -12,8 +12,6 @@ import Cocoa
 class Saver {
     func save(view: NSView) {
         if let directoryPath = chooseDirectoryPath() {
-            //let image = NSImage.init(data: myViewCopy.dataWithPDF(inside: myViewCopy.bounds))!
-            
             let image = view.snapshot
             let randNum = String(arc4random())
             let imageName = randNum + ".png"
@@ -21,7 +19,6 @@ class Saver {
             imagePath = imagePath.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlPathAllowed)!
             image.savePNG(imagePath)
         }
-        
     }
     
     func chooseDirectoryPath() -> URL? {

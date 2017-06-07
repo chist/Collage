@@ -18,22 +18,23 @@ enum Position {
 }
 
 class ViewController: NSViewController, MouseClickDelegate {
-    let menuSize: CGFloat = 200
-    let minCanvasXSize: CGFloat = 300
-    let minCanvasYSize: CGFloat = 500
-    var count: Int = 0
-    var savedCount: Int = 0
+    private let menuSize: CGFloat = 200
+    private let minCanvasXSize: CGFloat = 300
+    private let minCanvasYSize: CGFloat = 500
+    private var count: Int = 0
+    private var savedCount: Int = 0
     
     // minimum window size
-    var xConstraint: CGFloat = 500
-    var yConstraint: CGFloat = 500
+    private var xConstraint: CGFloat = 500
+    private var yConstraint: CGFloat = 500
     
-    var canvasController: CanvasController?
-    var help: Help?
-    let saver = Saver()
-    var popUpMenu: PopUpMenuView?
+    private var canvasController: CanvasController?
+    private var help: Help?
+    private let saver = Saver()
+    private var popUpMenu: PopUpMenuView?
     
-    var currentColor = CGColor(red: 255, green: 255, blue: 255, alpha: 255)
+    // canvas background color
+    private var currentColor = CGColor(red: 255, green: 255, blue: 255, alpha: 255)
     
     @IBOutlet var canvas: NSView!
     @IBOutlet var menuView: NSView!

@@ -207,6 +207,7 @@
 				4FB62C2C1D6F5B3D00FE2BD3 /* Sources */,
 				4FB62C2D1D6F5B3D00FE2BD3 /* Frameworks */,
 				4FB62C2E1D6F5B3D00FE2BD3 /* Resources */,
+				4F4F03CD1E1D1A890071F163 /* Increment Build */,
 			);
 			buildRules = (
 			);
@@ -332,6 +333,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F4F03CD1E1D1A890071F163 /* Increment Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4FB62C2C1D6F5B3D00FE2BD3 /* Sources */ = {

@@ -1,17 +1,19 @@
 version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
 options: "e54f7eb2492e15641efb108132e1398a"
-build_time: [532896440, 919103000]
+build_time: [536846910, 985681000]
 inputs:
   "/Users/ivanchistyakov/Desktop/Collage/Collage/Error.swift": [9223372036854775807, 0]
-  "/Users/ivanchistyakov/Desktop/Collage/Collage/Window.swift": [9223372036854775807, 0]
   "/Users/ivanchistyakov/Desktop/Collage/Collage/PopupMenu.swift": [9223372036854775807, 0]
   "/Users/ivanchistyakov/Desktop/Collage/Collage/Hint.swift": [9223372036854775807, 0]
-  "/Users/ivanchistyakov/Desktop/Collage/Collage/ScrollView.swift": [9223372036854775807, 0]
+  "/Users/ivanchistyakov/Desktop/Collage/Collage/MutableScrollView.swift": [9223372036854775807, 0]
   "/Users/ivanchistyakov/Desktop/Collage/Collage/Rectangle.swift": [9223372036854775807, 0]
   "/Users/ivanchistyakov/Desktop/Collage/CanvasController.swift": [9223372036854775807, 0]
-  "/Users/ivanchistyakov/Desktop/Collage/Collage/PreferencesViewController.swift": [9223372036854775807, 0]
+  "/Users/ivanchistyakov/Desktop/Collage/Collage/ScrollViewDelegate.swift": [9223372036854775807, 0]
   "/Users/ivanchistyakov/Desktop/Collage/Collage/ViewController.swift": [9223372036854775807, 0]
+  "/Users/ivanchistyakov/Desktop/Collage/Collage/DragAndDropImageView.swift": [9223372036854775807, 0]
   "/Users/ivanchistyakov/Desktop/Collage/Collage/Help.swift": [9223372036854775807, 0]
+  "/Users/ivanchistyakov/Desktop/Collage/Collage/MoseClickDelegate.swift": [9223372036854775807, 0]
   "/Users/ivanchistyakov/Desktop/Collage/Collage/Container.swift": [9223372036854775807, 0]
   "/Users/ivanchistyakov/Desktop/Collage/Collage/AppDelegate.swift": [9223372036854775807, 0]
   "/Users/ivanchistyakov/Desktop/Collage/Collage/Saver.swift": [9223372036854775807, 0]
+  "/Users/ivanchistyakov/Desktop/Collage/Collage/MenuDelegate.swift": [9223372036854775807, 0]
